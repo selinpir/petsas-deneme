@@ -2,4 +2,11 @@ wwwroot\app.css
 wwwroot\bootstrap\bootstrap.min.css
 wwwroot\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\img\paymentLogo\etbis.jpg
+wwwroot\img\paymentLogo\ISO.png
+wwwroot\img\paymentLogo\iyzico.png
+wwwroot\img\paymentLogo\mastercard.png
+wwwroot\img\paymentLogo\paypal.png
+wwwroot\img\paymentLogo\SSL.png
+wwwroot\img\paymentLogo\visa.png
 wwwroot\petsasLogo.png

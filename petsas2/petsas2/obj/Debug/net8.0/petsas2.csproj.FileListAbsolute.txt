@@ -150,3 +150,13 @@ D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\obj\Debug\net8.0\refint\p
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\obj\Debug\net8.0\petsas2.pdb
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\obj\Debug\net8.0\petsas2.genruntimeconfig.cache
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\obj\Debug\net8.0\ref\petsas2.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\obj\Debug\net8.0\petsas2.sourcelink.json
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.JSInterop.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\MudBlazor.dll

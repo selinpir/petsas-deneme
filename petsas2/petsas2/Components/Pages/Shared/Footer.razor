@@ -88,6 +88,69 @@ ctrl+k+d kod düzeni için
         </section>
     </div>
 
+    <!-- Ödeme Logoları & Sertifikalar -->
+    <section class="mb-4">
+        <div class="container">
+            <!-- Ödeme Logoları  -->
+            <h6 class="text-uppercase mb-2">Ödeme Yöntemleri</h6>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <img src="/img/paymentlogo/visa.png"
+                     alt="Visa"
+                     title="Visa"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+                <img src="/img/paymentLogo/mastercard.png"
+                     alt="Mastercard"
+                     title="Mastercard"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+                <img src="/img/paymentLogo/paypal.png"
+                     alt="PayPal"
+                     title="PayPal"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+                <img src="/img/paymentLogo/iyzico.png"
+                     alt="iyzico"
+                     title="iyzico"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+            </div>
+
+            <!-- Sertifika / Rozetler Başlığı -->
+            <h6 class="text-uppercase mt-3 mb-2">Sertifika &amp; Rozetler</h6>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <img src="/img/paymentLogo/SSL.png"
+                     alt="SSL Sertifikası"
+                     title="SSL Sertifikası"
+                     class="me-2 mb-2"
+                     style="height:45px;" />
+              
+
+                <img src="/img/paymentLogo/ISO.png"
+                     alt="ISO Sertifikası"
+                     title="ISO Sertifikası"
+                     class="me-2 mb-2"
+                     style="height:45px;" />
+
+                     @* elektronik ticaret bilgi sistemi *@
+                <img src="/img/paymentLogo/etbis.jpg"
+                     alt="ETBİS"
+                     title="ETBİS"
+                     class="me-2 mb-2"
+                     style="height:45px;" />
+            </div>
+
+            <!-- İade & Değişim Garantisi -->
+            <small class="d-block text-muted mt-3">
+                30 gün içinde iade &amp; değişim garantisi.
+            </small>
+        </div>
+    </section>
+
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
         © @DateTime.Now.Year Copyright:
         <a class="text-reset fw-bold" href="/">Selin Pir</a>
@@ -106,11 +169,11 @@ ctrl+k+d kod düzeni için
     // Ürün Kategorileri
     private readonly LinkItem[] ProductCategories = new[]
     {
-        new LinkItem("Kedi", "/categories/kedi"),
-        new LinkItem("Köpek", "/categories/kopek"),
-        new LinkItem("Kuş", "/categories/kus"),
-        new LinkItem("Akvaryum", "/categories/akvaryum"),
-        new LinkItem("Kemirgen", "/categories/kemirgen")
+        new LinkItem("Kedi", "/categories/cat"),
+        new LinkItem("Köpek", "/categories/dog"),
+        new LinkItem("Kuş", "/categories/bird"),
+        new LinkItem("Akvaryum", "/categories/aquarium"),
+        new LinkItem("Kemirgen", "/categories/smallPets") //rodent kullanımı doğru değil tavşanlar ve hamsterlar memeli sayılıyor
     };
 
     // Yasal Sayfalar

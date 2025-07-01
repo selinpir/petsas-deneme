@@ -21,6 +21,34 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\ISO.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\SSL.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\etbis.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\iyzico.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\mastercard.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\paypal.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\visa.png"
+    },
+    {
       "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\petsasLogo.png",
       "PackagePath": "staticwebassets\\petsasLogo.png"
     },
