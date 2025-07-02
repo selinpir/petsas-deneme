@@ -89,4 +89,29 @@ display: block;
 .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
  display: block;
 }
+/*
+login -register page için
+*/
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+.auth-card {
+    max-width: 360px;
+    backdrop-filter: blur(15px);
+    margin: auto;
+}
+
+    .auth-card .card-body {
+        padding: 1rem !important; /* p-3 eþdeðeri */
+    }
+
+.auth-img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin: auto;
+}

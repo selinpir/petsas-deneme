@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bF4tXSpc97XO/+zOKtDHhx1YkEEXX8i/L0jmGrteQYQ=",
+  "Hash": "pS1ULhhaRsE5fNcbyL8Szbsnx2rV+1X5PJ5qXwG3nUA=",
   "Source": "petsas2",
   "BasePath": "_content/petsas2",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m4at5fhgav",
-      "Integrity": "elYxKABKX5+S5BnJbHAqKHsDzqTHYA+rTFzYDFPJNz4=",
+      "Fingerprint": "bgom8zszot",
+      "Integrity": "tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -183,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\loginCat.png",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "img/loginCat#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aj2fsqpmje",
+      "Integrity": "avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\loginCat.png"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
@@ -330,6 +351,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\visa.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\signIn.png",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "img/signIn#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oeuhosh6zc",
+      "Integrity": "MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\signIn.png"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\petsasLogo.png",
@@ -519,6 +561,51 @@
       ]
     },
     {
+      "Route": "app.bgom8zszot.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 14:02:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bgom8zszot"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw="
+        }
+      ]
+    },
+    {
       "Route": "app.css",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\app.css",
       "Selectors": [],
@@ -529,7 +616,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3228"
+          "Value": "3673"
         },
         {
           "Name": "Content-Type",
@@ -537,11 +624,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"elYxKABKX5+S5BnJbHAqKHsDzqTHYA+rTFzYDFPJNz4=\""
+          "Value": "\"tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 13:49:00 GMT"
+          "Value": "Wed, 02 Jul 2025 14:02:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -551,52 +638,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-elYxKABKX5+S5BnJbHAqKHsDzqTHYA+rTFzYDFPJNz4="
-        }
-      ]
-    },
-    {
-      "Route": "app.m4at5fhgav.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3228"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"elYxKABKX5+S5BnJbHAqKHsDzqTHYA+rTFzYDFPJNz4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 13:49:00 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m4at5fhgav"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-elYxKABKX5+S5BnJbHAqKHsDzqTHYA+rTFzYDFPJNz4="
+          "Value": "sha256-tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw="
         }
       ]
     },
@@ -843,6 +885,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "img/loginCat.aj2fsqpmje.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\loginCat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3037449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 14:23:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aj2fsqpmje"
+        },
+        {
+          "Name": "label",
+          "Value": "img/loginCat.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4="
+        }
+      ]
+    },
+    {
+      "Route": "img/loginCat.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\loginCat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3037449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 14:23:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4="
         }
       ]
     },
@@ -1417,6 +1541,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pQFutJ+I0gGBZfyB4doN6xbLjjkqAAbKnFFHl+Xaeo8="
+        }
+      ]
+    },
+    {
+      "Route": "img/signIn.oeuhosh6zc.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\signIn.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3011415"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 14:31:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oeuhosh6zc"
+        },
+        {
+          "Name": "label",
+          "Value": "img/signIn.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg="
+        }
+      ]
+    },
+    {
+      "Route": "img/signIn.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\signIn.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3011415"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 14:31:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg="
         }
       ]
     },

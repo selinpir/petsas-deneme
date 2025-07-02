@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\loginCat.png",
+      "PackagePath": "staticwebassets\\img\\loginCat.png"
+    },
+    {
       "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
       "PackagePath": "staticwebassets\\img\\paymentLogo\\ISO.png"
     },
@@ -47,6 +51,10 @@
     {
       "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
       "PackagePath": "staticwebassets\\img\\paymentLogo\\visa.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\signIn.png",
+      "PackagePath": "staticwebassets\\img\\signIn.png"
     },
     {
       "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\petsasLogo.png",

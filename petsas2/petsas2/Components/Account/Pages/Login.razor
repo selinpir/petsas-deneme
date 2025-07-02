@@ -10,59 +10,73 @@
 @inject NavigationManager NavigationManager
 @inject IdentityRedirectManager RedirectManager
 
-<PageTitle>Log in</PageTitle>
+<PageTitle>Giriş Yap</PageTitle>
 
-<h1>Log in</h1>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <StatusMessage Message="@errorMessage" />
-            <EditForm Model="Input" method="post" OnValidSubmit="LoginUser" FormName="login">
-                <DataAnnotationsValidator />
-                <h2>Use a local account to log in.</h2>
-                <hr />
-                <ValidationSummary class="text-danger" role="alert" />
-                <div class="form-floating mb-3">
-                    <InputText @bind-Value="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label for="email" class="form-label">Email</label>
-                    <ValidationMessage For="() => Input.Email" class="text-danger" />
-                </div>
-                <div class="form-floating mb-3">
-                    <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <label for="password" class="form-label">Password</label>
-                    <ValidationMessage For="() => Input.Password" class="text-danger" />
-                </div>
-                <div class="checkbox mb-3">
-                    <label class="form-label">
-                        <InputCheckbox @bind-Value="Input.RememberMe" class="darker-border-checkbox form-check-input" />
-                        Remember me
-                    </label>
-                </div>
-                <div>
-                    <button type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
-                </div>
-                <div>
-                    <p>
-                        <a href="Account/ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a href="@(NavigationManager.GetUriWithQueryParameters("Account/Register", new Dictionary<string, object?> { ["ReturnUrl"] = ReturnUrl }))">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a href="Account/ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
-                </div>
-            </EditForm>
-        </section>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to log in.</h3>
-            <hr />
-            <ExternalLoginPicker />
-        </section>
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 60vh;">
+
+        <!-- Login Form -->
+        <div class="col-md-4">
+            <section>
+                <StatusMessage Message="@errorMessage" />
+                <EditForm Model="Input" OnValidSubmit="LoginUser">
+                    <DataAnnotationsValidator />
+                    <h2>PetSas'a Hoşgeldin!</h2>
+                    <hr />
+                    <ValidationSummary class="text-danger" role="alert" />
+
+                    <div class="form-floating mb-3">
+                        <InputText @bind-Value="Input.Email"
+                                   class="form-control"
+                                   autocomplete="username"
+                                   placeholder="name@example.com" />
+                        <label for="email">Email</label>
+                        <ValidationMessage For="() => Input.Email" class="text-danger" />
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <InputText type="password"
+                                   @bind-Value="Input.Password"
+                                   class="form-control"
+                                   autocomplete="current-password"
+                                   placeholder="password" />
+                        <label for="password">Şifre</label>
+                        <ValidationMessage For="() => Input.Password" class="text-danger" />
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label>
+                            <InputCheckbox @bind-Value="Input.RememberMe"
+                                           class="form-check-input me-2" />
+                           Beni Hatırla
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-100 btn btn-lg btn-primary mb-3">Log in</button>
+
+                    <div class="text-center small">
+                        <a href="Account/ForgotPassword">Şifreni mi unuttun?</a><br />
+
+                        <a href="@(NavigationManager.GetUriWithQueryParameters(
+                         "Account/Register",
+                         new Dictionary<string, object?> { ["ReturnUrl"] = ReturnUrl }))">
+                            Hesabın mı yok? Kayıt ol!
+                        </a><br />
+                    </div>
+                </EditForm>
+            </section>
+        </div>
+
+        <!-- Görsel -->
+        <div class="col-md-4 text-center">
+            <img src="/img/loginCat.png"
+                 class="img-fluid rounded shadow-sm"
+                 style="max-height: 300px; object-fit: cover;"
+                 alt="Login " />
+        </div>
     </div>
 </div>
+
 
 @code {
     private string? errorMessage;

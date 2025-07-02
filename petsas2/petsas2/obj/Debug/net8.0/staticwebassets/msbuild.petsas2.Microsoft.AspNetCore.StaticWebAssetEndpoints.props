@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/petsas2/app.bgom8zszot.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bgom8zszot"},{"Name":"integrity","Value":"sha256-tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw="},{"Name":"label","Value":"_content/petsas2/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3673"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Jul 2025 14:02:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-elYxKABKX5\u002BS5BnJbHAqKHsDzqTHYA\u002BrTFzYDFPJNz4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3228"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022elYxKABKX5\u002BS5BnJbHAqKHsDzqTHYA\u002BrTFzYDFPJNz4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 13:49:00 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/petsas2/app.m4at5fhgav.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m4at5fhgav"},{"Name":"integrity","Value":"sha256-elYxKABKX5\u002BS5BnJbHAqKHsDzqTHYA\u002BrTFzYDFPJNz4="},{"Name":"label","Value":"_content/petsas2/app.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3228"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022elYxKABKX5\u002BS5BnJbHAqKHsDzqTHYA\u002BrTFzYDFPJNz4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 13:49:00 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3673"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tebpdzhAGI6WJhcRMHDB7zApY7fCFvUlOdfUqDJLmqw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Jul 2025 14:02:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/bootstrap/bootstrap.min.bpk8xqwxhs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>
@@ -47,6 +47,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 10:13:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/petsas2/img/loginCat.aj2fsqpmje.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\loginCat.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aj2fsqpmje"},{"Name":"integrity","Value":"sha256-avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4="},{"Name":"label","Value":"_content/petsas2/img/loginCat.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3037449"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Jul 2025 14:23:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/petsas2/img/loginCat.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\loginCat.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3037449"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Jul 2025 14:23:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/img/paymentLogo/etbis.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\paymentLogo\etbis.jpg'))</AssetFile>
@@ -131,6 +143,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pQFutJ\u002BI0gGBZfyB4doN6xbLjjkqAAbKnFFHl\u002BXaeo8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"81407"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022pQFutJ\u002BI0gGBZfyB4doN6xbLjjkqAAbKnFFHl\u002BXaeo8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 15:42:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/petsas2/img/signIn.oeuhosh6zc.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\signIn.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oeuhosh6zc"},{"Name":"integrity","Value":"sha256-MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg="},{"Name":"label","Value":"_content/petsas2/img/signIn.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3011415"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Jul 2025 14:31:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/petsas2/img/signIn.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\signIn.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3011415"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022MExGqmmFJeNe2cZnFUVf6PJxQI3NOwrgSf3iLoOBqrg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Jul 2025 14:31:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/petsas2.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\petsas2.y428ohqy2n.bundle.scp.css'))</AssetFile>
