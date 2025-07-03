@@ -116,13 +116,13 @@
 
             // sadece rol bazlı yönlendirme:
             if (await UserManager.IsInRoleAsync(user, "Admin"))
-                NavigationManager.NavigateTo("/Areas/Admin/AdminDashboard");
+                NavigationManager.NavigateTo("/Admin/AdminDashboard");
 
             else if (await UserManager.IsInRoleAsync(user, "Supplier"))
-                NavigationManager.NavigateTo("/Areas/Supplier/SupDashboard");
+                NavigationManager.NavigateTo("/Supplier/SupplierDashboard");
 
             else
-                NavigationManager.NavigateTo("/Areas/User/UserDashboard");
+                NavigationManager.NavigateTo("/User/UserDashboard");
         }
         //?????????
         else if (result.RequiresTwoFactor)

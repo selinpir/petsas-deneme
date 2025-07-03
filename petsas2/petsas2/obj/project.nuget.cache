@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mNQYwQp6GQM=",
+  "dgSpecHash": "OymbCk8NoyQ=",
   "success": true,
   "projectFilePath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\petsas2.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,7 @@
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.17\\microsoft.aspnetcore.cryptography.keyderivation.8.0.17.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\8.0.17\\microsoft.aspnetcore.diagnostics.entityframeworkcore.8.0.17.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.17\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.17.nupkg.sha512",
-    "C:\\Users\\selin\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.6\\microsoft.aspnetcore.identity.ui.9.0.6.nupkg.sha512",
+    "C:\\Users\\selin\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.17\\microsoft.aspnetcore.identity.ui.8.0.17.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.12\\microsoft.aspnetcore.metadata.8.0.12.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -40,6 +40,8 @@
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.2\\microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\8.0.17\\microsoft.extensions.fileproviders.embedded.8.0.17.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.17\\microsoft.extensions.identity.core.8.0.17.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.17\\microsoft.extensions.identity.stores.8.0.17.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\microsoft.extensions.localization\\8.0.12\\microsoft.extensions.localization.8.0.12.nupkg.sha512",

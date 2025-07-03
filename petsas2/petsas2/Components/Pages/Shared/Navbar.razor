@@ -1,4 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Identity
+
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Web
+@using petsas2.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject NavigationManager NavigationManager
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -173,20 +180,6 @@
                         PetBlog
                     </NavLink>
                 </li>
-
-                @*istege baglı *@
-                @*    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li> *@
-
             </ul>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -202,20 +195,35 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto align-items-center">
-                            <!-- Üye Girişi -->
-                            <li class="nav-item mx-3">
-                                <NavLink class="nav-link d-flex align-items-center" href="/Account/Login" Match="NavLinkMatch.Prefix">
-                                    <i class="fas fa-sign-in-alt fa-lg text-danger"></i>
-                                    <span class="ms-1">Giriş Yap</span>
-                                </NavLink>
-                            </li>
-                            <!-- Kayıt Ol -->
-                            <li class="nav-item mx-3">
-                                <NavLink class="nav-link d-flex align-items-center" href="/Account/Register" Match="NavLinkMatch.Prefix">
-                                    <i class="fas fa-user-plus fa-lg text-primary"></i>
-                                    <span class="ms-1">Kayıt Ol</span>
-                                </NavLink>
-                            </li>
+                            <!-- Oturum açmışsa sadece Çıkış Yap -->
+                            <AuthorizeView>
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center"
+                                                 href="Account/Logout"
+                                                 Match="NavLinkMatch.All">
+                                            <i class="fas fa-sign-out-alt fa-lg text-secondary"></i>
+                                            <span class="ms-1">Çıkış Yap</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                                <NotAuthorized>
+                                    <!-- Üye Girişi -->
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/Account/Login" Match="NavLinkMatch.Prefix">
+                                            <i class="fas fa-sign-in-alt fa-lg text-danger"></i>
+                                            <span class="ms-1">Giriş Yap</span>
+                                        </NavLink>
+                                    </li>
+                                    <!-- Kayıt Ol -->
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/Account/Register" Match="NavLinkMatch.Prefix">
+                                            <i class="fas fa-user-plus fa-lg text-primary"></i>
+                                            <span class="ms-1">Kayıt Ol</span>
+                                        </NavLink>
+                                    </li>
+                                </NotAuthorized>
+                            </AuthorizeView>
                             <!-- Sepetim -->
                             <li class="nav-item mx-3">
                                 <NavLink class="nav-link d-flex align-items-center" href="/cart" Match="NavLinkMatch.Prefix">
@@ -223,12 +231,12 @@
                                     <span class="ms-1">Sepetim</span>
                                 </NavLink>
                             </li>
+
                         </ul>
                     </div>
+
                 </div>
             </nav>
-
-
         </div>
     </div>
 </nav>

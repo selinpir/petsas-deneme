@@ -160,3 +160,6 @@ D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsof
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.JSInterop.dll
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\MudBlazor.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2\petsas2\obj\Debug\net8.0\petsas2.MvcApplicationPartsAssemblyInfo.cs

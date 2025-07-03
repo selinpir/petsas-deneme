@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\pages\\shared\\navbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\pages\\shared\\navbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\account\\pages\\logout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\account\\pages\\logout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\areas\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2\\petsas2\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -38,50 +54,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Register.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Register.razor",
-              "RelativeDocumentMoniker": "petsas2\\Components\\Account\\Pages\\Register.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Register.razor",
-              "RelativeToolTip": "petsas2\\Components\\Account\\Pages\\Register.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T12:22:46.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminDashboard.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Title": "Logout.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Logout.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\Account\\Pages\\Logout.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Logout.razor",
+              "RelativeToolTip": "petsas2\\Components\\Account\\Pages\\Logout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T12:09:56.955Z",
+              "WhenOpened": "2025-07-03T13:56:41.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "petsas2\\Components\\Account\\Pages\\Login.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Login.razor",
-              "RelativeToolTip": "petsas2\\Components\\Account\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Title": "Navbar.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Pages\\Shared\\Navbar.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\Pages\\Shared\\Navbar.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Pages\\Shared\\Navbar.razor",
+              "RelativeToolTip": "petsas2\\Components\\Pages\\Shared\\Navbar.razor",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAIwMoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:38:48.81Z",
+              "WhenOpened": "2025-07-03T13:29:44.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\Routes.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Routes.razor",
+              "RelativeToolTip": "petsas2\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T13:51:38.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\_Imports.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\_Imports.razor",
+              "RelativeToolTip": "petsas2\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T13:51:37.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Register.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\Account\\Pages\\Register.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Register.razor",
+              "RelativeToolTip": "petsas2\\Components\\Account\\Pages\\Register.razor",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T13:49:37.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\Account\\Pages\\Login.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\Account\\Pages\\Login.razor",
+              "RelativeToolTip": "petsas2\\Components\\Account\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T13:49:21.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\App.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\App.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Components\\App.razor",
+              "RelativeToolTip": "petsas2\\Components\\App.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T13:46:39.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IDesignTimeDbContextFactory.cs",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Data\\IDesignTimeDbContextFactory.cs",
               "RelativeDocumentMoniker": "petsas2\\Data\\IDesignTimeDbContextFactory.cs",
@@ -94,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "20250703113816_M5.cs",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Data\\Migrations\\20250703113816_M5.cs",
               "RelativeDocumentMoniker": "petsas2\\Data\\Migrations\\20250703113816_M5.cs",
@@ -107,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "petsas2\\Data\\ApplicationDbContext.cs",
@@ -120,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\Program.cs",
               "RelativeDocumentMoniker": "petsas2\\Program.cs",
