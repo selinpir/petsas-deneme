@@ -21,6 +21,18 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
+      "PackagePath": "staticwebassets\\img\\legal\\gizlilik.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
+      "PackagePath": "staticwebassets\\img\\legal\\kvkk.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
+      "PackagePath": "staticwebassets\\img\\legal\\mesafeli.png"
+    },
+    {
       "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2\\petsas2\\wwwroot\\img\\loginCat.png",
       "PackagePath": "staticwebassets\\img\\loginCat.png"
     },

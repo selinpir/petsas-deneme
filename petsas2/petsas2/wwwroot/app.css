@@ -115,3 +115,11 @@ login -register page için
     object-fit: cover;
     margin: auto;
 }
+/*
+legal page için*/
+.justified {
+    text-align: justify;
+    text-align-last: center;
+    max-width: 800px; 
+    margin: 0 auto;
+}

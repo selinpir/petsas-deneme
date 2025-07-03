@@ -83,6 +83,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aFJlY292ZXJ5Q29kZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Account/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ291dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Account/Pages/Manage/ChangePassword.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxDaGFuZ2VQYXNzd29yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -201,6 +205,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Pages/Legal/DistanceSales.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWdhbFxEaXN0YW5jZVNhbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Pages/Legal/KvkkPolicy.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWdhbFxLdmtrUG9saWN5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Pages/Legal/LegalPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWdhbFxMZWdhbFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Pages/Legal/PrivacyPolicy.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWdhbFxQcml2YWN5UG9saWN5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Components/Pages/Shared/Footer.razor]

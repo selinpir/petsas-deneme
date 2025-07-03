@@ -1,0 +1,16 @@
+﻿@page "/Account/Logout"
+
+@using Microsoft.AspNetCore.Identity
+@using petsas2.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject NavigationManager NavigationManager
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // 1) Gerçekten çıkış yap
+        await SignInManager.SignOutAsync();
+        // 2) Tam sayfa reload ederek yeni auth state’i al
+        NavigationManager.NavigateTo("/", forceLoad: true);
+    }
+}

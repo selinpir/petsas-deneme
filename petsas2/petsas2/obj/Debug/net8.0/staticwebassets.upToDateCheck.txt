@@ -2,6 +2,9 @@ wwwroot\app.css
 wwwroot\bootstrap\bootstrap.min.css
 wwwroot\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\img\legal\gizlilik.png
+wwwroot\img\legal\kvkk.png
+wwwroot\img\legal\mesafeli.png
 wwwroot\img\loginCat.png
 wwwroot\img\paymentLogo\etbis.jpg
 wwwroot\img\paymentLogo\ISO.png
