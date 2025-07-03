@@ -11,11 +11,12 @@
 using System;
 using System.Reflection;
 
+//[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-petsas2-951053f2-8f2c-47b4-bef9-4aa2eee9ec83")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("petsas2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d0ef398e7b3e428e6c89c298b9abb2ffbf39f76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff5cc53bde4d3cdfcf2cd94fff78dfa9f84e00cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("petsas2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("petsas2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

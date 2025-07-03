@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.17",
+          "Microsoft.AspNetCore.Identity.UI": "9.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.17",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.17",
           "MudBlazor": "8.8.0"
@@ -156,6 +157,7 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Identity.UI/9.0.6": {},
       "Microsoft.AspNetCore.Metadata/8.0.12": {
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -1170,6 +1172,13 @@
       "sha512": "sha512-CPfyQuBuAezOjoSQ36sdSb9Bm6nBX6Gx9vXWzEkx5GeUv+hYMfOyPoJ+BU6u/NvBA75dFMh6uA1qzqMDzhwm1A==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/8.0.17",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.8.0.17.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Identity.UI/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UeM/54cDvN67I6jD2k8PaMyafHE2J0AGz7H8JOqKCziTdgaqdQeVS9/IAOi/CUIKMh6NZ+Y2pk/VykwBF8toug==",
+      "path": "microsoft.aspnetcore.identity.ui/9.0.6",
+      "hashPath": "microsoft.aspnetcore.identity.ui.9.0.6.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Metadata/8.0.12": {
       "type": "package",

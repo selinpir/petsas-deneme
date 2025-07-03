@@ -1,44 +1,135 @@
-using Microsoft.AspNetCore.Components.Authorization;
+﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 using petsas2.Components;
 using petsas2.Components.Account;
 using petsas2.Data;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Threading.Tasks;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddControllersWithViews();
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-//mudblazor i�in
+//mudblazor için
 builder.Services.AddMudServices();
-
+//
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
 
-builder.Services.AddAuthentication(options =>
-    {
-        options.DefaultScheme = IdentityConstants.ApplicationScheme;
-        options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
-    })
-    .AddIdentityCookies();
-
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDatabaseDeveloperPageExceptionFilter(); //detaylı hata goster
+
+builder.Services
+    .AddIdentity<ApplicationUser, IdentityRole>(options =>
+    {
+        options.SignIn.RequireConfirmedAccount = true;
+    })
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddSignInManager()
     .AddDefaultTokenProviders();
+
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
+////
+
 var app = builder.Build();
+
+//Seed burada sadece rolleri ve başlangıç Admin/Supplier hesaplarını oluşturur.
+//seed baslangıç
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await SeedIdentityDataAsync(services);
+}
+static async Task SeedIdentityDataAsync(IServiceProvider services)
+{
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+
+    //Roller admin-tedarikci-kullanıcı
+    string[] roles = new[] { "Admin", "Supplier", "User" };
+    foreach (var roleName in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(roleName))
+        {
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+
+    // Admin
+    var adminData = new[]
+    {
+        new { Email = "admin1@petsas.com", Password = "Admin1!" },
+        new { Email = "admin2@petsas.com", Password = "Admin2!" }
+    };
+
+    foreach (var adm in adminData)
+    {
+        if (await userManager.FindByEmailAsync(adm.Email) == null)
+        {
+            var user = new ApplicationUser
+            {
+                UserName = adm.Email,
+                Email = adm.Email,
+                EmailConfirmed = true
+            };
+            var result = await userManager.CreateAsync(user, adm.Password);
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(user, "Admin");
+            }
+            else
+            {
+
+            }
+        }
+    }
+
+    //  Supplier 
+    var supplierEmail = "supplier@petsas.com";
+    var supplierPwd = "Supplier1!";
+    if (await userManager.FindByEmailAsync(supplierEmail) == null)
+    {
+        var supplier = new ApplicationUser
+        {
+            UserName = supplierEmail,
+            Email = supplierEmail,
+            EmailConfirmed = true
+        };
+        var result = await userManager.CreateAsync(supplier, supplierPwd);
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(supplier, "Supplier");
+        }
+    }
+    //user
+    var userEmail = "user@petsas.com";
+    var userPwd = "User1!";
+    if (await userManager.FindByEmailAsync(userEmail) == null)
+    {
+        var normalUser = new ApplicationUser
+        {
+            UserName = userEmail,
+            Email = userEmail,
+            EmailConfirmed = true
+        };
+        var result = await userManager.CreateAsync(normalUser, userPwd);
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(normalUser, "User");
+        }
+    }
+}
+//seed bitis
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -52,15 +143,11 @@ else
     app.UseHsts();
 }
 
+//bu sıralanıs onemli
 app.UseHttpsRedirection();
-
-app.UseStaticFiles();
-app.UseAntiforgery();
-
-app.MapRazorComponents<App>()
+app.UseStaticFiles(); //wwwroot için
+app.UseAntiforgery(); //koruma
+app.MapRazorComponents<App>() //componentler için
     .AddInteractiveServerRenderMode();
-
-// Add additional endpoints required by the Identity /Account Razor components.
-app.MapAdditionalIdentityEndpoints();
-
-app.Run();
+app.MapAdditionalIdentityEndpoints(); //oto kaydet
+app.Run(); //calıs!!!!
