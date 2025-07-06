@@ -10,7 +10,7 @@
     {
         // 1) Gerçekten çıkış yap
         await SignInManager.SignOutAsync();
-        // 2) Tam sayfa reload ederek yeni auth state’i al
+        // 2) Tam sayfa reload ederek yeni auth state’i(kimlik doğrulama durumu) al
         NavigationManager.NavigateTo("/", forceLoad: true);
     }
 }

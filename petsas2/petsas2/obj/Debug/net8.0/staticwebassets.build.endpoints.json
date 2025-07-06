@@ -2413,7 +2413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 14:48:24 GMT"
+          "Value": "Sun, 06 Jul 2025 18:50:58 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2450,7 +2450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 14:48:24 GMT"
+          "Value": "Sun, 06 Jul 2025 18:50:58 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2715,6 +2715,88 @@
       ]
     },
     {
+      "Route": "img/legal/cerez.dz61rdwzey.png",
+      "AssetFile": "img/legal/cerez.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2651860"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZxfW87N2tvz8LCRaG06FwaRR+iwQ0o1MqzQiIVgE/FE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:10:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dz61rdwzey"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZxfW87N2tvz8LCRaG06FwaRR+iwQ0o1MqzQiIVgE/FE="
+        },
+        {
+          "Name": "label",
+          "Value": "img/legal/cerez.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/legal/cerez.png",
+      "AssetFile": "img/legal/cerez.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2651860"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZxfW87N2tvz8LCRaG06FwaRR+iwQ0o1MqzQiIVgE/FE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:10:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZxfW87N2tvz8LCRaG06FwaRR+iwQ0o1MqzQiIVgE/FE="
+        }
+      ]
+    },
+    {
       "Route": "img/legal/gizlilik.kaczni0ozt.png",
       "AssetFile": "img/legal/gizlilik.png",
       "Selectors": [],
@@ -2793,6 +2875,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-BNhcx7F6TXLqNcJuW0REmPVR4UJz0nyZVpgQuklnknE="
+        }
+      ]
+    },
+    {
+      "Route": "img/legal/iptal.nzlrck47ko.png",
+      "AssetFile": "img/legal/iptal.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2442446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EwRwAZhQJUgUGOJqU5jTaEutBZc5B7FZ61FUDnbebr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:04:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nzlrck47ko"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EwRwAZhQJUgUGOJqU5jTaEutBZc5B7FZ61FUDnbebr8="
+        },
+        {
+          "Name": "label",
+          "Value": "img/legal/iptal.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/legal/iptal.png",
+      "AssetFile": "img/legal/iptal.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2442446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EwRwAZhQJUgUGOJqU5jTaEutBZc5B7FZ61FUDnbebr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:04:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EwRwAZhQJUgUGOJqU5jTaEutBZc5B7FZ61FUDnbebr8="
         }
       ]
     },
