@@ -3,8 +3,25 @@
 @using Microsoft.AspNetCore.Components
 @using petsas2.Components
 @using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
 
 @attribute [Authorize]
 
 <h1>Hesabım</h1>
 
+<CardsGrid Items="CardList" />
+
+@code {
+    private List<CardsGrid.CardInfo> CardList = new() {
+        new() { Title = "Profil Bilgilerim", Link = "/sayfa1", ButtonText = "Sayfa 1'e Git" },
+        new() { Title = "Adres Bilgilerim",  Link = "/sayfa2", ButtonText = "Sayfa 2'ye Git" },
+        new() { Title = "Siparişlerim",      Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
+        new() { Title = "Sepetim",           Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
+        new() { Title = "Şifreyi Güncelle",  Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
+        new() { Title = "Favorilerim",       Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
+        new() { Title = "Çıkış Yap",         Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" }
+    };
+
+
+
+}
