@@ -15,7 +15,7 @@
 @inject NavigationManager NavigationManager
 @inject IdentityRedirectManager RedirectManager
 
-<PageTitle>Register</PageTitle>
+<PageTitle>Kayıt Ol</PageTitle>
 
 
 <div class="container">
@@ -75,15 +75,34 @@
         await UserStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
         var emailStore = GetEmailStore();
         await emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-        var result = await UserManager.CreateAsync(user, Input.Password);
 
-        if (!result.Succeeded)
+        var result = await UserManager.CreateAsync(user, Input.Password);
+      // yeniler user olarak gelir
+        if (result.Succeeded)
+        {
+            var roleAssign = await UserManager.AddToRoleAsync(user, "User");
+            if (!roleAssign.Succeeded)
+            {
+                identityErrors = roleAssign.Errors;
+                return;
+            }
+
+            Logger.LogInformation("Kullanıcı başarıyla oluşturuldu ve User rolü atandı.");
+
+        }
+        else
         {
             identityErrors = result.Errors;
             return;
         }
 
-        Logger.LogInformation("Kullanıcı parola ile yeni bir hesap oluşturdu.");
+        // if (!result.Succeeded)
+        // {
+        //     identityErrors = result.Errors;
+        //     return;
+        // }
+
+        // Logger.LogInformation("Kullanıcı parola ile yeni bir hesap oluşturdu.");
 
         var userId = await UserManager.GetUserIdAsync(user);
         var code = await UserManager.GenerateEmailConfirmationTokenAsync(user);

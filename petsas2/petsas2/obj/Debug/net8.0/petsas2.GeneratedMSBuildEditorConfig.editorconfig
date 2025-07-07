@@ -31,6 +31,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3VwcGxpZXJcU3VwcGxpZXJEYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Areas/User/Address.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxBZGRyZXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Areas/User/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxDYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Areas/User/Fav.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxGYXYucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Areas/User/Orders.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxPcmRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Areas/User/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2/petsas2/Areas/User/UserDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxVc2VyRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
