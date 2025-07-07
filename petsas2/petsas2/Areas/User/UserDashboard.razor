@@ -13,15 +13,17 @@
 
 @code {
     private List<CardsGrid.CardInfo> CardList = new() {
-        new() { Title = "Profil Bilgilerim", Link = "/sayfa1", ButtonText = "Sayfa 1'e Git" },
-        new() { Title = "Adres Bilgilerim",  Link = "/sayfa2", ButtonText = "Sayfa 2'ye Git" },
-        new() { Title = "Siparişlerim",      Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
-        new() { Title = "Sepetim",           Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
-        new() { Title = "Şifreyi Güncelle",  Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
-        new() { Title = "Favorilerim",       Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" },
-        new() { Title = "Çıkış Yap",         Link = "/sayfa3", ButtonText = "Sayfa 3'e Git" }
+        new() { Title = "Profil Bilgilerim", Icon="bi bi-clipboard-heart-fill",  Link = "/user/profile", ButtonText = "Profil Bilgilerim" },
+        new() { Title = "Adres Bilgilerim",  Icon="bi bi-house-door-fill",      Link = "/user/address", ButtonText = "Adres Bilgilerim" },
+        new() { Title = "Siparişlerim",      Icon="bi bi-box2-heart-fill",        Link = "/user/orders", ButtonText = "Siparişlerim" },
+        new() { Title = "Sepetim",           Icon="bi bi-bag-heart-fill",          Link = "/user/cart", ButtonText = "Sepetim" },
+        new() { Title = "Şifreyi Güncelle",  Icon="bi bi-bootstrap-reboot",        Link = "/Account/ResetPassword", ButtonText = "Şifreyi Güncelle" },
+        new() { Title = "Favorilerim",       Icon="bi bi-arrow-through-heart-fill",     Link = "/user/fav", ButtonText = "Favorilerim" },
+        new() { Title = "Çıkış Yap",         Icon="bi bi-box-arrow-right",    Link = "/Account/Logout", ButtonText = "Çıkış Yap" }
     };
 
 
-
 }
+@* reset password çalışmıyor--favorilerim ?? *@
+@* icon
+@Icons.Material.Filled.Pets *@
