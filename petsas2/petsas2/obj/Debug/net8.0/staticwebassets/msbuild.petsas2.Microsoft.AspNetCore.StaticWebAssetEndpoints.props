@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/petsas2/app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AIv7QAmX7XQshiA2bleddZILZcF8RlfNwbahuJdxVt0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3816"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022AIv7QAmX7XQshiA2bleddZILZcF8RlfNwbahuJdxVt0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 18:50:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PRSm/YdJSvusiv/hF8Yp0Br8HU9w64aE2rkrK0FnYx8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3897"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PRSm/YdJSvusiv/hF8Yp0Br8HU9w64aE2rkrK0FnYx8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Jul 2025 09:07:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/petsas2/app.oyq2uuktnm.css">
+    <StaticWebAssetEndpoint Include="_content/petsas2/app.zsjuot8w06.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oyq2uuktnm"},{"Name":"integrity","Value":"sha256-AIv7QAmX7XQshiA2bleddZILZcF8RlfNwbahuJdxVt0="},{"Name":"label","Value":"_content/petsas2/app.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3816"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022AIv7QAmX7XQshiA2bleddZILZcF8RlfNwbahuJdxVt0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 18:50:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zsjuot8w06"},{"Name":"integrity","Value":"sha256-PRSm/YdJSvusiv/hF8Yp0Br8HU9w64aE2rkrK0FnYx8="},{"Name":"label","Value":"_content/petsas2/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3897"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PRSm/YdJSvusiv/hF8Yp0Br8HU9w64aE2rkrK0FnYx8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Jul 2025 09:07:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/bootstrap/bootstrap.min.bpk8xqwxhs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>

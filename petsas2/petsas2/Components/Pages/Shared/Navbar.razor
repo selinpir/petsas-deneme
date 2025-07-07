@@ -224,14 +224,27 @@
                                     </li>
                                 </NotAuthorized>
                             </AuthorizeView>
-                            <!-- Sepetim -->
-                            <li class="nav-item mx-3">
-                                <NavLink class="nav-link d-flex align-items-center" href="/cart" Match="NavLinkMatch.Prefix">
-                                    <i class="fas fa-shopping-cart fa-lg text-success"></i>
-                                    <span class="ms-1">Sepetim</span>
-                                </NavLink>
-                            </li>
+                            @*  <!-- Sepetim -->
+                            <!-- sadece kullanıcıda görünmeli gibi görünüyor yani ama ?? -->
+                            <!--şuanda sadece üye kullanıcı girişi yaptığında sepeti gösteriliyor - giriş yapmadan gösterilmeli mi ama giriş yapmadan sepet tutmak ??-> *@
+                            <AuthorizeView Roles="User">
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/cart" Match="NavLinkMatch.Prefix">
+                                            <i class="fas fa-shopping-cart fa-lg text-success"></i>
+                                            <span class="ms-1">Sepetim</span>
+                                        </NavLink>
+                                    </li>
 
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/user/userdashboard" Match="NavLinkMatch.Prefix">
+                                            <i class="fas fa-solid fa-user fa-lg text-primary"></i>
+                                            <span class="ms-1">Hesabım</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+                          
                         </ul>
                     </div>
 
