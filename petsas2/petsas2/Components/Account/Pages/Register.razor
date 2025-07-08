@@ -21,41 +21,45 @@
 <div class="container">
     <div class="row justify-content-center align-items-center" style="min-height: 60vh;">
 
-            <div class="col-md-4">
-                <StatusMessage Message="@Message" />
-                <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser" FormName="register">
-                    <DataAnnotationsValidator />
-                    <h2>Yeni hesap oluştur.</h2>
-                    <hr />
-                    <ValidationSummary class="text-danger" role="alert" />
-                    <div class="form-floating mb-3">
-                        <InputText @bind-Value="Input.Email" class="form-control" autocomplete="Kullanıcı Adı" aria-required="true" placeholder="name@example.com" />
-                        <label for="email">Email</label>
-                        <ValidationMessage For="() => Input.Email" class="text-danger" />
-                    </div>
-                    <div class="form-floating mb-3">
-                        <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                        <label for="password">Şifre</label>
-                        <ValidationMessage For="() => Input.Password" class="text-danger" />
-                    </div>
-                    <div class="form-floating mb-3">
-                        <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                        <label for="confirm-password">Şifre Tekrar</label>
-                        <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
-                    </div>
-                    <button type="submit" class="w-100 btn btn-lg btn-primary">Kayıt Ol</button>
-                </EditForm>
-            </div>
+        <div class="col-md-4">
+            <StatusMessage Message="@Message" />
+            <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser" FormName="register">
+                <DataAnnotationsValidator />
+                <h2>Yeni hesap oluştur.</h2>
+                <hr />
+                <ValidationSummary class="text-danger" role="alert" />
+                <div class="form-floating mb-3">
+                    <InputText @bind-Value="Input.Email" class="form-control" autocomplete="Kullanıcı Adı" aria-required="true" placeholder="name@example.com" />
+                    <label for="email">Email</label>
+                    <ValidationMessage For="() => Input.Email" class="text-danger" />
+                </div>
+                <div class="form-floating mb-3">
+                    <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <label for="password">Şifre</label>
+                    <ValidationMessage For="() => Input.Password" class="text-danger" />
+                </div>
+                <div class="form-floating mb-3">
+                    <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <label for="confirm-password">Şifre Tekrar</label>
+                    <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
+                </div>
+                <button type="submit"
+                        class="w-100 btn btn-lg btn-primary"
+                        style="background-color: #b385e0; border-color: #b385e0; ">
+                    Kayıt Ol
+                </button>
+            </EditForm>
+        </div>
 
-            <!-- Görsel -->
-            <div class="col-md-4 text-center">
-                <img src="/img/signIn.png"
-                     class="img-fluid rounded shadow-sm"
-                     style="max-height: 300px; object-fit: cover;"
-                     alt="Login " />
-            </div>
+        <!-- Görsel -->
+        <div class="col-md-4 text-center">
+            <img src="/img/signIn.png"
+                 class="img-fluid rounded shadow-sm"
+                 style="max-height: 300px; object-fit: cover;"
+                 alt="Login " />
         </div>
     </div>
+</div>
 
 @code {
     private IEnumerable<IdentityError>? identityErrors;
@@ -77,7 +81,7 @@
         await emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
 
         var result = await UserManager.CreateAsync(user, Input.Password);
-      // yeniler user olarak gelir
+        // yeniler user olarak gelir
         if (result.Succeeded)
         {
             var roleAssign = await UserManager.AddToRoleAsync(user, "User");
@@ -95,14 +99,6 @@
             identityErrors = result.Errors;
             return;
         }
-
-        // if (!result.Succeeded)
-        // {
-        //     identityErrors = result.Errors;
-        //     return;
-        // }
-
-        // Logger.LogInformation("Kullanıcı parola ile yeni bir hesap oluşturdu.");
 
         var userId = await UserManager.GetUserIdAsync(user);
         var code = await UserManager.GenerateEmailConfirmationTokenAsync(user);
