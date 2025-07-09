@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using petsas2.Models.UserViewModel;
 
 namespace petsas2.Data
 {
@@ -10,5 +11,7 @@ namespace petsas2.Data
             : base(options)
         {
         }
+
+        public DbSet<UserProfile> UserProfiles { get; set; }
     }
 }

@@ -1,1 +1,160 @@
 ﻿@page "/User/Profile"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore
+@using petsas2.Data
+@using petsas2.Models           
+@using Microsoft.AspNetCore.Identity
+@using MudBlazor
+@using petsas2.Models.UserViewModel
+
+@inject AuthenticationStateProvider AuthStateProvider
+@inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext Db
+
+<EditForm Model="@formModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+
+    <MudGrid>
+        <MudItem xs="12" sm="7">
+            <MudCard>
+                <MudCardContent>
+
+                    <MudTextField Label="Ad"
+                                  @bind-Value="formModel.FirstName"
+                                  For="@(() => formModel.FirstName)"
+                                  Disabled="@ProfileCompleted" />
+
+                    <MudTextField Label="Soyad"
+                                  @bind-Value="formModel.LastName"
+                                  For="@(() => formModel.LastName)"
+                                  Disabled="@ProfileCompleted" />
+
+                    <MudRadioGroup T="GenderType"
+                                   @bind-SelectedOption="formModel.Gender"
+                                   Disabled="@ProfileCompleted">
+                        <MudRadio Value="@GenderType.Erkek">Erkek</MudRadio>
+                        <MudRadio Value="@GenderType.Kadın">Kadın</MudRadio>
+                        <MudRadio Value="@GenderType.Diğer">Diğer</MudRadio>
+                    </MudRadioGroup>
+
+                    <MudDatePicker Label="Doğum Tarihi"
+                                   For="@(() => formModel.Birthdate)"
+                                   Disabled="@ProfileCompleted" />
+
+                    <MudTextField Label="Telefon Numarası"
+                                  @bind-Value="formModel.PhoneNumber"
+                                  For="@(() => formModel.PhoneNumber)" />
+
+                    <MudTextField Label="TC Kimlik Numarası"
+                                  @bind-Value="formModel.TcIdentity"
+                                  For="@(() => formModel.TcIdentity)"
+                                  Disabled="@ProfileCompleted" />
+
+                    <MudTextField Label="E-Posta"
+                                  @bind-Value="formModel.Email"
+                                  For="@(() => formModel.Email)"
+                                  Disabled="true" />
+
+                </MudCardContent>
+                <MudCardActions>
+                    @if (!ProfileCompleted)
+                    {
+                        <MudButton ButtonType="ButtonType.Submit"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Primary"
+                                   Class="ml-auto">
+                            Kaydet
+                        </MudButton>
+                    }
+                    else
+                    {
+                        <MudButton ButtonType="ButtonType.Submit"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Primary"
+                                   Class="ml-auto">
+                            Güncelle
+                        </MudButton>
+                    }
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@code {
+    // View-model
+    private ProfileFormModel formModel = new ProfileFormModel();
+    // EF Core entity
+    private UserProfile dbProfile;
+    private bool ProfileCompleted;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var auth = await AuthStateProvider.GetAuthenticationStateAsync();
+        var appUser = await UserManager.GetUserAsync(auth.User);
+
+        // Email her zaman gösterilecek
+        formModel.Email = appUser.Email;
+
+        // Veritabanında var mı bak
+        dbProfile = await Db.UserProfiles
+                            .FirstOrDefaultAsync(p => p.UserId == appUser.Id);
+
+        if (dbProfile != null)
+        {
+            // Mevcut kaydı view-model’e aktar
+            formModel.FirstName = dbProfile.FirstName;
+            formModel.LastName = dbProfile.LastName;
+            formModel.Gender = dbProfile.Gender;
+            formModel.Birthdate = dbProfile.Birthdate;
+            formModel.PhoneNumber = dbProfile.PhoneNumber;
+            formModel.TcIdentity = dbProfile.TcIdentity;
+            ProfileCompleted = true;
+        }
+    }
+
+    private async Task HandleValidSubmit(EditContext _)
+    {
+        var auth = await AuthStateProvider.GetAuthenticationStateAsync();
+        var appUser = await UserManager.GetUserAsync(auth.User);
+
+        if (dbProfile == null)
+        {
+            // İlk kayıt
+            dbProfile = new UserProfile
+                {
+                    UserId = appUser.Id,
+                    FirstName = formModel.FirstName,
+                    LastName = formModel.LastName,
+                    Gender = formModel.Gender,
+                    Birthdate = formModel.Birthdate.Value,
+                    PhoneNumber = formModel.PhoneNumber,
+                    TcIdentity = formModel.TcIdentity,
+                    ProfileCompleted = true
+                };
+            Db.UserProfiles.Add(dbProfile);
+        }
+        else
+        {
+            // Sadece izin verilen alanları güncelle
+            dbProfile.PhoneNumber = formModel.PhoneNumber;
+            Db.UserProfiles.Update(dbProfile);
+        }
+
+        await Db.SaveChangesAsync();
+        ProfileCompleted = true;
+    }
+
+    public class ProfileFormModel
+    {
+        [Required] public string FirstName { get; set; }
+        [Required] public string LastName { get; set; }
+        public GenderType Gender { get; set; }
+        [Required] public DateTime? Birthdate { get; set; }
+        [Required] public string PhoneNumber { get; set; }
+        [Required] public string TcIdentity { get; set; }
+        [EmailAddress] public string Email { get; set; }
+    }
+}
