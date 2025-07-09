@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\petsas2.y428ohqy2n.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\cerez.png",
+      "PackagePath": "staticwebassets\\img\\legal\\cerez.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
+      "PackagePath": "staticwebassets\\img\\legal\\gizlilik.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\iptal.png",
+      "PackagePath": "staticwebassets\\img\\legal\\iptal.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
+      "PackagePath": "staticwebassets\\img\\legal\\kvkk.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
+      "PackagePath": "staticwebassets\\img\\legal\\mesafeli.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\loginCat.png",
+      "PackagePath": "staticwebassets\\img\\loginCat.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\ISO.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\SSL.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\etbis.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\iyzico.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\mastercard.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\paypal.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
+      "PackagePath": "staticwebassets\\img\\paymentLogo\\visa.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\signIn.png",
+      "PackagePath": "staticwebassets\\img\\signIn.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\slideHamster.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderBird1.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderBird2.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderCat1.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderCats.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderCats2.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderDog1.png"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderDogs.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderRabbit.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\sliderRabbit2.jpg"
+    },
+    {
+      "Id": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\petsasLogo.png",
+      "PackagePath": "staticwebassets\\petsasLogo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.petsas2.props",
+      "PackagePath": "build\\petsas2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.petsas2.props",
+      "PackagePath": "buildMultiTargeting\\petsas2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.petsas2.props",
+      "PackagePath": "buildTransitive\\petsas2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.petsas2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.petsas2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
