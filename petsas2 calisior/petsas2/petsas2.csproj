@@ -19,7 +19,6 @@
   <ItemGroup>
     <Folder Include="Components\Pages\Categories\" />
     <Folder Include="Models\UserViewModel\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

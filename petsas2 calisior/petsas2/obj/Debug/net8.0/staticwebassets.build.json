@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gIdKFf4SR2L3SCCKwxvCmZiPmhCUqLw3n2AvT4Uw6oc=",
+  "Hash": "Zr7z+WA7ibwNdvMtJVL3YsXk0kVe7EJZXvrfSfrmRjI=",
   "Source": "petsas2",
   "BasePath": "_content/petsas2",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "petsas2\\wwwroot",
       "Source": "petsas2",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "Pattern": "**"
     }
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "C:\\Users\\selin\\.nuget\\packages\\mudblazor\\8.8.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css",
       "SourceId": "petsas2",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "petsas2#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -1337,13 +1337,13 @@
       "Integrity": "0thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR+edrk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css"
+      "OriginalItemSpec": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
       "SourceId": "petsas2",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "petsas2#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -1358,13 +1358,13 @@
       "Integrity": "0thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR+edrk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css"
+      "OriginalItemSpec": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\app.css",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\app.css",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\favicon.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\favicon.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\cerez.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\cerez.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/legal/cerez#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\img\\legal\\cerez.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/legal/gizlilik#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\img\\legal\\gizlilik.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\iptal.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\iptal.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/legal/iptal#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\img\\legal\\iptal.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/legal/kvkk#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\img\\legal\\kvkk.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/legal/mesafeli#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\img\\legal\\mesafeli.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\loginCat.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\loginCat.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/loginCat#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\img\\loginCat.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/etbis#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\etbis.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/ISO#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\ISO.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/iyzico#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\iyzico.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/mastercard#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\mastercard.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/paypal#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\paypal.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/SSL#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\SSL.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/paymentLogo/visa#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\img\\paymentLogo\\visa.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\signIn.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\signIn.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/signIn#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\img\\signIn.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/slideHamster#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\slideHamster.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderBird1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderBird1.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderBird2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderBird2.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderCat1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderCat1.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderCats#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderCats.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderCats2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderCats2.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderDog1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderDog1.png"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderDogs#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderDogs.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderRabbit#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1928,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderRabbit.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "img/slider/sliderRabbit2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1949,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\sliderRabbit2.jpg"
     },
     {
-      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\petsasLogo.png",
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\petsasLogo.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\",
       "BasePath": "_content/petsas2",
       "RelativePath": "petsasLogo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -2137,7 +2137,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\app.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2174,7 +2174,7 @@
     },
     {
       "Route": "app.ec8309ldop.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\app.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2219,7 +2219,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2264,7 +2264,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2301,7 +2301,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2346,7 +2346,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2383,7 +2383,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2428,7 +2428,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4685,7 +4685,7 @@
     },
     {
       "Route": "img/legal/cerez.dz61rdwzey.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\cerez.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\cerez.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4730,7 +4730,7 @@
     },
     {
       "Route": "img/legal/cerez.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\cerez.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\cerez.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4767,7 +4767,7 @@
     },
     {
       "Route": "img/legal/gizlilik.kaczni0ozt.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4812,7 +4812,7 @@
     },
     {
       "Route": "img/legal/gizlilik.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\gizlilik.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4849,7 +4849,7 @@
     },
     {
       "Route": "img/legal/iptal.nzlrck47ko.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\iptal.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\iptal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4894,7 +4894,7 @@
     },
     {
       "Route": "img/legal/iptal.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\iptal.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\iptal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4931,7 +4931,7 @@
     },
     {
       "Route": "img/legal/kvkk.edn72o4dd5.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4976,7 +4976,7 @@
     },
     {
       "Route": "img/legal/kvkk.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\kvkk.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5013,7 +5013,7 @@
     },
     {
       "Route": "img/legal/mesafeli.ldqsv2td65.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5058,7 +5058,7 @@
     },
     {
       "Route": "img/legal/mesafeli.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\legal\\mesafeli.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5095,7 +5095,7 @@
     },
     {
       "Route": "img/loginCat.aj2fsqpmje.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\loginCat.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\loginCat.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5140,7 +5140,7 @@
     },
     {
       "Route": "img/loginCat.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\loginCat.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\loginCat.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5177,7 +5177,7 @@
     },
     {
       "Route": "img/paymentLogo/etbis.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5214,7 +5214,7 @@
     },
     {
       "Route": "img/paymentLogo/etbis.qk9gtow1lq.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\etbis.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5259,7 +5259,7 @@
     },
     {
       "Route": "img/paymentLogo/ISO.cd8tfkyeh2.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5304,7 +5304,7 @@
     },
     {
       "Route": "img/paymentLogo/ISO.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\ISO.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5341,7 +5341,7 @@
     },
     {
       "Route": "img/paymentLogo/iyzico.f4qyz9068l.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5386,7 +5386,7 @@
     },
     {
       "Route": "img/paymentLogo/iyzico.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\iyzico.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5423,7 +5423,7 @@
     },
     {
       "Route": "img/paymentLogo/mastercard.aksbv7kvl2.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5468,7 +5468,7 @@
     },
     {
       "Route": "img/paymentLogo/mastercard.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\mastercard.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5505,7 +5505,7 @@
     },
     {
       "Route": "img/paymentLogo/paypal.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5542,7 +5542,7 @@
     },
     {
       "Route": "img/paymentLogo/paypal.qu61ttvxsm.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\paypal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5587,7 +5587,7 @@
     },
     {
       "Route": "img/paymentLogo/SSL.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5624,7 +5624,7 @@
     },
     {
       "Route": "img/paymentLogo/SSL.xynfh1v0x0.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\SSL.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5669,7 +5669,7 @@
     },
     {
       "Route": "img/paymentLogo/visa.bsuu70ujmk.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5714,7 +5714,7 @@
     },
     {
       "Route": "img/paymentLogo/visa.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\paymentLogo\\visa.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5751,7 +5751,7 @@
     },
     {
       "Route": "img/signIn.oeuhosh6zc.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\signIn.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\signIn.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5796,7 +5796,7 @@
     },
     {
       "Route": "img/signIn.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\signIn.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\signIn.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5833,7 +5833,7 @@
     },
     {
       "Route": "img/slider/slideHamster.j3ecob9diw.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5878,7 +5878,7 @@
     },
     {
       "Route": "img/slider/slideHamster.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\slideHamster.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5915,7 +5915,7 @@
     },
     {
       "Route": "img/slider/sliderBird1.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5952,7 +5952,7 @@
     },
     {
       "Route": "img/slider/sliderBird1.xvocdd8xu0.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderBird1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5997,7 +5997,7 @@
     },
     {
       "Route": "img/slider/sliderBird2.eomgj4e10i.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6042,7 +6042,7 @@
     },
     {
       "Route": "img/slider/sliderBird2.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderBird2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6079,7 +6079,7 @@
     },
     {
       "Route": "img/slider/sliderCat1.e3psptkdeu.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6124,7 +6124,7 @@
     },
     {
       "Route": "img/slider/sliderCat1.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCat1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6161,7 +6161,7 @@
     },
     {
       "Route": "img/slider/sliderCats.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6198,7 +6198,7 @@
     },
     {
       "Route": "img/slider/sliderCats.ucbres8pmt.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCats.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6243,7 +6243,7 @@
     },
     {
       "Route": "img/slider/sliderCats2.8ai33wacpg.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6288,7 +6288,7 @@
     },
     {
       "Route": "img/slider/sliderCats2.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderCats2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6325,7 +6325,7 @@
     },
     {
       "Route": "img/slider/sliderDog1.devpgd4bc8.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6370,7 +6370,7 @@
     },
     {
       "Route": "img/slider/sliderDog1.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderDog1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6407,7 +6407,7 @@
     },
     {
       "Route": "img/slider/sliderDogs.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6444,7 +6444,7 @@
     },
     {
       "Route": "img/slider/sliderDogs.poq9ebz5u1.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderDogs.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6489,7 +6489,7 @@
     },
     {
       "Route": "img/slider/sliderRabbit.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6526,7 +6526,7 @@
     },
     {
       "Route": "img/slider/sliderRabbit.noysb8pn1q.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderRabbit.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6571,7 +6571,7 @@
     },
     {
       "Route": "img/slider/sliderRabbit2.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6608,7 +6608,7 @@
     },
     {
       "Route": "img/slider/sliderRabbit2.qtoys2ssxi.jpg",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\img\\slider\\sliderRabbit2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6653,7 +6653,7 @@
     },
     {
       "Route": "petsas2.bundle.scp.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6690,7 +6690,7 @@
     },
     {
       "Route": "petsas2.styles.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6727,7 +6727,7 @@
     },
     {
       "Route": "petsas2.y428ohqy2n.bundle.scp.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\petsas2.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6772,7 +6772,7 @@
     },
     {
       "Route": "petsas2.y428ohqy2n.styles.css",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\petsas2.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6817,7 +6817,7 @@
     },
     {
       "Route": "petsasLogo.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\petsasLogo.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\petsasLogo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6854,7 +6854,7 @@
     },
     {
       "Route": "petsasLogo.thamg2t6ur.png",
-      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 saf\\petsas2\\wwwroot\\petsasLogo.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 calisior\\petsas2\\wwwroot\\petsasLogo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {

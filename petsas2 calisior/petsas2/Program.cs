@@ -8,6 +8,7 @@ using petsas2.Data;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
+using petsas2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -16,6 +17,9 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 //mudblazor için
 builder.Services.AddMudServices();
+
+// Ürün servisi
+builder.Services.AddScoped<IProductService, ProductService>();
 //
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();

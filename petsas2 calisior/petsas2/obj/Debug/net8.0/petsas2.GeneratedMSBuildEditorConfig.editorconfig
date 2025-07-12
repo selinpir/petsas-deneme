@@ -27,6 +27,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cQWRtaW5EYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2 calisior/petsas2/Areas/ProductProcess/EditProductDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdFByb2Nlc3NcRWRpdFByb2R1Y3REaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2 calisior/petsas2/Areas/ProductProcess/ProductProcess.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdFByb2Nlc3NcUHJvZHVjdFByb2Nlc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2 calisior/petsas2/Areas/Supplier/SupplierDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3VwcGxpZXJcU3VwcGxpZXJEYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
