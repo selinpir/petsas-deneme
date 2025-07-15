@@ -1,15 +1,14 @@
-﻿@* marka adını güncelle- markanın isim değiştirmesi senaryosunda- 
-çok gerekli değil gibi- soft delete gibi değil isim tamamen değişir her yerde *@
+﻿@* marka adını güncelle- markanın isim değiştirmesi senaryosunda-soft delete gibi değil isim tamamen değişir her yerde *@
 
-@page "/areas/Brand/BrandEdit/{id:int}"
+@page "/Brand/BrandEdit/{id:int}"
 @using Microsoft.AspNetCore.Authorization
 @using petsas2.Services
 
 @attribute [Authorize(Roles = "Admin,Supplier")]
 @using MudBlazor
 @using petsas2.Models
+@using petsas2.Services.Interface
 @using static MudBlazor.Icons.Material
-@inject petsas2.Services.IBrandService BrandService
 @inject IBrandService BrandService
 @inject NavigationManager Navigation
 
@@ -47,12 +46,12 @@ else
         if (brand != null)
         {
             await BrandService.UpdateAsync(brand);
-            Navigation.NavigateTo("/areas/Brand/BrandIndex");
+            Navigation.NavigateTo("/Brand/BrandIndex");
         }
     }
 
     private void Cancel()
     {
-        Navigation.NavigateTo("/areas/Brand/BrandIndex");
+        Navigation.NavigateTo("/Brand/BrandIndex");
     }
 }

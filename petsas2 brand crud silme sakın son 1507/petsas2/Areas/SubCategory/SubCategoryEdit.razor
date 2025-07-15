@@ -1,0 +1,64 @@
+﻿@page "/subcategory/SubCategoryEdit/{id:int}"
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using MudBlazor
+@using petsas2.Services
+@using petsas2.Models
+@using petsas2.Services.Interface
+@using static MudBlazor.Icons.Material
+@inject ISubCategoryService SubCategoryService
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<h3>Alt Kategori Güncelle</h3>
+@if (subCategory == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+    <MudPaper Class="p-4">
+        <MudTextField @bind-Value="subCategory.ProductName" Label="Alt kategori Adı" Variant="Variant.Outlined" />
+
+        <div class="mt-3 d-flex gap-2">
+            <MudButton Color="Color.Secondary" OnClick="Cancel">İptal</MudButton>
+            <MudButton Color="Color.Primary" OnClick="UpdateSubCategory">Güncelle</MudButton>
+        </div>
+    </MudPaper>
+
+}
+@code{
+    [Parameter]
+    public int id { get; set; }
+    private SubCategory? subCategory;
+
+    protected override async Task OnInitializedAsync()
+    {
+        subCategory = await SubCategoryService.GetByIdAsync(id);
+    }
+
+    private async Task UpdateSubCategory()
+    {
+        if (subCategory == null)
+            return;
+
+        try
+        {
+            await SubCategoryService.Update(subCategory);
+            Snackbar.Add("Kategori başarıyla güncellendi.", Severity.Success);
+            Navigation.NavigateTo("/subcategory/SubCategoryIndex");
+        }
+        catch (Exception ex)
+        {
+            // Burada circuit çökmez, kullanıcıya Snackbar mesajı gidip işlem devam eder
+            Snackbar.Add(ex.Message, Severity.Error);
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/subcategory/SubCategoryIndex");
+    }
+}

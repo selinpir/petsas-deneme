@@ -3,24 +3,34 @@ using System.Collections.Generic;
 
 namespace petsas2.Models
 {
+    //brandManagement++
+    //categoryManagement++
+    //subcategoryManagement++
+    //productManagement-
+    //productFeatureManagement-
+
     //Category - SubCategory - Product 
     //PetType: kedi,köpek,kuş,akvaryum,tavşan,hamster
     public class Category
     {
         public int Id { get; set; }
         public string PetType { get; set; } = string.Empty;
+        public bool IsDeleted { get; set; } = false;
         public ICollection<SubCategory> SubCategories { get; set; } = new List<SubCategory>();
+        //bir kategorinin birden çok alt kategorisi olabilir
     }
 
     //ProductName:petler icin alt kategori ürünler fln mama,tasma
     public class SubCategory
     {
         public int Id { get; set; }
-        public string ProductName { get; set; } = string.Empty;
-        public int CategoryId { get; set; }
+        public string ProductName { get; set; } = string.Empty; //mama
+        public int CategoryId { get; set; } //yavru kedi maması
         public Category? Category { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public ICollection<Product> Products { get; set; } = new List<Product>();
     }
+
     //urunler
     public class Product
     {
@@ -44,6 +54,7 @@ namespace petsas2.Models
         public decimal? Rating { get; set; } = 0; // begeni
         public ICollection<ProductFeature> Features { get; set; } = new List<ProductFeature>();
     }
+   
     //urunun markası- her urunun bir markası olur- bir markanın birden çok urunu olabilir
     public class Brand
     {
@@ -51,7 +62,8 @@ namespace petsas2.Models
         public string Name { get; set; } = string.Empty;
         //soft delete- tamamen silmek yerine görünümden kaldırmak ama birdaha kullanılmayacak zaten marka çöktüyse falan
         public bool IsDeleted { get; set; } = false;
-        public ICollection<Product> Products { get; set; } = new List<Product>();
+        public ICollection<Product> Products { get; set; } = new List<Product>();     
+        //bir marka birden çok ürün ile ilişkili olabilir.
     }
 
 
@@ -65,6 +77,4 @@ namespace petsas2.Models
         public string Value { get; set; } = string.Empty; //  Kırmızı, 10kg, Plastik
 
     }
-
-
 }

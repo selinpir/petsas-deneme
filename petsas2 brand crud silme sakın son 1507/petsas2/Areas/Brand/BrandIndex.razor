@@ -1,7 +1,7 @@
 ﻿@* ÇALIŞIYOR GOAT *@
 @* MARKA LİSTELE-YENİ MARKA EKLE-MARKA SİL- Marka güncelle? *@
 
-@page "/areas/Brand/BrandIndex"
+@page "/Brand/BrandIndex"
 @attribute [Authorize(Roles = "Admin,Supplier")]
 
 @using Microsoft.AspNetCore.Authorization
@@ -9,15 +9,16 @@
 
 @using MudBlazor
 @using petsas2.Models
+@using petsas2.Services.Interface
 @using static MudBlazor.Icons.Material
-@inject petsas2.Services.IBrandService BrandService
+@inject IBrandService BrandService
 @inject NavigationManager Navigation
 @inject IDialogService DialogService
 
 <h3>Marka Tablosu</h3>
 @if (brands == null)
 {
-    <p><em>Yükleniyor...</em></p>
+    <MudProgressCircular Indeterminate="true" />
 }
 else
 {
@@ -32,12 +33,12 @@ else
             <MudTd DataLabel="ID">@brand.Id</MudTd>
             <MudTd DataLabel="Marka Adı">@brand.Name</MudTd>
             <MudTd>
-               @*  güncelleme *@
+                @*  güncelleme *@
                 <MudButton Color="Color.Warning" Variant="Variant.Filled" OnClick="() => EditBrand(brand.Id)">
                     <MudIcon Icon="@Icons.Material.Filled.Edit" />
                 </MudButton>
 
-              @*   direkt silme işlemi- isdeleted true olur *@
+                @*   direkt silme işlemi- isdeleted true olur *@
                 <MudButton Color="Color.Error" Variant="Variant.Filled" Class="ms-2" OnClick="() => DeleteBrand(brand.Id)">
                     <MudIcon Icon="@Icons.Material.Filled.Delete" />
                 </MudButton>
@@ -47,7 +48,7 @@ else
     </MudTable>
 
 }
-
+<MudStack Spacing="2" Class="mt-4">
 <MudButton Color="Color.Primary" Class="mt-4"
            OnClick="@( () => OpenAddBrandPage() )">
     <MudIcon Icon="@Icons.Material.Filled.Add" Class="me-1" />
@@ -57,7 +58,7 @@ else
 <MudText Typo="Typo.caption" Class="mt-2">
     Bu sayfa yalnızca Admin ve Tedarikçiler için erişilebilir. Silinen markalar sistemden tamamen kaldırılmaz.
 </MudText>
-
+</MudStack>
 @code {
     private List<Models.Brand>? brands;
 
@@ -68,7 +69,7 @@ else
     //yeni marka ekleeeee
     private void OpenAddBrandPage()
     {
-        Navigation.NavigateTo("/areas/Brand/BrandCreate");
+        Navigation.NavigateTo("/Brand/BrandCreate");
     }
     //marka sil-tamamen silinmez
     private async Task DeleteBrand(int id)
@@ -89,7 +90,7 @@ else
     //marka güncelle
     private void EditBrand(int id)
     {
-        Navigation.NavigateTo($"/areas/Brand/BrandEdit/{id}");
+        Navigation.NavigateTo($"/Brand/BrandEdit/{id}");
     }
 }
 

@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
 using petsas2.Services;
+using petsas2.Services.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -24,8 +25,15 @@ builder.Services.AddServerSideBlazor().AddCircuitOptions(options =>
 
 //mudblazor için
 builder.Services.AddMudServices();
+
 //brand marka servis
 builder.Services.AddScoped<IBrandService, BrandService>();
+
+//category kategori servis
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+//subcategory servisi
+builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
+
 //
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();

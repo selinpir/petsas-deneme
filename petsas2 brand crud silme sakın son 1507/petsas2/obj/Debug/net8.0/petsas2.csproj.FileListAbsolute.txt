@@ -1155,8 +1155,8 @@ D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 son silme sakın\petsas2\obj\Debu
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 son silme sakın\petsas2\obj\Debug\net8.0\ref\petsas2.dll
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\appsettings.Development.json
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\appsettings.json
-D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\petsas2.staticwebassets.endpoints.json
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\petsas2.staticwebassets.runtime.json
+D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\petsas2.staticwebassets.endpoints.json
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\petsas2.exe
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\petsas2.deps.json
 D:\masaustu_yedek\GITHUB\petsas-deneme\petsas2 brand crud silme sakın son 1507\petsas2\bin\Debug\net8.0\petsas2.runtimeconfig.json

@@ -13,9 +13,13 @@
 
 @code {
     private List<CardsGrid.CardInfo> CardList = new() {
-        new() { Title = "Ürün-Stok İşlemleri", Icon="bi bi-upc-scan",  Link = "", ButtonText = "Git" },
-        new() { Title = "Gelen Siparişler-Kargo Yönetimi",  Icon="bi bi-truck",      Link = "", ButtonText = "Git" },
-        new() { Title = "Fatura Yönetimi",  Icon="bi bi-truck",      Link = "", ButtonText = "Git" },
+        new() { Title = "Marka Yönetimi" ,      Icon="bi bi-nvidia",     Link =  "/brand/BrandIndex",             ButtonText = "Git" },  //+
+        new() { Title = "Kategori Yönetimi" ,   Icon="bi bi-tags-fill",  Link =  "/category/CategoryIndex",       ButtonText = "Git" },  //+
+        new() { Title = "Alt Kategori Yönetimi",Icon="bi bi-back",       Link =  "/subcategory/SubCategoryIndex", ButtonText = "Git" },  //+
+
+        // new() { Title = "Ürün-Stok İşlemleri", Icon="bi bi-upc-scan",  Link = "", ButtonText = "Git" },
+        // new() { Title = "Gelen Siparişler-Kargo Yönetimi",  Icon="bi bi-truck",      Link = "", ButtonText = "Git" },
+        // new() { Title = "Fatura Yönetimi",  Icon="bi bi-truck",      Link = "", ButtonText = "Git" },
         
     };
     //tedarikçi siparişleri görüntüler ve hazırlar

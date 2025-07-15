@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\areas\\brand\\brandcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\brand\\brandcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\areas\\subcategory\\subcategoryedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\subcategory\\subcategoryedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\areas\\brand\\brandedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\brand\\brandedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\services\\subcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\subcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\areas\\brand\\brandindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\brand\\brandindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\areas\\subcategory\\subcategorycreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\subcategory\\subcategorycreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\services\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\services\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\areas\\category\\categorycreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\category\\categorycreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,33 +25,46 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 195,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 129,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IBrandService.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\IBrandService.cs",
-              "RelativeDocumentMoniker": "petsas2\\Services\\IBrandService.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\IBrandService.cs",
-              "RelativeToolTip": "petsas2\\Services\\IBrandService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SubCategoryService.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\SubCategoryService.cs",
+              "RelativeDocumentMoniker": "petsas2\\Services\\SubCategoryService.cs",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\SubCategoryService.cs",
+              "RelativeToolTip": "petsas2\\Services\\SubCategoryService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:52:46.715Z",
+              "WhenOpened": "2025-07-15T16:32:11.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "petsas2\\Services\\ICategoryService.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\ICategoryService.cs",
-              "RelativeToolTip": "petsas2\\Services\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:51:21.224Z",
+              "DocumentIndex": 0,
+              "Title": "SubCategoryEdit.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "RelativeToolTip": "petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T16:14:42.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryCreate.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Category\\CategoryCreate.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Category\\CategoryCreate.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Category\\CategoryCreate.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Category\\CategoryCreate.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T16:14:34.603Z",
               "EditorCaption": ""
             },
             {
@@ -84,106 +73,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BrandService.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\BrandService.cs",
-              "RelativeDocumentMoniker": "petsas2\\Services\\BrandService.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Services\\BrandService.cs",
-              "RelativeToolTip": "petsas2\\Services\\BrandService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:02:49.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BrandIndex.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Brand\\BrandIndex.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Brand\\BrandIndex.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Brand\\BrandIndex.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Brand\\BrandIndex.razor",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBwAAAAYAAAAAAAAAA==",
+              "Title": "SubCategoryCreate.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "RelativeToolTip": "petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T10:46:54.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BrandEdit.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Brand\\BrandEdit.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Brand\\BrandEdit.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Brand\\BrandEdit.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Brand\\BrandEdit.razor",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T20:54:32.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BrandCreate.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Brand\\BrandCreate.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Brand\\BrandCreate.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Areas\\Brand\\BrandCreate.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Brand\\BrandCreate.razor",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T19:30:58.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "petsas2\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "petsas2\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwBAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:38:10.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Products.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Models\\Products.cs",
-              "RelativeDocumentMoniker": "petsas2\\Models\\Products.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Models\\Products.cs",
-              "RelativeToolTip": "petsas2\\Models\\Products.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAmwC8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:25:13.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Program.cs",
-              "RelativeDocumentMoniker": "petsas2\\Program.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\Program.cs",
-              "RelativeToolTip": "petsas2\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:16:55.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\appsettings.json",
-              "RelativeDocumentMoniker": "petsas2\\appsettings.json",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand crud silme sak\u0131n son 1507\\petsas2\\appsettings.json",
-              "RelativeToolTip": "petsas2\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-14T21:26:01.845Z",
+              "WhenOpened": "2025-07-15T15:08:31.177Z",
               "EditorCaption": ""
             }
           ]

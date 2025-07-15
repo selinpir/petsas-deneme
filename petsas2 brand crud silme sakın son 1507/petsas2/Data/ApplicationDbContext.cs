@@ -14,6 +14,8 @@ namespace petsas2.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
         public DbSet<Product> Products { get; set; }
+
+        //brand+
         public DbSet<Brand> Brands { get; set; }
         public DbSet<ProductFeature> ProductFeatures { get; set; }
 

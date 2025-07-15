@@ -1,44 +1,62 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using petsas2.Data;
 using petsas2.Models;
+using petsas2.Services;
+using petsas2.Services.Interface;
+
 namespace petsas2.Services
 {
     public class CategoryService : ICategoryService
     {
         private readonly ApplicationDbContext _context;
+
         public CategoryService(ApplicationDbContext context)
         {
             _context = context;
+
         }
-        public Task AddCategory(Category category)
+        //silinenleri göstermemesi için
+        public async Task<List<Category>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Categories
+                .Where(c => !c.IsDeleted)
+                .ToListAsync();
         }
 
-        public Task DeleteCategory(int id)
+        public async Task<Category?> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Categories.FindAsync(id);
         }
 
-        //+
-        public async Task<List<Category>> GetCategories()
+        //ekle
+        public async Task AddAsync(Category category)
         {
-            return await _context.Categories.ToListAsync();
+            _context.Categories.Add(category);
+            await _context.SaveChangesAsync();
         }
-        //+
-        public async Task<Category> GetCategory(int id)
+        //sil       
+        public async Task SoftDeleteAsync(int id)
         {
             var category = await _context.Categories.FindAsync(id);
-            if (category == null)
+            if (category != null)
             {
-                throw new Exception("club not found");
+                category.IsDeleted = true;
+                await _context.SaveChangesAsync();
             }
-            return category;
+
+        }
+        //güncelle
+        public async Task UpdateAsync(Category category)
+        {
+            var existing = await _context.Categories.FindAsync(category.Id);
+            if (existing == null || existing.IsDeleted)
+                throw new Exception("Kategori bulunamadı veya silinmiş.");
+
+            existing.PetType = category.PetType;
+            await _context.SaveChangesAsync();
         }
 
-        public Task UpdateCategory(Category category)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+
+

@@ -1,0 +1,77 @@
+﻿@page "/subcategory/SubCategoryCreate"
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin,Supplier")]
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject ISubCategoryService SubCategoryService
+@inject ICategoryService CategoryService
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<h3>Yeni Alt Kategori Ekle</h3>
+
+<MudPaper Class="p-4" Elevation="1">
+    <MudStack Spacing="3">
+     @*pet türü --dropdown*@
+     <MudSelect T="int" @bind-Value="model.CategoryId" Label="Pet Türü" Required="true">  
+        <MudSelectItem Value="0">– Seçiniz –</MudSelectItem>
+         @foreach(var cat in Categories)
+         {
+             <MudSelectItem Value="@cat.Id">
+                 @cat.PetType
+             </MudSelectItem>
+         }
+     </MudSelect>
+
+     @*alt kategori*@
+     <MudTextField T="string"
+         @bind-Value="model.ProductName"
+         Label="Alt Kategori Adı"
+         Required="true"/>
+
+        <MudStack Direction="Row" Justify="Justify.FlexEnd" Spacing="2">
+            <MudButton Variant="Variant.Text" OnClick="Cancel">İptal</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Save">Kaydet</MudButton>
+        </MudStack>
+
+    </MudStack>
+</MudPaper>
+
+
+
+@code {
+    //boş subcategory nesnesi
+    private SubCategory model = new();
+
+    //kategorilerin listesi
+    private List<Category> Categories = new();
+
+    //silinmeyen-varolan kategorilerin çekilmesi
+    protected override async Task OnInitializedAsync()
+    {
+        Categories = await CategoryService.GetAllAsync();
+    }
+
+    private async Task Save()
+    {
+        try
+        {
+            await SubCategoryService.AddAsync(model);
+            Snackbar.Add("Alt kategori başarıyla eklendi.", Severity.Success);
+            Navigation.NavigateTo("/subcategory/SubCategoryIndex");
+
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Ekleme sırasında hata: {ex.Message}", Severity.Error);
+        }
+    }
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/subcategory/SubCategoryIndex");
+    }
+}
+
+

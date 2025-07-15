@@ -2,10 +2,14 @@
 @* yeni marka eklemek içindir-ürün eklerken umarım dropdown list ile gelecektir *@
 @* TAMAM CALISIYOR *@
 @* Yeni Marka Ekle *@
-@page "/areas/Brand/BrandCreate"
+@page "/Brand/BrandCreate"
+
+@attribute [Authorize(Roles = "Admin,Supplier")]
+@using Microsoft.AspNetCore.Authorization
 @using MudBlazor
 @using petsas2.Models
-@inject petsas2.Services.IBrandService BrandService
+@using petsas2.Services.Interface
+@inject IBrandService BrandService
 @inject MudBlazor.ISnackbar Snackbar
 @inject NavigationManager Navigation
 
@@ -38,6 +42,6 @@
         Snackbar.Add("Yeni marka başarıyla eklendi.Teşekkürler.", Severity.Success);
 
         //index sayfasına yönlendir
-        Navigation.NavigateTo("/areas/Brand/BrandIndex");
+        Navigation.NavigateTo("/Brand/BrandIndex");
     }
 }

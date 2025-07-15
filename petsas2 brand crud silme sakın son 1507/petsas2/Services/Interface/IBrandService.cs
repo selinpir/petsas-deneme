@@ -1,6 +1,7 @@
-﻿using petsas2.Models;
+﻿//marka yonetimi icin interface
+using petsas2.Models;
 
-namespace petsas2.Services
+namespace petsas2.Services.Interface
 {
     public interface IBrandService
     {

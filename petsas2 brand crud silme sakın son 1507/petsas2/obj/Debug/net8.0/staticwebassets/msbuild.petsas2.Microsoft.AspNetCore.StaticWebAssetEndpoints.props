@@ -412,13 +412,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\petsas2.y428ohqy2n.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR\u002Bedrk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR\u002Bedrk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Jul 2025 20:47:54 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR\u002Bedrk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 16:34:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/petsas2.y428ohqy2n.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\petsas2.y428ohqy2n.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y428ohqy2n"},{"Name":"integrity","Value":"sha256-0thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR\u002Bedrk="},{"Name":"label","Value":"_content/petsas2/petsas2.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR\u002Bedrk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Jul 2025 20:47:54 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220thb/KXCg7UiMNqydztLhSSQ1sfoekN2MDTkgR\u002Bedrk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Jul 2025 16:34:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/petsas2/petsasLogo.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\petsasLogo.png'))</AssetFile>
