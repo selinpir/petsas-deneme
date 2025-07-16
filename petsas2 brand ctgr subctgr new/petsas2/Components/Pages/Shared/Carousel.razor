@@ -1,0 +1,60 @@
+﻿@* hata veririse TData="object"  -->Carousel'in içinde göstereceği veri tipini belirtir.*@
+@* app.css icinde calısmıo?? *@
+<style>
+    .fixed-height-carousel {
+        height: 70vh !important; /* Ekran yüksekliğinin %70'i */
+        min-height: 500px;
+    }
+
+        .fixed-height-carousel .mud-carousel-item {
+            height: 100% !important;
+        }
+
+        .fixed-height-carousel .mud-carousel-container {
+            height: 100% !important;
+        }
+
+        .fixed-height-carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+</style>
+
+<MudCarousel TData="object" 
+             Class="fixed-height-carousel"
+             ShowArrows="true"
+             ShowBullets="true"
+             Style="width: 100%;">
+    <MudCarouselItem>
+        <img src="/img/slider/sliderDogs.jpg" alt="Slider 6" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderCats2.jpg" alt="Slider 10" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderCat1.png" alt="Slider 1" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/slideHamster.jpg" alt="Slider 2" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderBird1.jpg" alt="Slider 3" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderDog1.png" alt="Slider 4" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderRabbit2.jpg" alt="Slider 5" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderCats.jpg" alt="Slider 7" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderRabbit.jpg" alt="Slider 8" />
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <img src="/img/slider/sliderBird2.jpg" alt="Slider 9" />
+    </MudCarouselItem>
+</MudCarousel>

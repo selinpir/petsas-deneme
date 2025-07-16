@@ -260,74 +260,6 @@ namespace petsas2.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("petsas2.Models.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<Guid?>("Barcode")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("BrandId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal?>("DiscountedPrice")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal?>("DiscountedRatio")
-                        .HasPrecision(5, 2)
-                        .HasColumnType("decimal(5,2)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal?>("KdvPrice")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal?>("KdvRatio")
-                        .HasPrecision(5, 2)
-                        .HasColumnType("decimal(5,2)");
-
-                    b.Property<int>("MinStock")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal?>("Rating")
-                        .HasPrecision(3, 2)
-                        .HasColumnType("decimal(3,2)");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SubCategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BrandId");
-
-                    b.HasIndex("SubCategoryId");
-
-                    b.ToTable("Products");
-                });
-
             modelBuilder.Entity("petsas2.Models.ProductFeature", b =>
                 {
                     b.Property<int>("Id")
@@ -352,6 +284,54 @@ namespace petsas2.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductFeatures");
+                });
+
+            modelBuilder.Entity("petsas2.Models.ProductNew", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<Guid>("Barcode")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("DefaultKdvOranı")
+                        .HasPrecision(18, 4)
+                        .HasColumnType("decimal(18,4)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MinStock")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("NetBirimFiyat")
+                        .HasPrecision(18, 4)
+                        .HasColumnType("decimal(18,4)");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubCategoryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
+
+                    b.HasIndex("SubCategoryId");
+
+                    b.ToTable("ProductNews");
                 });
 
             modelBuilder.Entity("petsas2.Models.SubCategory", b =>
@@ -430,16 +410,27 @@ namespace petsas2.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("petsas2.Models.Product", b =>
+            modelBuilder.Entity("petsas2.Models.ProductFeature", b =>
+                {
+                    b.HasOne("petsas2.Models.ProductNew", "ProductNew")
+                        .WithMany("Features")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("ProductNew");
+                });
+
+            modelBuilder.Entity("petsas2.Models.ProductNew", b =>
                 {
                     b.HasOne("petsas2.Models.Brand", "Brand")
-                        .WithMany("Products")
+                        .WithMany("ProductNews")
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("petsas2.Models.SubCategory", "SubCategory")
-                        .WithMany("Products")
+                        .WithMany("ProductNews")
                         .HasForeignKey("SubCategoryId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -447,17 +438,6 @@ namespace petsas2.Migrations
                     b.Navigation("Brand");
 
                     b.Navigation("SubCategory");
-                });
-
-            modelBuilder.Entity("petsas2.Models.ProductFeature", b =>
-                {
-                    b.HasOne("petsas2.Models.Product", "Product")
-                        .WithMany("Features")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("petsas2.Models.SubCategory", b =>
@@ -473,7 +453,7 @@ namespace petsas2.Migrations
 
             modelBuilder.Entity("petsas2.Models.Brand", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("ProductNews");
                 });
 
             modelBuilder.Entity("petsas2.Models.Category", b =>
@@ -481,14 +461,14 @@ namespace petsas2.Migrations
                     b.Navigation("SubCategories");
                 });
 
-            modelBuilder.Entity("petsas2.Models.Product", b =>
+            modelBuilder.Entity("petsas2.Models.ProductNew", b =>
                 {
                     b.Navigation("Features");
                 });
 
             modelBuilder.Entity("petsas2.Models.SubCategory", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("ProductNews");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,159 @@
+﻿@* ürün yönetimi-yeni ürün ekle-ürün düzenle-ürün sil *@
+@page "/product/ProductIndex"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject IProductService ProductService
+@inject ICategoryService CategoryService
+@inject ISubCategoryService SubCategoryService
+@inject IDialogService DialogService
+@inject NavigationManager Navigation
+
+<MudText Typo="Typo.h5">Ürünler</MudText>
+@* <MudButton Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/product/ProductCreate"))">
+    Yeni Ürün
+</MudButton> *@
+
+<MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+           OnClick="@(() => Navigation.NavigateTo("/product/ProductCreate"))">
+    Yeni Ürün Ekle
+</MudButton>
+
+@*  //ARAMA ÇUBUGU *@
+<MudTextField @bind-Value="_searchString"
+              Placeholder="Search"
+              Adornment="Adornment.Start"
+              Immediate="true"
+              AdornmentIcon="@Icons.Material.Filled.Search"
+              IconSize="Size.Medium"
+              Class="mt-0" />
+ @* Filter = "_quickFilter" BU OLMAYINCA ÇALIŞMIYOR FİLTRELENECEK YERLERE KOYULACAK*@
+<MudTable Items="@products" Filter="_quickFilter" Hover="true" Striped="true" Bordered="true">
+
+    <HeaderContent>
+        <MudTh>Ad</MudTh>
+        <MudTh>Barkod</MudTh>
+        <MudTh>Marka</MudTh>
+        <MudTh>Kategori</MudTh>
+        <MudTh>Alt Kategori</MudTh>
+        <MudTh>Görsel</MudTh>
+        <MudTh>Stok</MudTh>
+        <MudTh>Min Stok</MudTh>    
+
+        <MudTh>Son Kullanma Tarihi</MudTh>
+        <MudTh>Renk</MudTh>
+        <MudTh>Ağırlık</MudTh>
+        <MudTh>Ebat</MudTh>
+        <MudTh>Beden</MudTh>
+        <MudTh>Malzeme</MudTh>
+
+        <MudTh>İşlemler</MudTh>
+    </HeaderContent>
+
+    <RowTemplate Context="p">
+        <MudTd>@p.Name</MudTd>
+        <MudTd>@p.Barcode</MudTd>
+        <MudTd>@p.Brand?.Name</MudTd>
+        <MudTd DataLabel="Üst Kategori">@p.SubCategory.Category.PetType</MudTd>
+        <MudTd>@p.SubCategory?.ProductName</MudTd>
+
+        <MudTd>
+            @if (!string.IsNullOrWhiteSpace(p.ImageUrl))
+            {
+                <img src="@p.ImageUrl"
+                     alt="Ürün Görseli"
+                     style="width:60px; height:60px; object-fit:cover; border-radius:4px;" />
+            }
+        </MudTd>
+
+        <MudTd Style="@GetStockStyle(p)">
+            @p.Stock
+        </MudTd>
+
+        <MudTd>@p.MinStock</MudTd>
+
+        <MudTd>@p.ExpirationDate</MudTd>
+        <MudTd>@p.Color</MudTd>
+        <MudTd>@p.Weight</MudTd>
+        <MudTd>@p.Dimensions</MudTd>
+        <MudTd>@p.Size</MudTd>
+        <MudTd>@p.Material</MudTd>
+
+        
+
+        <MudTd>
+            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Warning"
+                       OnClick="@(() => Navigation.NavigateTo($"/product/ProductEdit/{p.Id}"))">
+                Düzenle
+            </MudButton>
+
+            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" Class="ms-2"
+                       OnClick="@(() => Delete(p.Id))">
+                Sil
+            </MudButton>
+        </MudTd>
+
+    </RowTemplate>
+</MudTable>
+
+
+@code {
+    List<Product>? products;
+    private string _searchString = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductService.GetAllAsync();
+
+    }
+
+    string? GetStockStyle(Product p)
+    {
+        //stok min stoğa eşit veya kucukse uyarıı
+        return p.Stock <= p.MinStock
+            ? "color:red;font-weight:bold" // Koşul doğruysa
+            : null; // Koşul yanlıssa
+    }
+
+    async Task Delete(int id)
+    {
+        bool? ok = await DialogService.ShowMessageBox(
+            "Sil",
+            "Bu ürünü silmek istediğinize emin misiniz?",
+            yesText: "Evet",
+            cancelText: "Vazgeç");
+
+        if (ok == true)
+        {
+            // soft-delete
+            await ProductService.SoftDeleteAsync(id);
+            products = await ProductService.GetAllAsync();
+            StateHasChanged();
+        }
+    }
+    //ARAMA ÇUBUGU
+    private Func<Product, bool> _quickFilter => x =>
+       {
+           if (string.IsNullOrWhiteSpace(_searchString))
+               return true;
+
+           // ara büyük küçük harf duyarsız
+           if (x.Name?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+               return true;
+           //kategori
+           if (x.SubCategory.Category.PetType.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+               return true;
+           //alt kategori
+           if (x.SubCategory?.ProductName?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+               return true;
+               //marka
+           if (x.Brand?.Name.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+               return true;         
+               //Daha fazla eklenebilir de eklemedim suanlık ve boş bırakilabilen alan eklenmesinde hata oldu ?
+           return false;
+       };
+    //ARAMA ÇUBUGU
+}
