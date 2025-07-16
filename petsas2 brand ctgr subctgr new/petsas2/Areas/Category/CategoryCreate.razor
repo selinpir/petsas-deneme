@@ -1,4 +1,6 @@
 ﻿@page "/category/CategoryCreate"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+@using Microsoft.AspNetCore.Authorization
 @using MudBlazor
 @using petsas2.Models
 @using petsas2.Services.Interface
@@ -6,9 +8,10 @@
 @inject MudBlazor.ISnackbar Snackbar
 @inject NavigationManager Navigation
 
-<h3>Yeni Kategori Ekle</h3>
 
-<MudTextField @bind-Value="newCategoryName" Label="Marka Adı" Required="true" Immediate="true" />
+<MudText Typo="Typo.h5">Yeni Kategori Ekle</MudText>
+
+<MudTextField @bind-Value="newCategoryName" Label="Kategori Adı" Required="true" Immediate="true" />
 <MudButton Color="Color.Primary" OnClick="SaveCategory" Disabled="string.IsNullOrWhiteSpace(newCategoryName)">Kaydet</MudButton>
 
 @code {

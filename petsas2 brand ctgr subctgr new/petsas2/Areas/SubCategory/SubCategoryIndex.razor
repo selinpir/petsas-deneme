@@ -29,23 +29,30 @@ else
 {
     <MudTable Items="subs" Hover="true" Striped="true" Bordered="true">
         <HeaderContent>
-            <MudTh>Id</MudTh>
+            @*   <MudTh>Id</MudTh> *@
             <MudTh>Kategori Adı</MudTh>
             <MudTh>Alt Kategori Adı</MudTh>
-            <MudTh>İşlemler</MudTh>
+            <MudTh>Güncelle</MudTh>
+            <MudTh>Sil</MudTh>
+            @*  <MudTh>İşlemler</MudTh> *@
+
         </HeaderContent>
 
         <RowTemplate Context="sub">
-            <MudTd DataLabel="ID">@sub.Id</MudTd>
+            @*  <MudTd DataLabel="ID">@sub.Id</MudTd> *@
             <MudTd DataLabel="Kategori Adı">@sub.Category!.PetType</MudTd>
+
             <MudTd DataLabel="Alt Kategori Adı">@sub.ProductName</MudTd>
+
             <MudTd>
                 <MudButton Color="Color.Warning"
                            Variant="Variant.Filled"
                            OnClick="@(() => EditSubCategory(sub.Id))">
                     <MudIcon Icon="@Icons.Material.Filled.Edit" />
                 </MudButton>
+            </MudTd>
 
+            <MudTd>
                 <MudButton Color="Color.Error"
                            Variant="Variant.Filled"
                            Class="ms-2"
@@ -53,6 +60,7 @@ else
                     <MudIcon Icon="@Icons.Material.Filled.Delete" />
                 </MudButton>
             </MudTd>
+
         </RowTemplate>
     </MudTable>
 

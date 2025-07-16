@@ -15,7 +15,7 @@
 @inject NavigationManager Navigation
 @inject IDialogService DialogService
 
-<h3>Marka Tablosu</h3>
+<MudText Typo="Typo.h5"> Marka Tablosu</MudText>
 <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
            OnClick="@( () => OpenAddBrandPage() )">
     Yeni Marka Ekle
@@ -30,20 +30,24 @@ else
 {
     <MudTable Items="brands" Hover="true" Striped="true" Bordered="true">
         <HeaderContent>
-            <MudTh>ID</MudTh>
+            @*  <MudTh>ID</MudTh> *@
             <MudTh>Marka Adı</MudTh>
-            <MudTh>İşlemler</MudTh>
+            <MudTh>Güncelle</MudTh>
+            <MudTh>Sil</MudTh>
         </HeaderContent>
 
         <RowTemplate Context="brand">
-            <MudTd DataLabel="ID">@brand.Id</MudTd>
+            @*   <MudTd DataLabel="ID">@brand.Id</MudTd> *@
             <MudTd DataLabel="Marka Adı">@brand.Name</MudTd>
+
             <MudTd>
                 @*  güncelleme *@
                 <MudButton Color="Color.Warning" Variant="Variant.Filled" OnClick="() => EditBrand(brand.Id)">
                     <MudIcon Icon="@Icons.Material.Filled.Edit" />
                 </MudButton>
+            </MudTd>
 
+            <MudTd>
                 @*   direkt silme işlemi- isdeleted true olur *@
                 <MudButton Color="Color.Error" Variant="Variant.Filled" Class="ms-2" OnClick="() => DeleteBrand(brand.Id)">
                     <MudIcon Icon="@Icons.Material.Filled.Delete" />

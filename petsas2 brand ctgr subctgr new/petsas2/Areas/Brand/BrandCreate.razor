@@ -10,7 +10,7 @@
 @inject MudBlazor.ISnackbar Snackbar
 @inject NavigationManager Navigation
 
-<h3>Yeni Marka Ekle</h3>
+<MudText Typo="Typo.h5">Yeni Marka Ekle</MudText>
 
 <MudTextField @bind-Value="newBrandName" Label="Marka Adı" Required="true" Immediate="true" />
 <MudButton Color="Color.Primary" OnClick="SaveBrand" Disabled="string.IsNullOrWhiteSpace(newBrandName)">Kaydet</MudButton>
