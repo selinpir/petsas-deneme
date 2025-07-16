@@ -2,12 +2,17 @@ wwwroot\app.css
 wwwroot\bootstrap\bootstrap.min.css
 wwwroot\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\images\products\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png
 wwwroot\images\products\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg
+wwwroot\images\products\376da3c0-433d-435c-9c2d-d271e30be63b.jpg
 wwwroot\images\products\63c4c56d-2fa9-4fb8-b7ca-a38ec731c67f.png
 wwwroot\images\products\969d3d7d-9a89-437d-a0d7-f9d56b5d152a.jpg
+wwwroot\images\products\ad4af4a9-c562-4223-b898-ebdffb9624eb.png
 wwwroot\images\products\b503343a-6b2e-464d-9ddf-5d9461ceabff.png
 wwwroot\images\products\c7f266ce-6fcb-4998-8e99-4d771d2ebc9a.png
 wwwroot\images\products\cd862d6c-fc2b-441b-b533-f138954a35b4.png
+wwwroot\images\products\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png
+wwwroot\images\products\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png
 wwwroot\img\about\admin.jpg
 wwwroot\img\about\contact.jpg
 wwwroot\img\about\pet.jpg

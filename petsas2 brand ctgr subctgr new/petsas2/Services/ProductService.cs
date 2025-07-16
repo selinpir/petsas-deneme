@@ -16,13 +16,13 @@ namespace petsas2.Services
         public async Task<List<Product>> GetAllAsync()
         {
             return await _context.Products
-                
+
                 .Include(p => p.SubCategory)
                      .ThenInclude(sc => sc!.Category)
                 .Include(p => p.Brand)
                 .ToListAsync();
         }
-               
+
         public async Task AddAsync(Product p)
         {
             _context.Products.Add(p);
@@ -34,7 +34,7 @@ namespace petsas2.Services
             var existing = await _context.Products.FindAsync(id);
             if (existing == null) return;
 
-            existing.IsDeleted = true;        
+            existing.IsDeleted = true;
             await _context.SaveChangesAsync();
         }
         // Belirli bir ürünü getir
@@ -63,6 +63,29 @@ namespace petsas2.Services
             //existing.CategoryId = p.CategoryId;
             existing.SubCategoryId = p.SubCategoryId;
 
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<StockAlertDto>> GetStockAlertAsync()
+        {
+            return await _context.Products
+             .Where(p => p.Stock <= p.MinStock)
+              .Select(p => new StockAlertDto
+              {
+                  ProductId = p.Id,
+                  ProductName = p.Name,
+                  Stock = p.Stock,
+                  MinStock = p.MinStock
+              })
+               .ToListAsync();
+        }
+        public async Task AddStockAsync(int productId, int amount)
+        {
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null)
+                throw new Exception("Ürün bulunamadı.");
+
+            product.Stock += amount;
             await _context.SaveChangesAsync();
         }
     }

@@ -9,5 +9,9 @@ namespace petsas2.Services.Interface
         Task AddAsync(Product p);
         Task UpdateAsync(Product p);
         Task SoftDeleteAsync(int id);
+
+        //dto: data transfer object : veri aktarım nesnesi
+        Task<List<StockAlertDto>> GetStockAlertAsync();      
+        Task AddStockAsync(int productId, int amount);
     }  
 }

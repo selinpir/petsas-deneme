@@ -20,6 +20,7 @@
                    @bind-Value="selectedCategoryId"
                    Required="true"
                    Class="mb-4">
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
             @foreach (var cat in categories)
             {
                 <MudSelectItem T="int?" Value="cat.Id">@cat.PetType</MudSelectItem>

@@ -18,7 +18,7 @@
 @inject IWebHostEnvironment Env
 
 <MudPaper Class="p-4 mx-auto" Style="max-width:600px">
-   
+
     <MudText Typo="Typo.h5">Yeni Ürün Ekle</MudText>
 
     <MudForm @ref="form">
@@ -28,6 +28,8 @@
         <MudSelect T="int" Label="Kategori"
                    @bind-Value="SelectedCategoryId"
                    Required="true">
+                   @* 0 gelmemesi icin *@
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
             @foreach (var cat in categories)
             {
                 <MudSelectItem Value="@cat.Id">@cat.PetType</MudSelectItem>
@@ -38,6 +40,7 @@
         <MudSelect T="int" Label="Alt Kategori"
                    @bind-Value="product.SubCategoryId"
                    Required="true">
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
             @foreach (var sc in filteredSubcategories)
             {
                 <MudSelectItem Value="@(sc.Id)">@sc.ProductName</MudSelectItem>
@@ -53,6 +56,7 @@
                    Label="Marka"
                    @bind-Value="product.BrandId"
                    Required="true">
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
             @foreach (var b in brands)
             {
                 <MudSelectItem Value="@b.Id">@b.Name</MudSelectItem>
@@ -76,11 +80,27 @@
         </MudFileUpload>
         @* GÖRSEL *@
 
-        <MudNumericField T="int" @bind-Value="product.Stock" Label="Stok" Required="true" />
-        <MudNumericField T="int" @bind-Value="product.MinStock" Label="Min Stok" Required="true" />
+        <MudNumericField T="int"
+                         @bind-Value="product.Stock"
+                         Label="Stok"
+                         Required="true"
+                         Min="0"
+                         Validation="@((int v) => v<0? "Stok 0'dan küçük olamaz":null)" />
+
+        <MudNumericField T="int"
+                         @bind-Value="product.MinStock"
+                         Label="Min Stok"
+                         Required="true"
+                         Min="0"
+                         Validation="@((int v) => v<0? "Stok 0'dan küçük olamaz":null)" />
 
         @*Son Kullanma Tarihi *@
-        <MudTextField @bind-Value="product.ExpirationDate" Label="Son Kullanma Tarihi"  />
+        @*   <MudTextField @bind-Value="product.ExpirationDate" Label="Son Kullanma Tarihi" /> *@
+
+        <MudDatePicker T="DateTime?" Label="Son Kullanma Tarihi"
+                       @bind-Date="product.ExpirationDate"                     
+                       MinDate="DateTime.Today"
+                       DateFormat="dd.MM.yyyy" />
 
         @*Renk *@
         <MudTextField @bind-Value="product.Color" Label="Renk" />

@@ -6,8 +6,7 @@ namespace petsas2.Models
     //brandManagement++
     //categoryManagement++
     //subcategoryManagement++
-    //productManagement+-
-    //productFeatureManagement-
+    //productManagement+- 
 
     //Category - SubCategory - Product 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -61,7 +60,7 @@ namespace petsas2.Models
         //boyut olarak
         public string? Dimensions { get; set; }
         //beden olarak
-        public string? Size {  get; set; }
+        public string? Size { get; set; }
         public string? Material { get; set; }
         //
 
@@ -76,5 +75,14 @@ namespace petsas2.Models
         public bool IsDeleted { get; set; } = false;
         public ICollection<Product> Products { get; set; } = new List<Product>();
         //bir marka birden çok ürün ile ilişkili olabilir.
+    }
+
+    //stok azalınca uyarı vermesi icin ama dbcontexte kaydetmedik ve mig yapmadık
+    public class StockAlertDto
+    {
+        public int ProductId { get; set; }
+        public string ProductName { get; set; } = string.Empty;
+        public int Stock { get; set; }
+        public int MinStock { get; set; }
     }
 }

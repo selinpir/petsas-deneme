@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VdEZKVG7FkID6Ku+TLuF3HI5tyEd8sAVffoiBTslIMo=",
+  "Hash": "Tk2PLPwovOL8BCSE6aZZzXU9SPnlVidT91xl+eW+xvU=",
   "Source": "petsas2",
   "BasePath": "_content/petsas2",
   "Mode": "Default",
@@ -1445,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/134f81ce-b92a-4cbb-b750-0a6d17ef6a6c#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1i1i4azigy",
+      "Integrity": "GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1464,6 +1485,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/376da3c0-433d-435c-9c2d-d271e30be63b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmo9m5zau3",
+      "Integrity": "FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\63c4c56d-2fa9-4fb8-b7ca-a38ec731c67f.png",
@@ -1506,6 +1548,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\969d3d7d-9a89-437d-a0d7-f9d56b5d152a.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\ad4af4a9-c562-4223-b898-ebdffb9624eb.png",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/ad4af4a9-c562-4223-b898-ebdffb9624eb#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1i1i4azigy",
+      "Integrity": "GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\ad4af4a9-c562-4223-b898-ebdffb9624eb.png"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\b503343a-6b2e-464d-9ddf-5d9461ceabff.png",
@@ -1569,6 +1632,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\cd862d6c-fc2b-441b-b533-f138954a35b4.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/da6e1cc0-0b3c-4142-be86-28dcc2bd7e18#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1i1i4azigy",
+      "Integrity": "GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/e14cc022-3cf4-44f2-8693-4ae3a7f0771a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1i1i4azigy",
+      "Integrity": "GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\img\\about\\admin.jpg",
@@ -4936,6 +5041,88 @@
       ]
     },
     {
+      "Route": "images/products/134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.1i1i4azigy.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1i1i4azigy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
       "Route": "images/products/364e8212-1a75-47f1-8f13-b32d92dd7765.jpg",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg",
       "Selectors": [],
@@ -5010,6 +5197,88 @@
         {
           "Name": "label",
           "Value": "images/products/364e8212-1a75-47f1-8f13-b32d92dd7765.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/376da3c0-433d-435c-9c2d-d271e30be63b.kmo9m5zau3.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmo9m5zau3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/376da3c0-433d-435c-9c2d-d271e30be63b.jpg"
         },
         {
           "Name": "integrity",
@@ -5178,6 +5447,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ad4af4a9-c562-4223-b898-ebdffb9624eb.1i1i4azigy.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\ad4af4a9-c562-4223-b898-ebdffb9624eb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1i1i4azigy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/ad4af4a9-c562-4223-b898-ebdffb9624eb.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ad4af4a9-c562-4223-b898-ebdffb9624eb.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\ad4af4a9-c562-4223-b898-ebdffb9624eb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
         }
       ]
     },
@@ -5424,6 +5775,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Nglb7Iq4xRStOoH+FUCpCHPrJvzFZUZa7W+Ou6ALGI8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.1i1i4azigy.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:27:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1i1i4azigy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:27:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/e14cc022-3cf4-44f2-8693-4ae3a7f0771a.1i1i4azigy.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:36:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1i1i4azigy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\wwwroot\\images\\products\\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2566631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 18:36:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
         }
       ]
     },
@@ -7910,7 +8425,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Jul 2025 00:43:38 GMT"
+          "Value": "Wed, 16 Jul 2025 18:03:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7947,7 +8462,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Jul 2025 00:43:38 GMT"
+          "Value": "Wed, 16 Jul 2025 18:03:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7984,7 +8499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Jul 2025 00:43:38 GMT"
+          "Value": "Wed, 16 Jul 2025 18:03:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8029,7 +8544,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Jul 2025 00:43:38 GMT"
+          "Value": "Wed, 16 Jul 2025 18:03:56 GMT"
         },
         {
           "Name": "Cache-Control",
