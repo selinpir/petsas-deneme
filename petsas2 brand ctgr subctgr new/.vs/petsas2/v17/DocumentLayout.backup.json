@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Data\\Migrations\\20250717155254_FiyatlandirmaAgain2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:petsas2\\Data\\Migrations\\20250717155254_FiyatlandirmaAgain2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\subcategory\\subcategoryindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\subcategory\\subcategoryindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\subcategory\\subcategoryedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\subcategory\\subcategoryedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\models\\pricing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\models\\pricing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\product\\productpricing.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\product\\productpricing.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\product\\stock\\stockalert.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\product\\stock\\stockalert.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\product\\productcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\product\\productcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\areas\\subcategory\\subcategorycreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\subcategory\\subcategorycreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,127 +21,61 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 30,
+          "DockedWidth": 124,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250717155254_FiyatlandirmaAgain2.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Data\\Migrations\\20250717155254_FiyatlandirmaAgain2.cs",
-              "RelativeDocumentMoniker": "petsas2\\Data\\Migrations\\20250717155254_FiyatlandirmaAgain2.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Data\\Migrations\\20250717155254_FiyatlandirmaAgain2.cs",
-              "RelativeToolTip": "petsas2\\Data\\Migrations\\20250717155254_FiyatlandirmaAgain2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T15:52:54.421Z",
+              "Title": "SubCategoryIndex.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\SubCategory\\SubCategoryIndex.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\SubCategory\\SubCategoryIndex.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\SubCategory\\SubCategoryIndex.razor",
+              "RelativeToolTip": "petsas2\\Areas\\SubCategory\\SubCategoryIndex.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T23:17:15.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "petsas2\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "petsas2\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA4wBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T14:59:47.455Z",
+              "Title": "SubCategoryEdit.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "RelativeToolTip": "petsas2\\Areas\\SubCategory\\SubCategoryEdit.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T23:16:55.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Pricing.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Models\\Pricing.cs",
-              "RelativeDocumentMoniker": "petsas2\\Models\\Pricing.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Models\\Pricing.cs",
-              "RelativeToolTip": "petsas2\\Models\\Pricing.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T13:36:56.871Z",
+              "Title": "SubCategoryCreate.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "RelativeToolTip": "petsas2\\Areas\\SubCategory\\SubCategoryCreate.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T23:16:23.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductPricing.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Product\\ProductPricing.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Product\\ProductPricing.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Product\\ProductPricing.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Product\\ProductPricing.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-17T12:06:11.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminDashboard.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Admin\\AdminDashboard.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-17T12:53:10.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductCreate.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Product\\ProductCreate.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Product\\ProductCreate.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Product\\ProductCreate.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Product\\ProductCreate.razor",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAF4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-17T12:04:48.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StockAlert.razor",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Product\\Stock\\StockAlert.razor",
-              "RelativeDocumentMoniker": "petsas2\\Areas\\Product\\Stock\\StockAlert.razor",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Areas\\Product\\Stock\\StockAlert.razor",
-              "RelativeToolTip": "petsas2\\Areas\\Product\\Stock\\StockAlert.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-16T19:25:45.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Services\\Interface\\IProductService.cs",
-              "RelativeDocumentMoniker": "petsas2\\Services\\Interface\\IProductService.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Services\\Interface\\IProductService.cs",
-              "RelativeToolTip": "petsas2\\Services\\Interface\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T21:13:50.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "petsas2\\Services\\ProductService.cs",
-              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 brand ctgr subctgr new\\petsas2\\Services\\ProductService.cs",
-              "RelativeToolTip": "petsas2\\Services\\ProductService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAwwFkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T21:13:55.522Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

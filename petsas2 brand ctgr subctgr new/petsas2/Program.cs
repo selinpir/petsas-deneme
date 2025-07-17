@@ -35,7 +35,8 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
 //Product serivisi
 builder.Services.AddScoped<IProductService, ProductService>();
-
+//fiyatlandırma pricing servisi
+builder.Services.AddScoped<IPricingService, PricingService>();
 //
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();

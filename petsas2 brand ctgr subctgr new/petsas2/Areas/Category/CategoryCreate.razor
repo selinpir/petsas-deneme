@@ -8,13 +8,22 @@
 @inject MudBlazor.ISnackbar Snackbar
 @inject NavigationManager Navigation
 
-
-<MudText Typo="Typo.h5">Yeni Kategori Ekle</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 <MudTextField @bind-Value="newCategoryName" Label="Kategori Adı" Required="true" Immediate="true" />
 <MudButton Color="Color.Primary" OnClick="SaveCategory" Disabled="string.IsNullOrWhiteSpace(newCategoryName)">Kaydet</MudButton>
 
 @code {
+    public string ReadOnly { get; set; } = "Yeni Kategori Ekle";
+
     private string newCategoryName = "";
     private List<Category> existingCategory = new();
 

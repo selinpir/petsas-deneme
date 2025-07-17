@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using petsas2.Data;
 
@@ -11,9 +12,11 @@ using petsas2.Data;
 namespace petsas2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250717214646_PricingUpdate")]
+    partial class PricingUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -280,8 +283,7 @@ namespace petsas2.Migrations
                         .HasPrecision(5, 4)
                         .HasColumnType("decimal(5,4)");
 
-                    b.Property<decimal?>("KdvOrani")
-                        .IsRequired()
+                    b.Property<decimal>("KdvOrani")
                         .HasPrecision(5, 4)
                         .HasColumnType("decimal(5,4)");
 

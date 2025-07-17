@@ -12,7 +12,16 @@
 @inject IBrandService BrandService
 @inject NavigationManager Navigation
 
-<MudText Typo="Typo.h5">Marka Güncelle </MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
 
 @if (brand == null)
 {
@@ -31,6 +40,8 @@ else
 }
 
 @code {
+    public string ReadOnly { get; set; } = "Marka Düzenle";
+
     [Parameter]
     public int id { get; set; }
 

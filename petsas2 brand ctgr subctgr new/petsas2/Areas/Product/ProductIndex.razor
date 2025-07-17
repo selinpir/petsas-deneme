@@ -7,12 +7,22 @@
 @using petsas2.Models
 @using petsas2.Services.Interface
 @inject IProductService ProductService
+@inject IPricingService PricingService
 @inject ICategoryService CategoryService
 @inject ISubCategoryService SubCategoryService
 @inject IDialogService DialogService
 @inject NavigationManager Navigation
 
-<MudText Typo="Typo.h5">Ürünler</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
 @* <MudButton Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/product/ProductCreate"))">
     Yeni Ürün
 </MudButton> *@
@@ -49,7 +59,8 @@
         <MudTh>Beden</MudTh>
         <MudTh>Malzeme</MudTh>
         <MudTh>İşlemler</MudTh>
-        <MudTh>Fiyatlandırma</MudTh>
+        <MudTh>Fiyat</MudTh>
+     
 
     </HeaderContent>
 
@@ -85,9 +96,14 @@
 
 
         <MudTd>
+            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" Class="ms-2"
+                       OnClick="@(() => Navigation.NavigateTo($"/product/ProductPricing/{p.Id}"))">
+                Fiyatlandır
+            </MudButton>
+
             <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Warning"
-                       OnClick="@(() => Navigation.NavigateTo($"/product/ProductEdit/{p.Id}"))">
-                Düzenle
+                       OnClick="@(() => Navigation.NavigateTo($"/stok/StokAlert/{p.Id}"))">
+                Stok Ekle
             </MudButton>
 
             <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" Class="ms-2"
@@ -95,27 +111,25 @@
                 Sil
             </MudButton>
         </MudTd>
+      @*   c-> para birimine dönüştür *@
+        <MudTd> @(currentPrices[p.Id]?.BrutFiyat.ToString("C") ?? "-")</MudTd>
 
-
-        <MudTd>
-            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" Class="ms-2"
-                       OnClick="@(() => Navigation.NavigateTo($"/product/ProductPricing/{p.Id}"))">
-                Fiyatlandır
-            </MudButton>
-        </MudTd>
-
+       
     </RowTemplate>
 </MudTable>
 
 
 @code {
-    // public int StockId { get; set; }
+    public string ReadOnly { get; set; } = "Ürün Listele";
     List<Product>? products;
     private string _searchString = "";
+    Dictionary<int, Pricing?> currentPrices = new();
 
     protected override async Task OnInitializedAsync()
     {
         products = await ProductService.GetAllAsync();
+        foreach (var p in products)
+            currentPrices[p.Id] = await PricingService.GetCurrentAsync(p.Id);
 
     }
 

@@ -10,13 +10,24 @@
 @inject MudBlazor.ISnackbar Snackbar
 @inject NavigationManager Navigation
 
-<MudText Typo="Typo.h5">Yeni Marka Ekle</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 <MudTextField @bind-Value="newBrandName" Label="Marka Adı" Required="true" Immediate="true" />
 <MudButton Color="Color.Primary" OnClick="SaveBrand" Disabled="string.IsNullOrWhiteSpace(newBrandName)">Kaydet</MudButton>
 
 @code {
+    public string ReadOnly { get; set; } = "Yeni Marka Ekle";
+
     private string newBrandName = "";
+
     private List<Brand> existingBrands = new();
 
     protected override async Task OnInitializedAsync()

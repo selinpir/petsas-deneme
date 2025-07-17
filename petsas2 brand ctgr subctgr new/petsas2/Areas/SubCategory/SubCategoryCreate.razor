@@ -11,7 +11,15 @@
 @inject ISnackbar Snackbar
 @inject NavigationManager Navigation
 
-<MudText Typo="Typo.h5">Yeni Alt Kategori Ekle</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 <MudPaper Class="p-4 mx-auto" Style="max-width:600px">
     <MudForm>
@@ -49,6 +57,8 @@
 </MudPaper>
 
 @code {
+
+    public string ReadOnly { get; set; } = "Yeni Alt Kategori Ekle";
     // Form alanları
     private string newSubCategoryName = "";
     private int? selectedCategoryId;

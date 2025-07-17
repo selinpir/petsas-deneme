@@ -15,7 +15,15 @@
 @inject NavigationManager Navigation
 @inject IDialogService DialogService
 
-<MudText Typo="Typo.h5">Kategori Tablosu</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
            OnClick="@( () => OpenAddCategoryPage() )">
@@ -73,6 +81,7 @@ else
 </MudStack>
 
 @code {
+    public string ReadOnly { get; set; } = "Kategori Tablosu";
     private List<Models.Category>? categories;
 
     protected override async Task OnInitializedAsync()

@@ -1,4 +1,6 @@
 ﻿@page "/stock/StockAlert"
+@page "/stok/StokAlert/{productId:int}"
+
 @attribute [Authorize(Roles = "Admin,Supplier")]
 
 @using Microsoft.AspNetCore.Authorization
@@ -10,7 +12,15 @@
 @inject ISnackbar Snackbar
 @inject NavigationManager NavigationManager
 
-<MudText Typo="Typo.h5" Class="mb-4">Kritik Stok Uyarıları</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 <MudTable Items="@alerts" Hover="true" Striped="true" Bordered="true">
     <HeaderContent>
@@ -20,6 +30,8 @@
         <MudTh>Min Stok</MudTh>
         <MudTh width="200px">Stok Ekle</MudTh>
     </HeaderContent>
+
+  @*   urun Id yerine barkod olmalıydı *@
 
     <RowTemplate Context="context">
         <MudTd DataLabel="Ürün Id">@context.ProductId</MudTd>
@@ -52,8 +64,11 @@
 
 
 @code {
+    public string ReadOnly { get; set; } = "Kritik Stok Uyarıları";
     //listeyi tutacak
     private List<StockAlertDto> alerts = new();
+    [Parameter]
+    public int productId { get; set; }
 
     //her ürün için eklenen miktarı tutan sözlük
     private Dictionary<int, int> addAmounts = new();

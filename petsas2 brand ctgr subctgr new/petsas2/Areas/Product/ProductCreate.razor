@@ -13,13 +13,25 @@
 @inject IBrandService BrandService
 @inject ICategoryService CategoryService
 @inject ISubCategoryService SubCategoryService
+@inject IPricingService PricingService
+
 @inject NavigationManager Nav
 @inject ISnackbar Snackbar
 @inject IWebHostEnvironment Env
 
-<MudPaper Class="p-4 mx-auto" Style="max-width:600px">
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
-    <MudText Typo="Typo.h5">Yeni Ürün Ekle</MudText>
+<MudPaper Class="p-4 mx-auto" Style="max-width:600px">
+    @*ürün alanı*@
+
 
     <MudForm @ref="form">
         @* referans *@
@@ -98,9 +110,11 @@
         @*   <MudTextField @bind-Value="product.ExpirationDate" Label="Son Kullanma Tarihi" /> *@
 
         <MudDatePicker T="DateTime?" Label="Son Kullanma Tarihi"
-                       @bind-Date="product.ExpirationDate"                     
+                       @bind-Date="product.ExpirationDate"
                        MinDate="DateTime.Today"
-                       DateFormat="dd.MM.yyyy" />
+                       DateFormat="dd.MM.yyyy" 
+                       Clearable="true" />
+                       @*tarihi olmayan ürünlerde clearable ile tarih girme zorunlu degil bos geç*@
 
         @*Renk *@
         <MudTextField @bind-Value="product.Color" Label="Renk" />
@@ -115,8 +129,26 @@
         <MudTextField @bind-Value="product.Dimensions" Label="Beden" />
 
         @*Materyal *@
-        <MudTextField @bind-Value="product.Material" Label="Materyal" />
+        <MudTextField @bind-Value="product.Material" Label="Malzeme" />
 
+        <MudDivider Class="my-4" />
+
+        @*fiyat alanı*@
+        <MudTextField T="decimal"
+                      @bind-Value="pricing.NetFiyat"
+                      Label="Net Fiyat"
+                      Required="true" />
+
+        <MudTextField T="decimal?"
+                      @bind-Value="pricing.IndirimOrani"
+                      Label="İndirim Oranı"
+                      Placeholder="0,10 = %10 (virgül kullanınız)" />
+
+        <MudTextField T="decimal?"
+                      @bind-Value="pricing.KdvOrani"
+                      Label="KDV Oranı"                     
+                      Placeholder="0,18 = %18 (virgül kullanınız) "
+                      Required="true" />
 
 
         <div class="mt-4 d-flex gap-2">
@@ -127,8 +159,13 @@
 </MudPaper>
 
 @code {
+    public string ReadOnly { get; set; } = "Yeni Ürün Ekle";
+
     MudForm? form;
+
     Product product = new();
+    private Pricing pricing = new();
+
     List<Category> categories = new();
     List<SubCategory> allSubcategories = new();
     List<SubCategory> filteredSubcategories = new();
@@ -147,7 +184,6 @@
             FilterSubcategories();
         }
     }
-
 
     protected override async Task OnInitializedAsync()
     {
@@ -178,7 +214,7 @@
     //   new[] { ".jpg", ".jpeg", ".png" };
 
     // kaydet
-    async Task Save()
+    private async Task Save()
     {
         await form!.Validate();
         if (!form.IsValid)
@@ -205,7 +241,16 @@
 
         // ürünü ekle
         await ProductService.AddAsync(product);
+
+
+
+        //Ürün ID geldikten sonra pricing.ProductId ata
+        pricing.ProductId = product.Id;
+        //İlk fiyat kaydını bırak
+        await PricingService.UpsertPricingAsync(pricing);
+
         Snackbar.Add("Ürün eklendi", Severity.Success);
         Nav.NavigateTo("/product/ProductIndex");
+
     }
 } 

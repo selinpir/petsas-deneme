@@ -71,6 +71,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdFxTdG9ja1xTdG9ja0FsZXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2 brand ctgr subctgr new/petsas2/Areas/Product/Stock/Test.razor]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdFxTdG9ja1xUZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/masaustu_yedek/GITHUB/petsas-deneme/petsas2 brand ctgr subctgr new/petsas2/Areas/SubCategory/SubCategoryCreate.razor]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3ViQ2F0ZWdvcnlcU3ViQ2F0ZWdvcnlDcmVhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

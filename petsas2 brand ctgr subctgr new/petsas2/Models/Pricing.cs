@@ -18,7 +18,7 @@ namespace petsas2.Models
         public decimal NetFiyat { get; set; }
 
         public decimal? IndirimOrani { get; set; }
-        public decimal KdvOrani { get; set; }
+        public decimal? KdvOrani { get; set; }
         //eski fiyatları da tutabilmek icin scd slowly changing dimension yapısı varmıs o kullanıldı
         public DateTime FiyatBaslangicTarihi { get; set; }
         public DateTime? FiyatSonlanmaTarihi { get; set; }
@@ -36,7 +36,7 @@ namespace petsas2.Models
 
         [NotMapped]
         public decimal KdvTutari
-            => IndirimliFiyat * KdvOrani;
+            => IndirimliFiyat * (KdvOrani ?? 0m);
 
         [NotMapped]
         public decimal BrutFiyat

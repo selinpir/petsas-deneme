@@ -8,13 +8,32 @@
 @using petsas2.Models
 @using petsas2.Services.Interface
 @using static MudBlazor.Icons.Material
+@* @using Microsoft.JSInterop *@
 
 @inject ISubCategoryService SubCategoryService
 @inject ICategoryService CategoryService
 @inject NavigationManager Navigation
 @inject IDialogService DialogService
+@* @inject IJSRuntime JS *@
 
-<h3>Alt Kategori Tablosu</h3>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+    @* <MudItem xs="6" Class="px-0">
+        <MudButton Variant="Variant.Text"
+                   Color="Color.Secondary"
+                   FullWidth="true"
+                   OnClick="GoBack">
+            Geri Dön
+        </MudButton>
+    </MudItem> *@
+</MudGrid>
+
 
 <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
            OnClick="@( () => OpenAddSubCategoryPage() )">
@@ -73,6 +92,13 @@ else
 </MudStack>
 
 @code {
+    public string ReadOnly { get; set; } = "Alt Kategori Tablosu";
+
+    // private async Task GoBack()
+    // {
+    //     // Bir önceki sayfaya JS ile geri dön
+    //     await JS.InvokeVoidAsync("history.back");
+    // }
     private List<Models.SubCategory>? subs;
 
     protected override async Task OnInitializedAsync()

@@ -6,12 +6,15 @@
 @using MudBlazor
 @using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
 
-<h2 class="d-flex align-items-center">
-    <MudIcon Icon="@Icons.Material.Filled.AdminPanelSettings"
-             Size="Size.Small"
-             Class="me-1" />
-    Admin Paneli
-</h2>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 <CardsGrid Items="CardList" />
 @* SATIŞLAR İLE İLGİLİ GRAFİK VEYA ÜRÜNLERLE İLGİLİ KAÇ ÜRÜN KEDİ KÖPEK ÜRÜN FLN FİYAT DAĞILIMI FLN *@
@@ -21,6 +24,8 @@
 @* https://ertugrulakdag.medium.com/questpdf-ile-dinamik-fatura-pdfleri-olu%C5%9Fturma-creating-dynamic-invoice-pdfs-with-questpdf-67b34db82f32 *@
 
 @code {
+    public string ReadOnly { get; set; } = "Hesabım";
+
     private List<CardsGrid.CardInfo> CardList = new()
     {   // new() { Title = "Tedarikçiyi Yönet",  Icon="bi bi-person-vcard",      Link = "", ButtonText = "Git" },
         // new() { Title = "Kullanıcıları Yönet",  Icon="bi bi-person-hearts",      Link = "", ButtonText = "Git" }

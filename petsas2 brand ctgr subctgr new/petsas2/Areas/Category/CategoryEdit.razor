@@ -11,7 +11,15 @@
 @inject NavigationManager Navigation
 @inject ISnackbar Snackbar
 
-<MudText Typo="Typo.h5">Kategori Güncelle</MudText>
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
 
 @if (category == null)
 {
@@ -30,6 +38,7 @@ else
 }
 
 @code{
+    public string ReadOnly { get; set; } = "Kategori Güncelle";
     [Parameter]
     public int id { get; set; }
     private Category? category;
