@@ -62,8 +62,8 @@ namespace petsas2.Models
         //beden olarak
         public string? Size { get; set; }
         public string? Material { get; set; }
-        //
-
+        // fiyat/kargo geçmişi
+        public ICollection<Pricing> Pricings { get; set; } = new List<Pricing>();
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     //urunun markası- her urunun bir markası olur- bir markanın birden çok urunu olabilir
