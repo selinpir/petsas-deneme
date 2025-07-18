@@ -7,6 +7,7 @@ wwwroot\images\products\2525db4c-8aff-42f1-909d-a0956365ad65.png
 wwwroot\images\products\2b9dceb2-550c-4249-9807-ecd127df4e3c.png
 wwwroot\images\products\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg
 wwwroot\images\products\376da3c0-433d-435c-9c2d-d271e30be63b.jpg
+wwwroot\images\products\4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.png
 wwwroot\images\products\63c4c56d-2fa9-4fb8-b7ca-a38ec731c67f.png
 wwwroot\images\products\7bd5b7ba-fb86-41d5-9602-aff7474d9215.png
 wwwroot\images\products\969d3d7d-9a89-437d-a0d7-f9d56b5d152a.jpg
@@ -19,6 +20,7 @@ wwwroot\images\products\d31186a6-312a-40f8-af8d-46dcc9cb6cb4.png
 wwwroot\images\products\d7662169-6ce9-4006-bbeb-bb0e63a9176e.png
 wwwroot\images\products\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png
 wwwroot\images\products\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png
+wwwroot\images\products\e969ad45-dbd4-49b6-b9a2-ccf3833bba2e.png
 wwwroot\img\about\admin.jpg
 wwwroot\img\about\contact.jpg
 wwwroot\img\about\pet.jpg

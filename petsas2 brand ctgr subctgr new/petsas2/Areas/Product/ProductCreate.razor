@@ -31,12 +31,9 @@
 
 <MudPaper Class="p-4 mx-auto" Style="max-width:600px">
     @*ürün alanı*@
-
-
     <MudForm @ref="form">
-        @* referans *@
 
-     @*KATEGORİ SECİMİ *@
+         @*KATEGORİ SECİMİ *@
         <MudSelect T="int" Label="Kategori"
                    @bind-Value="SelectedCategoryId"
                    Required="true">
@@ -47,8 +44,9 @@
                 <MudSelectItem Value="@cat.Id">@cat.PetType</MudSelectItem>
             }
         </MudSelect>
+        @*KATEGORİ SECİMİ *@
 
-        @*alt kategori *@
+        @*ALT K *@
         <MudSelect T="int" Label="Alt Kategori"
                    @bind-Value="product.SubCategoryId"
                    Required="true">
@@ -58,12 +56,13 @@
                 <MudSelectItem Value="@(sc.Id)">@sc.ProductName</MudSelectItem>
             }
         </MudSelect>
-        @*ad *@
+        @*ALT K *@
+
         <MudTextField @bind-Value="product.Name" Label="Ürün Adı" Required="true" />
-        @*açıklama *@
+
         <MudTextField @bind-Value="product.Description" Label="Açıklama" />
 
-        @*marka *@
+        @*MARKA *@
         <MudSelect T="int"
                    Label="Marka"
                    @bind-Value="product.BrandId"
@@ -74,8 +73,9 @@
                 <MudSelectItem Value="@b.Id">@b.Name</MudSelectItem>
             }
         </MudSelect>
+        @*MARKA *@
 
-        @*görsel *@
+        @*GÖRSEL *@
         @*       sadece bir ürüne ait bir görsel olacak -başta öyle yapmışım :( *@
         <MudFileUpload T="IBrowserFile"
                        MaxFileSize="1024*1024*20"
@@ -92,6 +92,7 @@
         </MudFileUpload>
         @* GÖRSEL *@
 
+        @* STOK *@
         <MudNumericField T="int"
                          @bind-Value="product.Stock"
                          Label="Stok"
@@ -105,16 +106,15 @@
                          Required="true"
                          Min="0"
                          Validation="@((int v) => v<0? "Min Stok 0'dan küçük olamaz":null)" />
+        @* STOK *@
 
-        @*Son Kullanma Tarihi *@
-        @*   <MudTextField @bind-Value="product.ExpirationDate" Label="Son Kullanma Tarihi" /> *@
-
+        @*Son Kullanma Tarihi *@   
         <MudDatePicker T="DateTime?" Label="Son Kullanma Tarihi"
                        @bind-Date="product.ExpirationDate"
                        MinDate="DateTime.Today"
-                       DateFormat="dd.MM.yyyy" 
+                       DateFormat="dd.MM.yyyy"
                        Clearable="true" />
-                       @*tarihi olmayan ürünlerde clearable ile tarih girme zorunlu degil bos geç*@
+        @*tarihi olmayan ürünlerde clearable ile tarih girme zorunlu degil bos geç*@
 
         @*Renk *@
         <MudTextField @bind-Value="product.Color" Label="Renk" />
@@ -133,7 +133,7 @@
 
         <MudDivider Class="my-4" />
 
-        @*fiyat alanı*@
+        @*FİYAT ALANİ*@
         <MudTextField T="decimal"
                       @bind-Value="pricing.NetFiyat"
                       Label="Net Fiyat"
@@ -146,15 +146,16 @@
 
         <MudTextField T="decimal?"
                       @bind-Value="pricing.KdvOrani"
-                      Label="KDV Oranı"                     
+                      Label="KDV Oranı"
                       Placeholder="0,18 = %18 (virgül kullanınız) "
                       Required="true" />
-
+        @*FİYAT ALANİ*@
 
         <div class="mt-4 d-flex gap-2">
             <MudButton Color="Color.Secondary" OnClick="@(() => Nav.NavigateTo("/product/ProductIndex"))">İptal</MudButton>
             <MudButton Color="Color.Primary" OnClick="@Save">Kaydet</MudButton>
         </div>
+
     </MudForm>
 </MudPaper>
 
@@ -242,12 +243,10 @@
         // ürünü ekle
         await ProductService.AddAsync(product);
 
-
-
         //Ürün ID geldikten sonra pricing.ProductId ata
         pricing.ProductId = product.Id;
         //İlk fiyat kaydını bırak
-        await PricingService.UpsertPricingAsync(pricing);
+        await PricingService.AddPricing(pricing);
 
         Snackbar.Add("Ürün eklendi", Severity.Success);
         Nav.NavigateTo("/product/ProductIndex");

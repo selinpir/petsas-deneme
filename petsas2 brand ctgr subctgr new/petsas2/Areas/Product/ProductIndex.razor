@@ -1,4 +1,4 @@
-﻿@* ürün yönetimi-yeni ürün ekle-ürün düzenle-ürün sil *@
+﻿@* açıklama yazılmadı *@
 @page "/product/ProductIndex"
 @attribute [Authorize(Roles = "Admin,Supplier")]
 
@@ -6,11 +6,13 @@
 @using MudBlazor
 @using petsas2.Models
 @using petsas2.Services.Interface
+
 @inject IProductService ProductService
 @inject IPricingService PricingService
 @inject ICategoryService CategoryService
 @inject ISubCategoryService SubCategoryService
 @inject IDialogService DialogService
+
 @inject NavigationManager Navigation
 
 <MudGrid GutterSize="2">
@@ -23,16 +25,12 @@
     </MudItem>
 </MudGrid>
 
-@* <MudButton Color="Color.Primary" OnClick="@(() => Navigation.NavigateTo("/product/ProductCreate"))">
-    Yeni Ürün
-</MudButton> *@
-
 <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
            OnClick="@(() => Navigation.NavigateTo("/product/ProductCreate"))">
     Yeni Ürün Ekle
 </MudButton>
 
-@*  //ARAMA ÇUBUGU *@
+@*  ARAMA ÇUBUGU *@
 <MudTextField @bind-Value="_searchString"
               Placeholder="Search"
               Adornment="Adornment.Start"
@@ -40,10 +38,12 @@
               AdornmentIcon="@Icons.Material.Filled.Search"
               IconSize="Size.Medium"
               Class="mt-0" />
+@*  ARAMA ÇUBUGU *@
 
 <MudTable Items="@products" Filter="_quickFilter" Hover="true" Striped="true" Bordered="true">
-
+   @*  üst başlık *@
     <HeaderContent>
+        <MudTh>İşlemler</MudTh>
         <MudTh>Ad</MudTh>
         <MudTh>Barkod</MudTh>
         <MudTh>Marka</MudTh>
@@ -52,23 +52,45 @@
         <MudTh>Görsel</MudTh>
         <MudTh>Stok</MudTh>
         <MudTh>Min Stok</MudTh>
+        <MudTh>Fiyat</MudTh>
+
         <MudTh>Son Kullanma Tarihi</MudTh>
         <MudTh>Renk</MudTh>
         <MudTh>Ağırlık</MudTh>
         <MudTh>Ebat</MudTh>
         <MudTh>Beden</MudTh>
         <MudTh>Malzeme</MudTh>
-        <MudTh>İşlemler</MudTh>
-        <MudTh>Fiyat</MudTh>
-     
-
     </HeaderContent>
+      @*  üst başlık *@
 
+  @*   içerik  *@
     <RowTemplate Context="p">
+
+        <MudTd>
+            <MudIconButton Icon="@Icons.Material.Filled.Paid"
+                           Color="Color.Error"
+                           OnClick="@(()=>Navigation.NavigateTo($"/product/UpdateProductPricing/{p.Id}"))"
+                           ToolTip="Fiyatlandır" />
+
+            <MudIconButton Icon="@Icons.Material.Filled.AddShoppingCart"
+                           Color="Color.Warning"
+                           OnClick="@(()=>Navigation.NavigateTo($"/stock/AddStock/{p.Id}"))"
+                           ToolTip="Stok Ekle" />
+
+            <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                           Color="Color.Error"
+                           OnClick="@(()=>Delete(p.Id))"
+                           ToolTip="Ürünü Sil" />
+        </MudTd>
+
         <MudTd>@p.Name</MudTd>
+
         <MudTd>@p.Barcode</MudTd>
+
         <MudTd>@p.Brand?.Name</MudTd>
+
         <MudTd DataLabel="Üst Kategori">@p.SubCategory.Category.PetType</MudTd>
+
         <MudTd>@p.SubCategory?.ProductName</MudTd>
 
         <MudTd>
@@ -86,43 +108,31 @@
 
         <MudTd> @p.MinStock</MudTd>
 
-        <MudTd>@p.ExpirationDate</MudTd>
-        <MudTd>@p.Color</MudTd>
-        <MudTd>@p.Weight</MudTd>
-        <MudTd>@p.Dimensions</MudTd>
-        <MudTd>@p.Size</MudTd>
-        <MudTd>@p.Material</MudTd>
-
-
-
-        <MudTd>
-            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" Class="ms-2"
-                       OnClick="@(() => Navigation.NavigateTo($"/product/ProductPricing/{p.Id}"))">
-                Fiyatlandır
-            </MudButton>
-
-            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Warning"
-                       OnClick="@(() => Navigation.NavigateTo($"/stok/StokAlert/{p.Id}"))">
-                Stok Ekle
-            </MudButton>
-
-            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" Class="ms-2"
-                       OnClick="@(() => Delete(p.Id))">
-                Sil
-            </MudButton>
-        </MudTd>
-      @*   c-> para birimine dönüştür *@
+        @*   c-> para birimine dönüştür *@
         <MudTd> @(currentPrices[p.Id]?.BrutFiyat.ToString("C") ?? "-")</MudTd>
 
-       
-    </RowTemplate>
-</MudTable>
+        <MudTd>@p.ExpirationDate</MudTd>
 
+        <MudTd>@p.Color</MudTd>
+
+        <MudTd>@p.Weight</MudTd>
+
+        <MudTd>@p.Dimensions</MudTd>
+
+        <MudTd>@p.Size</MudTd>
+
+        <MudTd>@p.Material</MudTd>
+    </RowTemplate>
+    @*   içerik  *@
+</MudTable>
 
 @code {
     public string ReadOnly { get; set; } = "Ürün Listele";
-    List<Product>? products;
     private string _searchString = "";
+
+    List<Product>? products;
+
+    //fiyat
     Dictionary<int, Pricing?> currentPrices = new();
 
     protected override async Task OnInitializedAsync()
@@ -130,7 +140,6 @@
         products = await ProductService.GetAllAsync();
         foreach (var p in products)
             currentPrices[p.Id] = await PricingService.GetCurrentAsync(p.Id);
-
     }
 
     string? GetStockStyle(Product p)
@@ -157,6 +166,7 @@
             StateHasChanged();
         }
     }
+
     //ARAMA ÇUBUGU
     private Func<Product, bool> _quickFilter => x =>
        {

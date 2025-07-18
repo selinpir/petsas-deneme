@@ -1,0 +1,136 @@
+﻿@page "/product/UpdateProductPricing/{productId:int}"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IProductService ProductService
+@inject IBrandService BrandService
+@inject ICategoryService CategoryService
+@inject ISubCategoryService SubCategoryService
+@inject IPricingService PricingService
+
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+@inject IWebHostEnvironment Env
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@if (product == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+
+    <MudPaper Class="pa-4">
+        <MudText Typo="Typo.h6">Ürün: @product.Name</MudText>
+
+        <MudText Typo="Typo.subtitle2" Class="mb-4">
+            Mevcut Brüt Fiyat: @current?.BrutFiyat.ToString("C")
+        </MudText>
+
+        <MudForm Model = "pricing" @ref = "form" OnValidSubmit = "SaveAsync" OnInvalidSubmit = "OnInvalidSubmit" >
+        <MudTextField T="decimal"
+                      Label="Net Fiyat"
+                      @bind-Value="pricing.NetFiyat"
+                      Variant="Variant.Outlined"
+                      Required="true" />
+
+        <MudTextField T="decimal?"
+                      Label="İndirim Oranı"
+                      @bind-Value="pricing.IndirimOrani"
+                      Variant="Variant.Outlined"
+                      Placeholder="0,10 = %10 (lütfen virgül kullanınız)" />
+
+        <MudTextField T="decimal?"
+                      Label="KDV Oranı"
+                      @bind-Value="pricing.KdvOrani"
+                      Variant="Variant.Outlined"
+                      Required="true"
+                      Placeholder="0,18 = %18 (lütfen virgül kullanınız)" />
+
+        <div class="mt-4 d-flex gap-2">
+       @*      <MudButton ButtonType="ButtonType.Submit"
+                       Variant="Variant.Filled"
+                       Color="Color.Success">
+                Güncelle
+            </MudButton> *@
+
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Success"
+                       OnClick="SaveAsync">
+                Güncelle
+            </MudButton>
+
+            <MudButton Variant="Variant.Text"
+                       Color="Color.Default"
+                       OnClick="Cancel">
+                Vazgeç
+            </MudButton>
+        </div>
+        </MudForm>
+    </MudPaper>
+
+}
+
+
+@code {
+    private string ReadOnly { get; set; } = "Ürün Fiyatını Güncelle";
+
+    [Parameter]
+    public int productId { get; set; }
+
+    //şuan null olabilir sonra eklenicek demekk ?
+    private Product? product;
+    private Pricing? current;
+    private Pricing pricing = new Pricing();
+    private MudForm? form;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // ürünü ve aktif fiyat kaydını yükle
+        product = await ProductService.GetByIdAsync(productId);
+        current = await PricingService.GetCurrentAsync(productId);
+
+        if (current != null)
+        {
+            // mevcut kaydı form modeline ata
+            pricing = current;
+        }
+        else
+        {
+            // Eğer hiç fiyat yoksa, yeni bir Pricing örneği
+            pricing = new Pricing { ProductId = productId };
+        }
+    }
+    private async Task SaveAsync()
+    {
+        // Sadece mevcut kaydı güncelleyelim
+        if (current != null)
+            await PricingService.UpdatePricingAsync(pricing);
+        else
+            // Hiç fiyat yoksa direkt ekleyelim
+            await PricingService.AddPricing(pricing);
+
+        Navigation.NavigateTo("/product/ProductIndex");
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/product/ProductIndex");
+    }
+
+}

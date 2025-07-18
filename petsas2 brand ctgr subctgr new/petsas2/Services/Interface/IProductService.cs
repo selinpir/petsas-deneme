@@ -1,4 +1,5 @@
-﻿using petsas2.Models;
+﻿//sayfa için gerekli yorumlar yazılmadı henüz---
+using petsas2.Models;
 
 namespace petsas2.Services.Interface
 {
@@ -11,7 +12,12 @@ namespace petsas2.Services.Interface
         Task SoftDeleteAsync(int id);
 
         //dto: data transfer object : veri aktarım nesnesi
-        Task<List<StockAlertDto>> GetStockAlertAsync();      
+        Task<List<StockAlertDto>> GetStockAlertAsync();    
+        
+        //kritik stok verenlere stok ekle
         Task AddStockAsync(int productId, int amount);
+
+        //normal bir ürüne stok ekle
+        Task AddNormStockAsync(int productId, int stock);
     }  
 }

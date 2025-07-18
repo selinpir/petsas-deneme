@@ -1,0 +1,76 @@
+﻿@* açıklama yazılmadı *@
+@page "/stock/AddStock/{productId:int}"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IProductService ProductService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@if (product == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+    <MudPaper Class="pa-4">
+        <MudText Typo="Typo.subtitle1">Ürün: @product.Name</MudText>
+
+        <MudNumericField T="int"
+                         @bind-Value="stokcToAdd"
+                         Label="Eklenecek Miktar"
+                         Variant="Variant.Outlined"
+                         Required="true"
+                         Min="1" />
+
+        <div class="mt-4 d-flex gap-2">
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Success"
+                       OnClick="AddNormStockAsync">
+                Kaydet
+            </MudButton>
+
+            <MudButton Variant="Variant.Text"
+                       Color="Color.Default"
+                       OnClick="Cancel">
+                Vazgeç
+            </MudButton>
+        </div>
+    </MudPaper>
+}
+
+@code {
+    public string ReadOnly { get; set; } = "Stok Ekle";
+
+    [Parameter]
+    public int productId { get; set; }
+    private Product? product;
+    private int stokcToAdd;
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await ProductService.GetByIdAsync(productId);
+    }
+
+    private async Task AddNormStockAsync()
+    {
+        await ProductService.AddNormStockAsync(productId, stokcToAdd);
+        Snackbar.Add($"{stokcToAdd} adet stok eklendi.", Severity.Success);
+        Navigation.NavigateTo("/product/ProductIndex");
+    }
+    private void Cancel() => Navigation.NavigateTo("/product/ProductIndex");
+}
