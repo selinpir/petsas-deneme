@@ -19,5 +19,7 @@ namespace petsas2.Services.Interface
 
         //normal bir ürüne stok ekle
         Task AddNormStockAsync(int productId, int stock);
+        //ürünleri tedarikçi için listele
+        Task<List<SPrdctListDto>> GetAllForSupplierAsync();
     }  
 }

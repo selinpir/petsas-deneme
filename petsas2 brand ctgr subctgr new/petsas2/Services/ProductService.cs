@@ -110,5 +110,21 @@ namespace petsas2.Services
             _context.Products.Update(p);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<SPrdctListDto>> GetAllForSupplierAsync()
+        {
+            return await _context.Products
+       .Select(p => new SPrdctListDto
+       {
+           ProductId = p.Id,
+           Barcode = (Guid)p.Barcode,
+           ProductName = p.Name,
+           Brand = p.Brand.Name,
+           ImageUrl = p.ImageUrl,
+           Stock = p.Stock,
+           MinStock = p.MinStock
+       })
+       .ToListAsync();
+        }
     }
 }

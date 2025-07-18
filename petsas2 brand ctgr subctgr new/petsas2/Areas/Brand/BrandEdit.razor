@@ -1,10 +1,10 @@
 ﻿@* marka adını güncelle- markanın isim değiştirmesi senaryosunda-soft delete gibi değil isim tamamen değişir her yerde *@
 
 @page "/Brand/BrandEdit/{id:int}"
-@using Microsoft.AspNetCore.Authorization
-@using petsas2.Services
 
-@attribute [Authorize(Roles = "Admin,Supplier")]
+@using petsas2.Services
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
 @using MudBlazor
 @using petsas2.Models
 @using petsas2.Services.Interface

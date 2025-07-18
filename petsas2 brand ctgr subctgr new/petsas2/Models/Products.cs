@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Humanizer;
+using Microsoft.EntityFrameworkCore;
+using MudBlazor;
 using System.Collections.Generic;
 
 namespace petsas2.Models
@@ -6,7 +8,8 @@ namespace petsas2.Models
     //brandManagement++
     //categoryManagement++
     //subcategoryManagement++
-    //productManagement+- 
+    //productManagement++
+    //stockAlertDto--
 
     //Category - SubCategory - Product 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -81,8 +84,21 @@ namespace petsas2.Models
     public class StockAlertDto
     {
         public int ProductId { get; set; }
+        public Guid Barcode { get; set; }
         public string ProductName { get; set; } = string.Empty;
         public int Stock { get; set; }
         public int MinStock { get; set; }
     }
+
+    public class SPrdctListDto
+    {
+        public int ProductId { get; set; }
+        public Guid Barcode { get; set; }
+        public string ProductName { get; set; } = string.Empty;
+        public string Brand { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
+        public int Stock { get; set; }
+        public int MinStock { get; set; }
+    }
+
 }

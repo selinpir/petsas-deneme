@@ -1,8 +1,9 @@
 ﻿@* alt kategorilerin yönetimi: sil-güncelle-yeni ekle *@
 
 @page "/subcategory/SubCategoryIndex"
+
+@attribute [Authorize(Roles = "Admin")]
 @using Microsoft.AspNetCore.Authorization
-@attribute [Authorize(Roles = "Admin,Supplier")]
 
 @using MudBlazor
 @using petsas2.Models

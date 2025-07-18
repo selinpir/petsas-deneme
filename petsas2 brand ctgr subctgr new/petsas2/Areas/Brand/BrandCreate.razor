@@ -3,6 +3,8 @@
 @* TAMAM CALISIYOR *@
 @* Yeni Marka Ekle *@
 @page "/Brand/BrandCreate"
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
 @using MudBlazor
 @using petsas2.Models
 @using petsas2.Services.Interface

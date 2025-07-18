@@ -1,4 +1,5 @@
 ﻿@* açıklama yazılmadı *@
+@* admin ve tedarikçide ortak*@
 @page "/stock/StockAlert"
 @attribute [Authorize(Roles = "Admin,Supplier")]
 
@@ -25,6 +26,7 @@
 
     <HeaderContent>
         <MudTh>Ürün Id</MudTh>
+        <MudTh>Ürün Barkod</MudTh>
         <MudTh>Ürün Adı</MudTh>
         <MudTh>Stok</MudTh>
         <MudTh>Min Stok</MudTh>
@@ -36,6 +38,8 @@
     <RowTemplate Context="context">
 
         <MudTd DataLabel="Ürün Id">@context.ProductId</MudTd>
+
+        <MudTd DataLabel="Ürün Barkod">@context.Barcode</MudTd>
 
         <MudTd DataLabel="Ürün Adı">@context.ProductName</MudTd>
 
@@ -64,7 +68,7 @@
 </MudTable>
 
 <MudButton Color="Color.Secondary" Class="mt-4"
-           OnClick="@(() => NavigationManager.NavigateTo("/product/ProductIndex"))">
+           OnClick="@(() => NavigationManager.NavigateTo(""))">
     Bitir
 </MudButton>
 

@@ -1,8 +1,9 @@
 ﻿@page "/subcategory/SubcategoryEdit/{id:int}"
-@using Microsoft.AspNetCore.Authorization
+
 @using petsas2.Services
 
-@attribute [Authorize(Roles = "Admin,Supplier")]
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
 @using MudBlazor
 @using petsas2.Models
 @using petsas2.Services.Interface

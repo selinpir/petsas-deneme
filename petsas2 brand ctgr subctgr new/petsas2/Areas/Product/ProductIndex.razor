@@ -1,6 +1,6 @@
 ﻿@* açıklama yazılmadı *@
 @page "/product/ProductIndex"
-@attribute [Authorize(Roles = "Admin,Supplier")]
+@attribute [Authorize(Roles = "Admin")]
 
 @using Microsoft.AspNetCore.Authorization
 @using MudBlazor
@@ -89,7 +89,7 @@
 
         <MudTd>@p.Brand?.Name</MudTd>
 
-        <MudTd DataLabel="Üst Kategori">@p.SubCategory.Category.PetType</MudTd>
+        <MudTd DataLabel="Üst Kategori">@p.SubCategory?.Category?.PetType</MudTd>
 
         <MudTd>@p.SubCategory?.ProductName</MudTd>
 
@@ -177,7 +177,7 @@
            if (x.Name?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
                return true;
            //kategori
-           if (x.SubCategory.Category.PetType.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
+           if (x.SubCategory?.Category?.PetType.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
                return true;
            //alt kategori
            if (x.SubCategory?.ProductName?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) == true)
