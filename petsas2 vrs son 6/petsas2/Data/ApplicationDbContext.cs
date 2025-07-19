@@ -69,7 +69,7 @@ namespace petsas2.Data
             //product-weight : agýrlýk decimal hata vermemesi icin
             modelBuilder.Entity<Product>()
             .Property(p => p.Weight)
-            .HasPrecision(5, 2);
+            .HasPrecision(8, 2);
             //-----------------------------------------------------------
             //decimal vs icin fiyatlandýrma 
             modelBuilder.Entity<Pricing>(entity =>

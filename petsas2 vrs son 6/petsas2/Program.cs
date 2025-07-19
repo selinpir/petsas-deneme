@@ -133,23 +133,7 @@ static async Task SeedIdentityDataAsync(IServiceProvider services)
             await userManager.AddToRoleAsync(supplier, "Supplier");
         }
     }
-    //user
-    var userEmail = "user@petsas.com";
-    var userPwd = "User1!";
-    if (await userManager.FindByEmailAsync(userEmail) == null)
-    {
-        var normalUser = new ApplicationUser
-        {
-            UserName = userEmail,
-            Email = userEmail,
-            EmailConfirmed = true
-        };
-        var result = await userManager.CreateAsync(normalUser, userPwd);
-        if (result.Succeeded)
-        {
-            await userManager.AddToRoleAsync(normalUser, "User");
-        }
-    }
+    
 }
 //seed bitis
 //KULLANICI ROLLERİ

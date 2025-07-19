@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t8t0V0eEKF4=",
+  "dgSpecHash": "DB1QJJ2dERQ=",
   "success": true,
-  "projectFilePath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 5\\petsas2\\petsas2.csproj",
+  "projectFilePath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\petsas2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\selin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\selin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

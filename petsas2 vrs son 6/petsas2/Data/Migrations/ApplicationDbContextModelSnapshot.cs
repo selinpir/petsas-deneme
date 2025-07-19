@@ -359,8 +359,8 @@ namespace petsas2.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal?>("Weight")
-                        .HasPrecision(5, 2)
-                        .HasColumnType("decimal(5,2)");
+                        .HasPrecision(8, 2)
+                        .HasColumnType("decimal(8,2)");
 
                     b.HasKey("Id");
 
