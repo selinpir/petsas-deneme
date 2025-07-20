@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using petsas2.Models;
 using System;
 
+
 namespace petsas2.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
@@ -22,6 +23,8 @@ namespace petsas2.Data
         public DbSet<Brand> Brands { get; set; }
         //fiyatlandýrma -
         public DbSet<Pricing> Pricings { get; set; }
+        public DbSet<SepetDetay> Sepets { get; set; }
+        public DbSet<KullaniciSepet> KullaniciSepets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -111,6 +114,10 @@ namespace petsas2.Data
                  .HasForeignKey(p => p.ProductId)
                  .OnDelete(DeleteBehavior.Cascade);
             });
+            //-----------------------------------------------------------
+            modelBuilder.Entity<SepetDetay>()
+              .Property(s => s.BrutFiyat)
+              .HasPrecision(8, 2);
             //-----------------------------------------------------------
         }
     }

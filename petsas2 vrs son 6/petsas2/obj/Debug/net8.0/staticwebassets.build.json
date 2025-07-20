@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TOJJiDrmsV95xeHzjVVZoJcPA4kvYy+akKsQSsj01w8=",
+  "Hash": "XlmoNcH8B4SDjuAvuyr2HIsZNPWdvDW0kicdU7Xy2Q8=",
   "Source": "petsas2",
   "BasePath": "_content/petsas2",
   "Mode": "Default",
@@ -1445,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/0c7eaf53-5a96-4985-8251-e6b1eb01c35e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rx3v1dzbfs",
+      "Integrity": "UfUq3CSRfXbzIY3lpT8DFxEQohH3PO8DwxpxgqUHtyQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1529,6 +1550,27 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\2525db4c-8aff-42f1-909d-a0956365ad65.png"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\27a19529-acd4-4433-824a-e2071293ddae.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/27a19529-acd4-4433-824a-e2071293ddae#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "879i59hodv",
+      "Integrity": "7AeExabP0+Oh5mVdJ9SbtrSr1l6xFKKtTmBOANQFQG0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\27a19529-acd4-4433-824a-e2071293ddae.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\2b9dceb2-550c-4249-9807-ecd127df4e3c.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1571,6 +1613,27 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/366eb6f4-098b-40db-8cdd-22b3736b8be3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ovs6x36akn",
+      "Integrity": "tGR7wSiaKzFja0+C+vDiFJFYEsFQEAwu0Hsx1YoF5zc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1590,6 +1653,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/3add2809-0cb5-4e4e-a8e5-4b21533bec39#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3qycfn26jr",
+      "Integrity": "Nfo+3mm6LSG5fhxX1qKVouEjLOJA2AuUbxh9HMLCCxM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\3fb97bc9-3499-4a4e-9684-891401e3f746.jpg",
@@ -1613,6 +1697,48 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\3fb97bc9-3499-4a4e-9684-891401e3f746.jpg"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\49baa0b1-acea-4f90-b492-a84b7278724c.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/49baa0b1-acea-4f90-b492-a84b7278724c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aeh8p0cbvp",
+      "Integrity": "7ryk5k23p2nc6jJkhOKXfMmfz5SuKVPO5EhqQeSKLSI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\49baa0b1-acea-4f90-b492-a84b7278724c.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/4cc08f80-6fc6-43b2-b1d4-142e9e064078#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yld8te7gd6",
+      "Integrity": "5pt0wsJV0bQbDR7LUoBohPKzjuSeRG7nKsSfrm2BwRE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1632,6 +1758,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\5cb5414c-85de-4d3c-9279-57bd7741c269.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/5cb5414c-85de-4d3c-9279-57bd7741c269#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fq1lbk6j3g",
+      "Integrity": "B9fJx+LYFoYZd8CwY/TkunRNGnNXKr3E/scpGlXwU/E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\5cb5414c-85de-4d3c-9279-57bd7741c269.jpg"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\63c4c56d-2fa9-4fb8-b7ca-a38ec731c67f.png",
@@ -1739,6 +1886,27 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\84aac652-4c66-46e9-827d-873daf2e1ee3.png"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vn3mvabk5i",
+      "Integrity": "9axLstNcFMT7jf01Ob8Cg3W6auL3awJPiKcuh/JkQIc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\90655253-b308-406a-9390-e579899da404.jpg",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1779,6 +1947,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\908bc039-87ba-46a3-9859-978a3351a23f.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\9127181c-be80-47de-807e-c9798b684f6f.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/9127181c-be80-47de-807e-c9798b684f6f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "glir6lopfz",
+      "Integrity": "5JC1Wag6Gw5kC0Y5DFcZXnEz61bY/LZzEHUBzn3C60k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\9127181c-be80-47de-807e-c9798b684f6f.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\961afac9-3ca6-46ab-81e8-0ace754208f4.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/961afac9-3ca6-46ab-81e8-0ace754208f4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l6mdumnyhq",
+      "Integrity": "jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\961afac9-3ca6-46ab-81e8-0ace754208f4.jpg"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\969d3d7d-9a89-437d-a0d7-f9d56b5d152a.jpg",
@@ -1823,6 +2033,27 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\97043aec-3c7d-45f6-bf84-842dcd9af00e.png"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/aabdcf01-2809-42ce-ab8d-34958a2bebd8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ue3ufpzlvq",
+      "Integrity": "xk+RTM28W3pdKAhEQ++Ddri0AtwPe5MJvybY6I86fOk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\ad4af4a9-c562-4223-b898-ebdffb9624eb.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -1863,6 +2094,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\b503343a-6b2e-464d-9ddf-5d9461ceabff.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\bbe62782-31f1-4018-a05e-8a5913da15fb.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/bbe62782-31f1-4018-a05e-8a5913da15fb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wrsxdi7xmb",
+      "Integrity": "7HSWuM/eM41yLX3xgaMMUFXHv7GqfxE+JnGAZ99HSIg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\bbe62782-31f1-4018-a05e-8a5913da15fb.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/befa1f77-5315-4e31-888b-a6d4ec6ce1bd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "781jad9126",
+      "Integrity": "9/oXN660VjVAmCD50rqZ0PjW3dgRJkFsRbf+cC8E6x4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\c1bb4823-bc81-408e-8074-14f2ce202b0f.jpg",
@@ -1949,6 +2222,48 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\c809f9ad-93e7-4e5e-847d-9368fa3283b1.jpg"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ntjya9ym4f",
+      "Integrity": "JbnttDuA1ZPu22whzRbEcC+ahEgKRQM99LLl+C61BH8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/cd1689c9-993f-4111-9eb0-fb30c6be8675#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ddh3h9a3zn",
+      "Integrity": "T7DZE1/dVqenDk9sy17eVspmuNBZqVGTefc6aHU9oOY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\cd862d6c-fc2b-441b-b533-f138954a35b4.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -2012,6 +2327,27 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\d7662169-6ce9-4006-bbeb-bb0e63a9176e.png"
     },
     {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/d7ea3f6e-be08-425a-9c5c-775d8304a155#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c5auhdy42t",
+      "Integrity": "IEzN5cqI8dGBiAjglobcv2QMqU4WtiG26s31DulGpq4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg"
+    },
+    {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png",
       "SourceId": "petsas2",
       "SourceType": "Discovered",
@@ -2052,6 +2388,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png"
+    },
+    {
+      "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\e2f6e333-f442-44e7-9308-7a32877b7ada.jpg",
+      "SourceId": "petsas2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\",
+      "BasePath": "_content/petsas2",
+      "RelativePath": "images/products/e2f6e333-f442-44e7-9308-7a32877b7ada#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l6mdumnyhq",
+      "Integrity": "jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\e2f6e333-f442-44e7-9308-7a32877b7ada.jpg"
     },
     {
       "Identity": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\e969ad45-dbd4-49b6-b9a2-ccf3833bba2e.png",
@@ -5461,6 +5818,88 @@
       ]
     },
     {
+      "Route": "images/products/0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UfUq3CSRfXbzIY3lpT8DFxEQohH3PO8DwxpxgqUHtyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UfUq3CSRfXbzIY3lpT8DFxEQohH3PO8DwxpxgqUHtyQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/0c7eaf53-5a96-4985-8251-e6b1eb01c35e.rx3v1dzbfs.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UfUq3CSRfXbzIY3lpT8DFxEQohH3PO8DwxpxgqUHtyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rx3v1dzbfs"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UfUq3CSRfXbzIY3lpT8DFxEQohH3PO8DwxpxgqUHtyQ="
+        }
+      ]
+    },
+    {
       "Route": "images/products/134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.1i1i4azigy.png",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png",
       "Selectors": [],
@@ -5789,6 +6228,88 @@
       ]
     },
     {
+      "Route": "images/products/27a19529-acd4-4433-824a-e2071293ddae.879i59hodv.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\27a19529-acd4-4433-824a-e2071293ddae.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39562"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7AeExabP0+Oh5mVdJ9SbtrSr1l6xFKKtTmBOANQFQG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "879i59hodv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/27a19529-acd4-4433-824a-e2071293ddae.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7AeExabP0+Oh5mVdJ9SbtrSr1l6xFKKtTmBOANQFQG0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/27a19529-acd4-4433-824a-e2071293ddae.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\27a19529-acd4-4433-824a-e2071293ddae.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39562"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7AeExabP0+Oh5mVdJ9SbtrSr1l6xFKKtTmBOANQFQG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:04:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7AeExabP0+Oh5mVdJ9SbtrSr1l6xFKKtTmBOANQFQG0="
+        }
+      ]
+    },
+    {
       "Route": "images/products/2b9dceb2-550c-4249-9807-ecd127df4e3c.cnefruytfc.png",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\2b9dceb2-550c-4249-9807-ecd127df4e3c.png",
       "Selectors": [],
@@ -5953,6 +6474,88 @@
       ]
     },
     {
+      "Route": "images/products/366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tGR7wSiaKzFja0+C+vDiFJFYEsFQEAwu0Hsx1YoF5zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:30:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tGR7wSiaKzFja0+C+vDiFJFYEsFQEAwu0Hsx1YoF5zc="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/366eb6f4-098b-40db-8cdd-22b3736b8be3.ovs6x36akn.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tGR7wSiaKzFja0+C+vDiFJFYEsFQEAwu0Hsx1YoF5zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:30:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovs6x36akn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tGR7wSiaKzFja0+C+vDiFJFYEsFQEAwu0Hsx1YoF5zc="
+        }
+      ]
+    },
+    {
       "Route": "images/products/376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\376da3c0-433d-435c-9c2d-d271e30be63b.jpg",
       "Selectors": [],
@@ -6031,6 +6634,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-FGH4islTyizfUBjtSAwBe4JfehhuIEtkCbsq0pw2qVQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3add2809-0cb5-4e4e-a8e5-4b21533bec39.3qycfn26jr.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29402"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nfo+3mm6LSG5fhxX1qKVouEjLOJA2AuUbxh9HMLCCxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:49:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3qycfn26jr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nfo+3mm6LSG5fhxX1qKVouEjLOJA2AuUbxh9HMLCCxM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29402"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nfo+3mm6LSG5fhxX1qKVouEjLOJA2AuUbxh9HMLCCxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:49:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nfo+3mm6LSG5fhxX1qKVouEjLOJA2AuUbxh9HMLCCxM="
         }
       ]
     },
@@ -6117,6 +6802,170 @@
       ]
     },
     {
+      "Route": "images/products/49baa0b1-acea-4f90-b492-a84b7278724c.aeh8p0cbvp.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\49baa0b1-acea-4f90-b492-a84b7278724c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ryk5k23p2nc6jJkhOKXfMmfz5SuKVPO5EhqQeSKLSI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:46:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aeh8p0cbvp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/49baa0b1-acea-4f90-b492-a84b7278724c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ryk5k23p2nc6jJkhOKXfMmfz5SuKVPO5EhqQeSKLSI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/49baa0b1-acea-4f90-b492-a84b7278724c.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\49baa0b1-acea-4f90-b492-a84b7278724c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ryk5k23p2nc6jJkhOKXfMmfz5SuKVPO5EhqQeSKLSI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:46:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ryk5k23p2nc6jJkhOKXfMmfz5SuKVPO5EhqQeSKLSI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9889"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5pt0wsJV0bQbDR7LUoBohPKzjuSeRG7nKsSfrm2BwRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:34:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5pt0wsJV0bQbDR7LUoBohPKzjuSeRG7nKsSfrm2BwRE="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/4cc08f80-6fc6-43b2-b1d4-142e9e064078.yld8te7gd6.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9889"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5pt0wsJV0bQbDR7LUoBohPKzjuSeRG7nKsSfrm2BwRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:34:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yld8te7gd6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5pt0wsJV0bQbDR7LUoBohPKzjuSeRG7nKsSfrm2BwRE="
+        }
+      ]
+    },
+    {
       "Route": "images/products/4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.cnefruytfc.png",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.png",
       "Selectors": [],
@@ -6195,6 +7044,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-6Ipa7PIaoKh2qxvv+/EUPyFzXo2wEExWCX9shfpixd0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/5cb5414c-85de-4d3c-9279-57bd7741c269.fq1lbk6j3g.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\5cb5414c-85de-4d3c-9279-57bd7741c269.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B9fJx+LYFoYZd8CwY/TkunRNGnNXKr3E/scpGlXwU/E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:07:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fq1lbk6j3g"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/5cb5414c-85de-4d3c-9279-57bd7741c269.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B9fJx+LYFoYZd8CwY/TkunRNGnNXKr3E/scpGlXwU/E="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/5cb5414c-85de-4d3c-9279-57bd7741c269.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\5cb5414c-85de-4d3c-9279-57bd7741c269.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B9fJx+LYFoYZd8CwY/TkunRNGnNXKr3E/scpGlXwU/E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:07:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B9fJx+LYFoYZd8CwY/TkunRNGnNXKr3E/scpGlXwU/E="
         }
       ]
     },
@@ -6609,6 +7540,88 @@
       ]
     },
     {
+      "Route": "images/products/8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9axLstNcFMT7jf01Ob8Cg3W6auL3awJPiKcuh/JkQIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:05:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9axLstNcFMT7jf01Ob8Cg3W6auL3awJPiKcuh/JkQIc="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.vn3mvabk5i.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18721"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9axLstNcFMT7jf01Ob8Cg3W6auL3awJPiKcuh/JkQIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:05:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vn3mvabk5i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9axLstNcFMT7jf01Ob8Cg3W6auL3awJPiKcuh/JkQIc="
+        }
+      ]
+    },
+    {
       "Route": "images/products/90655253-b308-406a-9390-e579899da404.781jad9126.jpg",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\90655253-b308-406a-9390-e579899da404.jpg",
       "Selectors": [],
@@ -6769,6 +7782,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-HTzNWwWAoM6IP9TbfaB0mEvlFEe1wK0ZrJlndB6X+xI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/9127181c-be80-47de-807e-c9798b684f6f.glir6lopfz.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\9127181c-be80-47de-807e-c9798b684f6f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5JC1Wag6Gw5kC0Y5DFcZXnEz61bY/LZzEHUBzn3C60k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:50:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "glir6lopfz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/9127181c-be80-47de-807e-c9798b684f6f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5JC1Wag6Gw5kC0Y5DFcZXnEz61bY/LZzEHUBzn3C60k="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/9127181c-be80-47de-807e-c9798b684f6f.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\9127181c-be80-47de-807e-c9798b684f6f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5JC1Wag6Gw5kC0Y5DFcZXnEz61bY/LZzEHUBzn3C60k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:50:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5JC1Wag6Gw5kC0Y5DFcZXnEz61bY/LZzEHUBzn3C60k="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/961afac9-3ca6-46ab-81e8-0ace754208f4.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\961afac9-3ca6-46ab-81e8-0ace754208f4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:40:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/961afac9-3ca6-46ab-81e8-0ace754208f4.l6mdumnyhq.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\961afac9-3ca6-46ab-81e8-0ace754208f4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:40:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l6mdumnyhq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/961afac9-3ca6-46ab-81e8-0ace754208f4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I="
         }
       ]
     },
@@ -6937,6 +8114,88 @@
       ]
     },
     {
+      "Route": "images/products/aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xk+RTM28W3pdKAhEQ++Ddri0AtwPe5MJvybY6I86fOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:35:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xk+RTM28W3pdKAhEQ++Ddri0AtwPe5MJvybY6I86fOk="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/aabdcf01-2809-42ce-ab8d-34958a2bebd8.ue3ufpzlvq.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xk+RTM28W3pdKAhEQ++Ddri0AtwPe5MJvybY6I86fOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:35:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ue3ufpzlvq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xk+RTM28W3pdKAhEQ++Ddri0AtwPe5MJvybY6I86fOk="
+        }
+      ]
+    },
+    {
       "Route": "images/products/ad4af4a9-c562-4223-b898-ebdffb9624eb.1i1i4azigy.png",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\ad4af4a9-c562-4223-b898-ebdffb9624eb.png",
       "Selectors": [],
@@ -7097,6 +8356,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Nglb7Iq4xRStOoH+FUCpCHPrJvzFZUZa7W+Ou6ALGI8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bbe62782-31f1-4018-a05e-8a5913da15fb.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\bbe62782-31f1-4018-a05e-8a5913da15fb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7HSWuM/eM41yLX3xgaMMUFXHv7GqfxE+JnGAZ99HSIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:42:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7HSWuM/eM41yLX3xgaMMUFXHv7GqfxE+JnGAZ99HSIg="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bbe62782-31f1-4018-a05e-8a5913da15fb.wrsxdi7xmb.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\bbe62782-31f1-4018-a05e-8a5913da15fb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7HSWuM/eM41yLX3xgaMMUFXHv7GqfxE+JnGAZ99HSIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:42:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wrsxdi7xmb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/bbe62782-31f1-4018-a05e-8a5913da15fb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7HSWuM/eM41yLX3xgaMMUFXHv7GqfxE+JnGAZ99HSIg="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/befa1f77-5315-4e31-888b-a6d4ec6ce1bd.781jad9126.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/oXN660VjVAmCD50rqZ0PjW3dgRJkFsRbf+cC8E6x4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:28:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "781jad9126"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/oXN660VjVAmCD50rqZ0PjW3dgRJkFsRbf+cC8E6x4="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/oXN660VjVAmCD50rqZ0PjW3dgRJkFsRbf+cC8E6x4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:28:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/oXN660VjVAmCD50rqZ0PjW3dgRJkFsRbf+cC8E6x4="
         }
       ]
     },
@@ -7429,6 +8852,170 @@
       ]
     },
     {
+      "Route": "images/products/c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbnttDuA1ZPu22whzRbEcC+ahEgKRQM99LLl+C61BH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:08:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbnttDuA1ZPu22whzRbEcC+ahEgKRQM99LLl+C61BH8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.ntjya9ym4f.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbnttDuA1ZPu22whzRbEcC+ahEgKRQM99LLl+C61BH8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 23:08:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ntjya9ym4f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbnttDuA1ZPu22whzRbEcC+ahEgKRQM99LLl+C61BH8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/cd1689c9-993f-4111-9eb0-fb30c6be8675.ddh3h9a3zn.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T7DZE1/dVqenDk9sy17eVspmuNBZqVGTefc6aHU9oOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:45:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ddh3h9a3zn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T7DZE1/dVqenDk9sy17eVspmuNBZqVGTefc6aHU9oOY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T7DZE1/dVqenDk9sy17eVspmuNBZqVGTefc6aHU9oOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:45:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T7DZE1/dVqenDk9sy17eVspmuNBZqVGTefc6aHU9oOY="
+        }
+      ]
+    },
+    {
       "Route": "images/products/cd862d6c-fc2b-441b-b533-f138954a35b4.png",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\cd862d6c-fc2b-441b-b533-f138954a35b4.png",
       "Selectors": [],
@@ -7675,6 +9262,88 @@
       ]
     },
     {
+      "Route": "images/products/d7ea3f6e-be08-425a-9c5c-775d8304a155.c5auhdy42t.jpeg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEzN5cqI8dGBiAjglobcv2QMqU4WtiG26s31DulGpq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:44:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c5auhdy42t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEzN5cqI8dGBiAjglobcv2QMqU4WtiG26s31DulGpq4="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEzN5cqI8dGBiAjglobcv2QMqU4WtiG26s31DulGpq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:44:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEzN5cqI8dGBiAjglobcv2QMqU4WtiG26s31DulGpq4="
+        }
+      ]
+    },
+    {
       "Route": "images/products/da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.1i1i4azigy.png",
       "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png",
       "Selectors": [],
@@ -7835,6 +9504,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-GXRF2iFd750Li3IqWm+kZmHnI6Sgfjt/qSNXocr/jSw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/e2f6e333-f442-44e7-9308-7a32877b7ada.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\e2f6e333-f442-44e7-9308-7a32877b7ada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:38:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/e2f6e333-f442-44e7-9308-7a32877b7ada.l6mdumnyhq.jpg",
+      "AssetFile": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs son 6\\petsas2\\wwwroot\\images\\products\\e2f6e333-f442-44e7-9308-7a32877b7ada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 22:38:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l6mdumnyhq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/e2f6e333-f442-44e7-9308-7a32877b7ada.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I="
         }
       ]
     },

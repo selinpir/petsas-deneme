@@ -72,6 +72,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rx3v1dzbfs</Fingerprint>
+      <Integrity>UfUq3CSRfXbzIY3lpT8DFxEQohH3PO8DwxpxgqUHtyQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\0c7eaf53-5a96-4985-8251-e6b1eb01c35e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\134f81ce-b92a-4cbb-b750-0a6d17ef6a6c.png'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -144,6 +162,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\2525db4c-8aff-42f1-909d-a0956365ad65.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\27a19529-acd4-4433-824a-e2071293ddae.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/27a19529-acd4-4433-824a-e2071293ddae.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>879i59hodv</Fingerprint>
+      <Integrity>7AeExabP0+Oh5mVdJ9SbtrSr1l6xFKKtTmBOANQFQG0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\27a19529-acd4-4433-824a-e2071293ddae.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\2b9dceb2-550c-4249-9807-ecd127df4e3c.png'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -180,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\364e8212-1a75-47f1-8f13-b32d92dd7765.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ovs6x36akn</Fingerprint>
+      <Integrity>tGR7wSiaKzFja0+C+vDiFJFYEsFQEAwu0Hsx1YoF5zc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\366eb6f4-098b-40db-8cdd-22b3736b8be3.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\376da3c0-433d-435c-9c2d-d271e30be63b.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -197,6 +251,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\376da3c0-433d-435c-9c2d-d271e30be63b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3qycfn26jr</Fingerprint>
+      <Integrity>Nfo+3mm6LSG5fhxX1qKVouEjLOJA2AuUbxh9HMLCCxM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3add2809-0cb5-4e4e-a8e5-4b21533bec39.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3fb97bc9-3499-4a4e-9684-891401e3f746.jpg'))">
       <SourceType>Package</SourceType>
@@ -216,6 +288,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3fb97bc9-3499-4a4e-9684-891401e3f746.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\49baa0b1-acea-4f90-b492-a84b7278724c.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/49baa0b1-acea-4f90-b492-a84b7278724c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aeh8p0cbvp</Fingerprint>
+      <Integrity>7ryk5k23p2nc6jJkhOKXfMmfz5SuKVPO5EhqQeSKLSI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\49baa0b1-acea-4f90-b492-a84b7278724c.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yld8te7gd6</Fingerprint>
+      <Integrity>5pt0wsJV0bQbDR7LUoBohPKzjuSeRG7nKsSfrm2BwRE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4cc08f80-6fc6-43b2-b1d4-142e9e064078.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.png'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -233,6 +341,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4d23e2d2-a5c1-4a72-b6b3-fd142c096c28.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\5cb5414c-85de-4d3c-9279-57bd7741c269.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/5cb5414c-85de-4d3c-9279-57bd7741c269.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fq1lbk6j3g</Fingerprint>
+      <Integrity>B9fJx+LYFoYZd8CwY/TkunRNGnNXKr3E/scpGlXwU/E=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\5cb5414c-85de-4d3c-9279-57bd7741c269.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\63c4c56d-2fa9-4fb8-b7ca-a38ec731c67f.png'))">
       <SourceType>Package</SourceType>
@@ -324,6 +450,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\84aac652-4c66-46e9-827d-873daf2e1ee3.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vn3mvabk5i</Fingerprint>
+      <Integrity>9axLstNcFMT7jf01Ob8Cg3W6auL3awJPiKcuh/JkQIc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\8eb4ff24-cc5e-4e76-a9fe-4cae17e5ddc4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\90655253-b308-406a-9390-e579899da404.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -359,6 +503,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\908bc039-87ba-46a3-9859-978a3351a23f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\9127181c-be80-47de-807e-c9798b684f6f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/9127181c-be80-47de-807e-c9798b684f6f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>glir6lopfz</Fingerprint>
+      <Integrity>5JC1Wag6Gw5kC0Y5DFcZXnEz61bY/LZzEHUBzn3C60k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\9127181c-be80-47de-807e-c9798b684f6f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\961afac9-3ca6-46ab-81e8-0ace754208f4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/961afac9-3ca6-46ab-81e8-0ace754208f4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l6mdumnyhq</Fingerprint>
+      <Integrity>jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\961afac9-3ca6-46ab-81e8-0ace754208f4.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\969d3d7d-9a89-437d-a0d7-f9d56b5d152a.jpg'))">
       <SourceType>Package</SourceType>
@@ -396,6 +576,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\97043aec-3c7d-45f6-bf84-842dcd9af00e.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ue3ufpzlvq</Fingerprint>
+      <Integrity>xk+RTM28W3pdKAhEQ++Ddri0AtwPe5MJvybY6I86fOk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\aabdcf01-2809-42ce-ab8d-34958a2bebd8.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\ad4af4a9-c562-4223-b898-ebdffb9624eb.png'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -431,6 +629,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\b503343a-6b2e-464d-9ddf-5d9461ceabff.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bbe62782-31f1-4018-a05e-8a5913da15fb.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/bbe62782-31f1-4018-a05e-8a5913da15fb.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wrsxdi7xmb</Fingerprint>
+      <Integrity>7HSWuM/eM41yLX3xgaMMUFXHv7GqfxE+JnGAZ99HSIg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bbe62782-31f1-4018-a05e-8a5913da15fb.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>781jad9126</Fingerprint>
+      <Integrity>9/oXN660VjVAmCD50rqZ0PjW3dgRJkFsRbf+cC8E6x4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\befa1f77-5315-4e31-888b-a6d4ec6ce1bd.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\c1bb4823-bc81-408e-8074-14f2ce202b0f.jpg'))">
       <SourceType>Package</SourceType>
@@ -504,6 +738,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\c809f9ad-93e7-4e5e-847d-9368fa3283b1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ntjya9ym4f</Fingerprint>
+      <Integrity>JbnttDuA1ZPu22whzRbEcC+ahEgKRQM99LLl+C61BH8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\c9650521-33ec-4dc5-b1e6-e5dd3cf4ede5.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ddh3h9a3zn</Fingerprint>
+      <Integrity>T7DZE1/dVqenDk9sy17eVspmuNBZqVGTefc6aHU9oOY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\cd1689c9-993f-4111-9eb0-fb30c6be8675.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\cd862d6c-fc2b-441b-b533-f138954a35b4.png'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -558,6 +828,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\d7662169-6ce9-4006-bbeb-bb0e63a9176e.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>c5auhdy42t</Fingerprint>
+      <Integrity>IEzN5cqI8dGBiAjglobcv2QMqU4WtiG26s31DulGpq4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\d7ea3f6e-be08-425a-9c5c-775d8304a155.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\da6e1cc0-0b3c-4142-be86-28dcc2bd7e18.png'))">
       <SourceType>Package</SourceType>
       <SourceId>petsas2</SourceId>
@@ -593,6 +881,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\e14cc022-3cf4-44f2-8693-4ae3a7f0771a.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\e2f6e333-f442-44e7-9308-7a32877b7ada.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>petsas2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/petsas2</BasePath>
+      <RelativePath>images/products/e2f6e333-f442-44e7-9308-7a32877b7ada.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l6mdumnyhq</Fingerprint>
+      <Integrity>jZccXHVDUoQzl9Qo1wJ5c2WCANkT9BDapJ5jN969o/I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\e2f6e333-f442-44e7-9308-7a32877b7ada.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\e969ad45-dbd4-49b6-b9a2-ccf3833bba2e.png'))">
       <SourceType>Package</SourceType>

@@ -15,11 +15,11 @@
         {
             <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <ProductGenel Name="@product.Name"
-                              DetailUrl="@($"/Urunler/detay/{product.Id}")"
+                              DetailUrl="@($"/urunDetay/{product.Id}")"
                               ImageUrl1="@product.ImageUrl"
-                              Price="@(product.Pricings.LastOrDefault()?.BrutFiyat ?? 0)"
-                              DetayaGit="@(() => DetayaGit(product))"
-                              SepeteEkle="@(() => SepeteEkle(product))" />
+                              BrutFiyat="@(product.Pricings.LastOrDefault()?.BrutFiyat ?? 0)"
+                              DetayaGit="@(() => DetayaGit(product.Id))"
+                              SepeteEkle="@(() => SepeteEkle(product.Id))" />
             </div>
         }
     </div>
@@ -30,7 +30,7 @@
 @code {
 
     [Parameter] public string Category { get; set; }
-    [Parameter] public string SubCategory { get; set; }
+    [Parameter] public required string SubCategory { get; set; }
 
     public List<Product> Products { get; set; } = new();
 
@@ -39,6 +39,12 @@
         Products = await ProductService.GetProductsAsync(Category, SubCategory);
     }
 
-    void DetayaGit(Product p) { /* ... */ }
-    void SepeteEkle(Product p) { /* ... */ }
+    void DetayaGit(int productId)
+    {
+        NavigationManager.NavigateTo($"/urunDetay/{productId}");
+    }
+    void SepeteEkle(int productId)
+    {
+        // Sepete ekleme işlemi
+    }
 }
