@@ -21,6 +21,10 @@ namespace petsas2.Models
         public bool IsDeleted { get; set; } = false;
         public ICollection<SubCategory> SubCategories { get; set; } = new List<SubCategory>();
         //bir kategorinin birden çok alt kategorisi olabilir
+
+        public ICollection<PetBilgileri> PetBilgileris { get; set; } = new List<PetBilgileri>();
+        //bir kategorinin birden çok peti olabilir
+
     }
 
     //ProductName:petler icin alt kategori ürünler fln mama,tasma

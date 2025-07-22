@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("petsas2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16df62a5fa58154184a54c2c35f5c4562f1bee4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+269471e4d0ae99e69274d3da76463383f50b3654")]
 [assembly: System.Reflection.AssemblyProductAttribute("petsas2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("petsas2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

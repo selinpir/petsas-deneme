@@ -15507,6 +15507,826 @@
       ]
     },
     {
+      "Route": "img/homeInfo/guvenli-alisveris.01yoldromn.jpg",
+      "AssetFile": "img/homeInfo/guvenli-alisveris.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPvUfBdwiBZRSt5g/615m7wfgdzImsKODfsVT7IATdk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:08:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "01yoldromn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPvUfBdwiBZRSt5g/615m7wfgdzImsKODfsVT7IATdk="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfo/guvenli-alisveris.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/guvenli-alisveris.jpg",
+      "AssetFile": "img/homeInfo/guvenli-alisveris.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPvUfBdwiBZRSt5g/615m7wfgdzImsKODfsVT7IATdk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:08:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPvUfBdwiBZRSt5g/615m7wfgdzImsKODfsVT7IATdk="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/kargo-ucretsi.jpg",
+      "AssetFile": "img/homeInfo/kargo-ucretsi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20883"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w6L9Ytb6UpZxF54OWbxjaJY9WvyVjoIVkk+Kbd/n8Bw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:08:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w6L9Ytb6UpZxF54OWbxjaJY9WvyVjoIVkk+Kbd/n8Bw="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/kargo-ucretsi.nvx11c7eep.jpg",
+      "AssetFile": "img/homeInfo/kargo-ucretsi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20883"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w6L9Ytb6UpZxF54OWbxjaJY9WvyVjoIVkk+Kbd/n8Bw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:08:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nvx11c7eep"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w6L9Ytb6UpZxF54OWbxjaJY9WvyVjoIVkk+Kbd/n8Bw="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfo/kargo-ucretsi.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/orijinal.058m9ka35s.jpg",
+      "AssetFile": "img/homeInfo/orijinal.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TFQudzoaVurHmfv7NFLI1PFIJ/TIXYtj2ctfi5q6o60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:09:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "058m9ka35s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TFQudzoaVurHmfv7NFLI1PFIJ/TIXYtj2ctfi5q6o60="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfo/orijinal.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/orijinal.jpg",
+      "AssetFile": "img/homeInfo/orijinal.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TFQudzoaVurHmfv7NFLI1PFIJ/TIXYtj2ctfi5q6o60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:09:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TFQudzoaVurHmfv7NFLI1PFIJ/TIXYtj2ctfi5q6o60="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/paketleme.jpg",
+      "AssetFile": "img/homeInfo/paketleme.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCHNjrmcYlZOMFKY/g489r8ChUeuUG3xbQ257KCAx+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:08:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VCHNjrmcYlZOMFKY/g489r8ChUeuUG3xbQ257KCAx+I="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfo/paketleme.w5kp7uht7x.jpg",
+      "AssetFile": "img/homeInfo/paketleme.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCHNjrmcYlZOMFKY/g489r8ChUeuUG3xbQ257KCAx+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:08:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w5kp7uht7x"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VCHNjrmcYlZOMFKY/g489r8ChUeuUG3xbQ257KCAx+I="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfo/paketleme.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-balik-urunleri.64ngxikqtn.png",
+      "AssetFile": "img/homeInfoPets/sora-balik-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2358581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+h0ewlPiMoGK0wIxscmzv0LqG5filju2AsqrHli4nZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:47:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "64ngxikqtn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+h0ewlPiMoGK0wIxscmzv0LqG5filju2AsqrHli4nZk="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfoPets/sora-balik-urunleri.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-balik-urunleri.png",
+      "AssetFile": "img/homeInfoPets/sora-balik-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2358581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+h0ewlPiMoGK0wIxscmzv0LqG5filju2AsqrHli4nZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:47:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+h0ewlPiMoGK0wIxscmzv0LqG5filju2AsqrHli4nZk="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-hamster-urunleri.png",
+      "AssetFile": "img/homeInfoPets/sora-hamster-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2213115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3mh32sExJESbTUEDmzBxjE9+p15/yMJwlSFMsi+KkZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 21:22:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3mh32sExJESbTUEDmzBxjE9+p15/yMJwlSFMsi+KkZc="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-hamster-urunleri.ykvxhisa1e.png",
+      "AssetFile": "img/homeInfoPets/sora-hamster-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2213115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3mh32sExJESbTUEDmzBxjE9+p15/yMJwlSFMsi+KkZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 21:22:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ykvxhisa1e"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3mh32sExJESbTUEDmzBxjE9+p15/yMJwlSFMsi+KkZc="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfoPets/sora-hamster-urunleri.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-kedi-urunleri.n7ibk29fxe.png",
+      "AssetFile": "img/homeInfoPets/sora-kedi-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2618196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DaPbA87sWXuBtrXlPum4iiR9gUCXhBwhIt7Yw1/+LTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:27:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n7ibk29fxe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DaPbA87sWXuBtrXlPum4iiR9gUCXhBwhIt7Yw1/+LTk="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfoPets/sora-kedi-urunleri.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-kedi-urunleri.png",
+      "AssetFile": "img/homeInfoPets/sora-kedi-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2618196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DaPbA87sWXuBtrXlPum4iiR9gUCXhBwhIt7Yw1/+LTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:27:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DaPbA87sWXuBtrXlPum4iiR9gUCXhBwhIt7Yw1/+LTk="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-kopek-urunleri.aqtwkhsfxf.png",
+      "AssetFile": "img/homeInfoPets/sora-kopek-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2440884"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fqkq52yIvfb6vLtYaDB33I9ru/ccMLoTQauus4s+eOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:37:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aqtwkhsfxf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fqkq52yIvfb6vLtYaDB33I9ru/ccMLoTQauus4s+eOE="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfoPets/sora-kopek-urunleri.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-kopek-urunleri.png",
+      "AssetFile": "img/homeInfoPets/sora-kopek-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2440884"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fqkq52yIvfb6vLtYaDB33I9ru/ccMLoTQauus4s+eOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:37:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fqkq52yIvfb6vLtYaDB33I9ru/ccMLoTQauus4s+eOE="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-kus-urunleri.na0t7ji6zn.png",
+      "AssetFile": "img/homeInfoPets/sora-kus-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2372945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QSZ6q0DPG8m1lUVMlJqzaVFVB7MpCyVAPfCNQBw7E+4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 21:00:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "na0t7ji6zn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QSZ6q0DPG8m1lUVMlJqzaVFVB7MpCyVAPfCNQBw7E+4="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfoPets/sora-kus-urunleri.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-kus-urunleri.png",
+      "AssetFile": "img/homeInfoPets/sora-kus-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2372945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QSZ6q0DPG8m1lUVMlJqzaVFVB7MpCyVAPfCNQBw7E+4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 21:00:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QSZ6q0DPG8m1lUVMlJqzaVFVB7MpCyVAPfCNQBw7E+4="
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-tavsan-urunleri.ok3z1t8mrt.png",
+      "AssetFile": "img/homeInfoPets/sora-tavsan-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2DH42FkMeUA+gZZsOkUjYqJL0dOwXQ9a+eKe06JI7CE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 21:14:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ok3z1t8mrt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2DH42FkMeUA+gZZsOkUjYqJL0dOwXQ9a+eKe06JI7CE="
+        },
+        {
+          "Name": "label",
+          "Value": "img/homeInfoPets/sora-tavsan-urunleri.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/homeInfoPets/sora-tavsan-urunleri.png",
+      "AssetFile": "img/homeInfoPets/sora-tavsan-urunleri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2DH42FkMeUA+gZZsOkUjYqJL0dOwXQ9a+eKe06JI7CE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 21:14:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2DH42FkMeUA+gZZsOkUjYqJL0dOwXQ9a+eKe06JI7CE="
+        }
+      ]
+    },
+    {
       "Route": "img/legal/cerez.dz61rdwzey.png",
       "AssetFile": "img/legal/cerez.png",
       "Selectors": [],
@@ -15995,6 +16815,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-avG1Z0JVveCVugDOlM57qSNEC79jVEebxa0kZR97Du4="
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/royal-canin.jpg",
+      "AssetFile": "img/marka/royal-canin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ubzS+GFQSyIpY0ef9SVLhurD3rrN5/O9NmskQXBLw+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:45:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ubzS+GFQSyIpY0ef9SVLhurD3rrN5/O9NmskQXBLw+8="
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/royal-canin.xemh9mrb6v.jpg",
+      "AssetFile": "img/marka/royal-canin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ubzS+GFQSyIpY0ef9SVLhurD3rrN5/O9NmskQXBLw+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:45:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xemh9mrb6v"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ubzS+GFQSyIpY0ef9SVLhurD3rrN5/O9NmskQXBLw+8="
+        },
+        {
+          "Name": "label",
+          "Value": "img/marka/royal-canin.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/tetra.e2w2jaakqe.png",
+      "AssetFile": "img/marka/tetra.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1gmpYSWr7xotOX5m3oc8ac1U7d+NDVgaTxw2WBkHJuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:44:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e2w2jaakqe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1gmpYSWr7xotOX5m3oc8ac1U7d+NDVgaTxw2WBkHJuc="
+        },
+        {
+          "Name": "label",
+          "Value": "img/marka/tetra.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/tetra.png",
+      "AssetFile": "img/marka/tetra.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1gmpYSWr7xotOX5m3oc8ac1U7d+NDVgaTxw2WBkHJuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:44:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1gmpYSWr7xotOX5m3oc8ac1U7d+NDVgaTxw2WBkHJuc="
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/vitakraft.png",
+      "AssetFile": "img/marka/vitakraft.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6AcpHJzKb4vB0T95qd5S7P7On1ll+MqRAwQgX4Oe4lQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:44:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6AcpHJzKb4vB0T95qd5S7P7On1ll+MqRAwQgX4Oe4lQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/vitakraft.wekj6xe9dg.png",
+      "AssetFile": "img/marka/vitakraft.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6AcpHJzKb4vB0T95qd5S7P7On1ll+MqRAwQgX4Oe4lQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:44:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wekj6xe9dg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6AcpHJzKb4vB0T95qd5S7P7On1ll+MqRAwQgX4Oe4lQ="
+        },
+        {
+          "Name": "label",
+          "Value": "img/marka/vitakraft.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/whiskas.5luaplbmll.png",
+      "AssetFile": "img/marka/whiskas.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+lfsC4UPMmQ+il0lGOsr5CG+/Az7juxoitaTINwLbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:42:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5luaplbmll"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+lfsC4UPMmQ+il0lGOsr5CG+/Az7juxoitaTINwLbE="
+        },
+        {
+          "Name": "label",
+          "Value": "img/marka/whiskas.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/marka/whiskas.png",
+      "AssetFile": "img/marka/whiskas.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+lfsC4UPMmQ+il0lGOsr5CG+/Az7juxoitaTINwLbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Jul 2025 20:42:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+lfsC4UPMmQ+il0lGOsr5CG+/Az7juxoitaTINwLbE="
         }
       ]
     },
@@ -17501,7 +18649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 22:33:26 GMT"
+          "Value": "Tue, 22 Jul 2025 20:22:07 GMT"
         }
       ],
       "EndpointProperties": [
@@ -17538,7 +18686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 22:33:26 GMT"
+          "Value": "Tue, 22 Jul 2025 20:22:07 GMT"
         }
       ],
       "EndpointProperties": [

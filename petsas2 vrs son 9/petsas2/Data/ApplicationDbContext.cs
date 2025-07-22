@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using petsas2.Models;
 using System;
-
 
 namespace petsas2.Data
 {
@@ -13,18 +13,36 @@ namespace petsas2.Data
             : base(options)
         {
         }
-        //+
+        //---------------------------------------------------------
+        //urunler ile ilgil kýsým
+        //kategori+
         public DbSet<Category> Categories { get; set; }
-        //+
+        //altkategori+
         public DbSet<SubCategory> SubCategories { get; set; }
-        //-
+        //urunler+
         public DbSet<Product> Products { get; set; }
-        //brand+
+        //marka+
         public DbSet<Brand> Brands { get; set; }
         //fiyatlandýrma -
         public DbSet<Pricing> Pricings { get; set; }
+        //urunler ile ilgil kýsým
+        //---------------------------------------------------------
         public DbSet<SepetDetay> Sepets { get; set; }
         public DbSet<KullaniciSepet> KullaniciSepets { get; set; }
+        //---------------------------------------------------------
+        //kullanýcý ile ilgili kýsým
+        public DbSet<HesapBilgileri> hesapBilgileris { get; set; }
+        public DbSet<AdresBilgileri> AdresBilgileris { get; set; }
+        public DbSet<PetBilgileri> PetBilgileri { get; set; }
+
+
+
+        //enum tipler icin db set tanýmlanmadý cünkü dbset veri tabanýnda bir tabloya karþýlýk gelen sýnýflar için tutulur
+        //burada enumlar tablo deðil ilgili tablolarýn bir sutunudur
+        //kullanýcý ile ilgili kýsým
+        //---------------------------------------------------------
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -118,6 +136,21 @@ namespace petsas2.Data
             modelBuilder.Entity<SepetDetay>()
               .Property(s => s.BrutFiyat)
               .HasPrecision(8, 2);
+            //-----------------------------------------------------------
+            //CÝNSÝYET - HESAP DURUMU
+            //enumlarýn sayýsal deðil metinsel gelmesi icin:
+            modelBuilder.Entity<HesapBilgileri>()
+                .Property(h => h.CinsiyetTipi)
+                .HasConversion<string>();  //Sayýsal olsaydý .HasConversion<int>() 
+
+            modelBuilder.Entity<HesapBilgileri>()
+                .Property(h=>h.HesapDurumu)
+                .HasConversion<string>();
+            //-----------------------------------------------------------
+            //il ve ilce tablolarý daha onceden sqlde oluþturulmuþtu
+            //migrationda ignore edildi          
+            modelBuilder.Ignore<il>();
+            modelBuilder.Ignore<ilce>();
             //-----------------------------------------------------------
         }
     }

@@ -220,6 +220,37 @@ namespace petsas2.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("petsas2.Models.AdresBilgileri", b =>
+                {
+                    b.Property<int>("ABId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ABId"));
+
+                    b.Property<string>("AcikAdres")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HesapBilgileriId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("il_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("ABId");
+
+                    b.HasIndex("HesapBilgileriId");
+
+                    b.ToTable("AdresBilgileris");
+                });
+
             modelBuilder.Entity("petsas2.Models.Brand", b =>
                 {
                     b.Property<int>("Id")
@@ -260,6 +291,51 @@ namespace petsas2.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("petsas2.Models.HesapBilgileri", b =>
+                {
+                    b.Property<int>("HBId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HBId"));
+
+                    b.Property<string>("Ad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CinsiyetTipi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DogumTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("HesapDurumu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("HesapOlusturmaTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Soyad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("HBId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("hesapBilgileris");
+                });
+
             modelBuilder.Entity("petsas2.Models.KullaniciSepet", b =>
                 {
                     b.Property<int>("Id")
@@ -277,6 +353,45 @@ namespace petsas2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("KullaniciSepets");
+                });
+
+            modelBuilder.Entity("petsas2.Models.PetBilgileri", b =>
+                {
+                    b.Property<int>("PBId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PBId"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EkMetin")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GorselUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HesapBilgileriId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("PetAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("PetDogum")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("PBId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("HesapBilgileriId");
+
+                    b.ToTable("PetBilgileri");
                 });
 
             modelBuilder.Entity("petsas2.Models.Pricing", b =>
@@ -504,6 +619,47 @@ namespace petsas2.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("petsas2.Models.AdresBilgileri", b =>
+                {
+                    b.HasOne("petsas2.Models.HesapBilgileri", "HesapBilgileri")
+                        .WithMany("Adresler")
+                        .HasForeignKey("HesapBilgileriId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HesapBilgileri");
+                });
+
+            modelBuilder.Entity("petsas2.Models.HesapBilgileri", b =>
+                {
+                    b.HasOne("petsas2.Data.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("petsas2.Models.PetBilgileri", b =>
+                {
+                    b.HasOne("petsas2.Models.Category", "Category")
+                        .WithMany("PetBilgileris")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("petsas2.Models.HesapBilgileri", "HesapBilgileri")
+                        .WithMany("PetBilgileris")
+                        .HasForeignKey("HesapBilgileriId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("HesapBilgileri");
+                });
+
             modelBuilder.Entity("petsas2.Models.Pricing", b =>
                 {
                     b.HasOne("petsas2.Models.Product", "Product")
@@ -571,7 +727,16 @@ namespace petsas2.Migrations
 
             modelBuilder.Entity("petsas2.Models.Category", b =>
                 {
+                    b.Navigation("PetBilgileris");
+
                     b.Navigation("SubCategories");
+                });
+
+            modelBuilder.Entity("petsas2.Models.HesapBilgileri", b =>
+                {
+                    b.Navigation("Adresler");
+
+                    b.Navigation("PetBilgileris");
                 });
 
             modelBuilder.Entity("petsas2.Models.KullaniciSepet", b =>
