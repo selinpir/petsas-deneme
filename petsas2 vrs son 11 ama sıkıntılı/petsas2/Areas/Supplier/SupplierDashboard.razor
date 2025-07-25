@@ -1,0 +1,28 @@
+﻿@page "/Supplier/SupplierDashboard"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Supplier")]
+
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
+
+<MudGrid Gutter="Gutter.Def">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+<CardsGrid Items="CardList" />
+
+@code {
+    public string ReadOnly { get; set; } = "Hesabım";
+    private List<CardsGrid.CardInfo> CardList = new() {
+     new() { Title = "Yeni Stok Ekle",              Icon="bi bi-back",       Link =  "/supplier/SProductList",         ButtonText = "Git" },
+     new() { Title = "Stoğu Azalan Ürünler",        Icon="bi bi-back",       Link =  "/stock/StockAlert",           ButtonText = "Git" }, 
+     };
+}

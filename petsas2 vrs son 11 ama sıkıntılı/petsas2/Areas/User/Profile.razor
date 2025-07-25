@@ -1,0 +1,206 @@
+﻿@page "/User/Profile"
+@* kayıt ol ikinci aşama bu ve adres doldurulmadan sipariş verilemeyecek *@
+@using MudBlazor
+@using System.ComponentModel.DataAnnotations
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@attribute [Authorize]
+@attribute [Authorize(Roles = "User")];
+@using Microsoft.AspNetCore.Authorization
+
+@inject IUserService UserService
+@inject NavigationManager Navigation
+@inject MudBlazor.ISnackbar Snackbar
+
+@* telefon girerken number ama oklar çıkmasını engellemek icin *@
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+@* telefon girerken number ama oklar çıkmasını engellemek icin *@
+
+<MudGrid Gutter="Gutter.Def">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@if (Hesap == null)
+{
+    <MudText Typo="Typo.body1" Color="Color.Secondary">Yükleniyor...</MudText>
+}
+else if (!Hesap.IsCompleted)
+{
+    <MudPaper Class="p-4 mx-auto" Style="background-color: lightblue; border-radius: 10px; max-width:600px">
+        <MudForm @ref="form">
+            <MudTextField @bind-Value="Hesap.Ad" Label="Ad" Required="true" />
+            <MudTextField @bind-Value="Hesap.Soyad" Label="Soyad" Required="true" />
+
+            <MudTextField @bind-Value="Hesap.Telefon"
+                          Label="Telefon"
+                          Required="true"
+                          Pattern="^(\+90|0)?5\d{9}$"
+                          Immediate="true"
+                          InputType="InputType.Number"
+                          HelperText="05XXXXXXXXX formatında giriniz" />
+            @* numberde arttırma azaltma cıkıor bunun icin css kullanılıyormus gizlemek icin yani *@
+
+            @*CİNSİYET SECİMİ *@
+            <MudSelect @bind-Value="Hesap.CinsiyetTipi" Label="Cinsiyet" T="Cinsiyet" Required="true">
+                @foreach (var c in Enum.GetValues<Cinsiyet>())
+                {
+                    <MudSelectItem T="Cinsiyet" Value="c">@c.ToString()</MudSelectItem>
+                }
+            </MudSelect>
+            @*CİNSİYET SECİMİ *@
+
+            @*Dogum Tarihi *@   
+                            <MudDatePicker T="DateTime?"
+                           Label="Doğum Tarihi"
+                           Date="@Hesap.DogumTarihi"
+                           Required="true"
+                           MaxDate="DateTime.Today"
+                           DateFormat="dd.MM.yyyy" />
+            @*Dogum Tarihi *@   
+                   
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       OnClick="@Kaydet">
+                Kaydet
+            </MudButton>
+        </MudForm>
+    </MudPaper>
+}
+
+else
+{
+    <br />
+    <br />
+    <MudGrid>
+        <!--görsel -->
+        <MudItem xs="12" md="6" Class="d-flex justify-center align-center">
+            @if (Hesap.CinsiyetTipi == Cinsiyet.Erkek)
+            {
+                <MudImage Src="img/erkek-user.png" Alt="Erkek" Width="100" Style="max-width: 400px;" />
+            }
+            else if (Hesap.CinsiyetTipi == Cinsiyet.Kadın)
+            {
+                <MudImage Src="img/kadin-user.png" Alt="Kadın" Width="100" Style="max-width: 400px;" />
+            }
+            else
+            {
+                <MudImage Src="img/diger-user.png" Alt="Diğer" Width="100" Style="max-width: 400px;" />
+            }
+        </MudItem>
+        <br />
+        <br />
+        <!-- form -->
+        <MudItem xs="12" md="6">
+            <MudPaper Class="pa-4" Elevation="15" Style="border-radius: 10px; ">
+                <MudField Label="Ad">
+                    <MudText Typo="Typo.subtitle1"> @Hesap.Ad</MudText>
+                </MudField>
+
+                <MudField Label="Soyad">
+                    <MudText Typo="Typo.subtitle1"> @Hesap.Soyad</MudText>
+                </MudField>
+
+                <MudField Label="Telefon Numarası">
+                    <MudText Typo="Typo.subtitle1"> @Hesap.Telefon</MudText>
+                </MudField>
+
+                <MudField Label="Doğum Tarihi">
+                    <MudText Typo="Typo.subtitle1"> @Hesap.DogumTarihi.ToShortDateString()</MudText>
+                </MudField>
+
+                <MudField Label="Cinsiyet">
+                    <MudText Typo="Typo.subtitle1"> @Hesap.CinsiyetTipi</MudText>
+                </MudField>
+            </MudPaper>
+        </MudItem>
+        <br />
+        <br />
+        <br />      
+    </MudGrid>
+    <br />
+    <br />
+    <br />
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+               OnClick="@(() => Navigation.NavigateTo("/user/userDashboard"))">
+        Geri Dön
+    </MudButton>
+}
+
+@* <MudTd>
+
+    <MudButton Color="Color.Error" Variant="Variant.Filled" Class="ms-2" OnClick="() => HesabiSil()">
+        <MudIcon Icon="@Icons.Material.Filled.Delete" />
+    </MudButton>
+
+</MudTd> *@
+
+@code {
+    public string ReadOnly { get; set; } = "Profil Bilgilerim";
+    [Required] MudForm form;
+    HesapBilgileri Hesap = new();
+    public int HBid { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Hesap = await UserService.GetCurrentUserHesapAsync();
+        if (Hesap == null)
+        {
+            Hesap = new HesapBilgileri
+                {
+                    Ad = string.Empty,
+                    Soyad = string.Empty,
+                    Telefon = string.Empty,
+                    CinsiyetTipi = Cinsiyet.Belirtilmedi,
+                    DogumTarihi = DateTime.Today.AddYears(-18)
+                };
+        }
+    }
+
+    private async Task Kaydet()
+    {
+        try
+        {
+            await UserService.SaveAsync(Hesap!);
+            Snackbar.Add("Hesap bilgileri başarıyla kaydedildi.", Severity.Success);
+            Hesap = await UserService.GetCurrentUserHesapAsync(); // Güncel veriyi tekrar yükle
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Hata oluştu: {ex.Message}", Severity.Error);
+        }
+    }
+    // private async Task HesabiSil()
+    // {
+    //     if (Hesap is null) return;
+
+    //     try
+    //     {
+    //         await UserService.SoftDeleteAsync(Hesap.HBId);
+    //         Snackbar.Add("Hesap silindi.", Severity.Warning);
+    //         Navigation.NavigateTo("/");
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Snackbar.Add($"Hesap silinirken hata oluştu: {ex.Message}", Severity.Error);
+    //     }
+    // }
+}

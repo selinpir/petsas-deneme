@@ -1,0 +1,46 @@
+﻿@page "/urunDetay/{productId:int}"
+
+@using petsas2.Services
+@using petsas2.Components.Pages.Shared
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject IProductService ProductService
+@inject NavigationManager NavigationManager
+
+<div class="container mt-4">
+    <div class="row">
+        @if (product != null)
+        {
+            <ProductDetay Name="@product.Name"
+                          Description="@product?.Description"
+                          ImageUrl1="@product.ImageUrl"
+                          BrutFiyat="@(product.Pricings.LastOrDefault()?.BrutFiyat ?? 0)"
+                          Category="@product.Category"
+                          SubCategory="@product.SubCategory"
+                          Brand="@product.Brand"
+                          Barcode="@product.Barcode"
+                          ExpirationDate="@product.ExpirationDate"
+                          Color="@product.Color"
+                          Weight="@product.Weight"
+                          Dimensions="@product.Dimensions"
+                          Size="@product.Size"
+                          Material="@product.Material"/>
+        }
+        else
+        {
+            <p>Ürün Bulunamadı :( </p>
+        }
+    </div>
+</div>
+
+@code {
+    void SepeteEkle(Product p) { /* ... */ }
+    [Parameter] public int productId { get; set; }
+    private Product product;
+    //OnInitializedAsync yerine
+    //OnParametersSetAsync
+    protected override async Task OnParametersSetAsync()
+    {
+        product = await ProductService.GetByIdAsync(productId);
+    }
+}
