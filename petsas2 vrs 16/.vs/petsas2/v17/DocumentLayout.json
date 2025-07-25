@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 vrs 15\\petsas2\\areas\\user\\sepet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\user\\sepet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 vrs 15\\petsas2\\services\\sepetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\sepetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 vrs 15\\petsas2\\areas\\prdctview\\urunler.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\prdctview\\urunler.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 vrs 15\\petsas2\\areas\\product\\productindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\product\\productindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 vrs 15\\petsas2\\areas\\prdctview\\urundetay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\prdctview\\urundetay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\github\\petsas-deneme\\petsas2 vrs 15\\petsas2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 192,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductIndex.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\Product\\ProductIndex.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Product\\ProductIndex.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\Product\\ProductIndex.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Product\\ProductIndex.razor",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T23:36:11.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Urunler.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\PrdctView\\Urunler.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\PrdctView\\Urunler.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\PrdctView\\Urunler.razor",
+              "RelativeToolTip": "petsas2\\Areas\\PrdctView\\Urunler.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEoAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T23:33:02.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SepetService.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Services\\SepetService.cs",
+              "RelativeDocumentMoniker": "petsas2\\Services\\SepetService.cs",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Services\\SepetService.cs",
+              "RelativeToolTip": "petsas2\\Services\\SepetService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwv1kAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T23:28:11.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sepet.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\User\\Sepet.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\User\\Sepet.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\User\\Sepet.razor",
+              "RelativeToolTip": "petsas2\\Areas\\User\\Sepet.razor",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwEEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T23:27:28.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UrunDetay.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\PrdctView\\UrunDetay.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\PrdctView\\UrunDetay.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Areas\\PrdctView\\UrunDetay.razor",
+              "RelativeToolTip": "petsas2\\Areas\\PrdctView\\UrunDetay.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T23:31:12.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "petsas2\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\masaustu_yedek\\GITHUB\\petsas-deneme\\petsas2 vrs 15\\petsas2\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "petsas2\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowD8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T23:22:10.846Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 106,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
