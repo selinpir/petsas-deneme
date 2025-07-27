@@ -1,0 +1,35 @@
+﻿@page "/admin/admindashboard"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@* cardsgrid componenti *@
+<CardsGrid Items="CardList" />
+
+@code {
+    public string ReadOnly { get; set; } = "Hesabım";
+
+    private List<CardsGrid.CardInfo> CardList = new()
+    {
+        new() { Title = "Sipariş Yönetimi",                  Icon="bi bi-cart3",        Link =  "/siparis/SiparisiYonet",        ButtonText = "Git" },//--- 
+        new() { Title = "Ürün - Stok - Fiyat Yönetimi",      Icon="bi bi-wrench",       Link =  "/product/ProductManagement",    ButtonText = "Git" },  //+
+        new() { Title = "Kategori Yönetimi" ,                Icon="bi bi-tags-fill",    Link =  "/category/CategoryIndex",       ButtonText = "Git" },  //+
+        new() { Title = "Alt Kategori Yönetimi",             Icon="bi bi-back",         Link =  "/subcategory/SubCategoryIndex", ButtonText = "Git" },  //+
+        new() { Title = "Marka Yönetimi" ,                   Icon="bi bi-nvidia",       Link =  "/brand/BrandIndex",             ButtonText = "Git" },  //+
+        new() { Title = "Kullanıcı Yönetimi",                Icon="bi bi-person-hearts",Link =  "admin/UserList",                ButtonText = "Git" }   //+
+    };
+}
+

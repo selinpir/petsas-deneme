@@ -1,0 +1,62 @@
+﻿@* eksik *@
+@page "/siparis/SiparisAlindi"
+
+@attribute [Authorize]
+@attribute [Authorize(Roles = "User")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@* bizi tercih ettiğiniz için tşk *@@* bizi tercih ettiğiniz için tşk *@@* bizi tercih ettiğiniz için tşk *@@* bizi tercih ettiğiniz için tşk *@
+@* mudtextfield ile yap *@
+@* siparis no *@
+@* siparis no *@
+@* siparis no *@
+@* siparis no *@
+@* siparis no *@
+@* siparis no *@
+@* fatura gösterimi *@@* fatura gösterimi *@@* fatura gösterimi *@@* fatura gösterimi *@@* fatura gösterimi *@@* fatura gösterimi *@
+
+<MudStack>
+    <MudButton Class="pa-3" Variant="Variant.Filled" Color="Color.Primary"
+               OnClick="@SiparislerimeGit">
+        Siparişlerime Gİt
+    </MudButton>
+
+    <MudButton Class="pa-3" Variant="Variant.Filled" Color="Color.Warning"
+               OnClick="@AlisveriseGeriDon">
+        Alışverişe Geri Dön
+    </MudButton>
+</MudStack>
+
+@code
+{
+    public string ReadOnly { get; set; } = "Siparişiniz Alındı";
+
+    // siparislerime gonderilir
+    private async Task SiparislerimeGit()
+    {
+        //----
+
+        Navigation.NavigateTo("/user/Siparislerim"); //+
+    }
+
+    //anasayfaya yonlendirilir
+    private async Task AlisveriseGeriDon()
+    {
+        Navigation.NavigateTo(" ");//+
+    }
+}
