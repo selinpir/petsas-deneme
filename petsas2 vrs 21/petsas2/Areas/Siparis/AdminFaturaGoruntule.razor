@@ -1,0 +1,91 @@
+﻿@page "/siparis/adminFaturaGoruntule{faturaNo:guid}"
+
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+
+@inject IFaturaService FaturaService
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+
+@if (fatura != null)
+{
+
+
+    <MudTable Items="AdminFatura" Elevation="2">
+        <HeaderContent>
+            <MudTh>FaturaNo </MudTh>
+            <MudTh>SiparisNo</MudTh>
+            <MudTh>Fatura Tarihi</MudTh>
+            <MudTh>Müşteri Adı</MudTh>
+            <MudTh>Ödeme Yöntemi</MudTh>
+            <MudTh>Fatura Toplam Tutar</MudTh>
+            <MudTh>Ürünler</MudTh>
+
+            <MudTh>Satici Vergi No</MudTh>
+            <MudTh>Satici Unvan</MudTh>
+            <MudTh>Satici Ad Soyad</MudTh>
+            <MudTh>Satici Adres</MudTh>
+        </HeaderContent>
+
+        <RowTemplate>
+            <MudTd>@context.FaturaNo</MudTd>
+            <MudTd>@context.SiparisNo</MudTd>
+            <MudTd>@context.FaturaTarihi</MudTd>
+            <MudTd>@context.MusteriAdi</MudTd>
+            <MudTd>@context.OdemeYontemi</MudTd>
+            <MudTd>@context.F_ToplamTutar</MudTd>
+
+            <MudTd>@context.SaticiVergiNo</MudTd>
+            <MudTd>@context.SaticiUnvan</MudTd>
+            <MudTd>@context.SaticiAdSoyad</MudTd>
+            <MudTd>@context.SaticiAdres</MudTd>
+            <MudTd>
+                <ul class="m-0 p-0">
+                    @foreach (var detay in context.SiparisDetaylari)
+                    {
+                        <li>@detay.Urun - @detay.UrunMiktar adet</li>
+                    }
+                </ul>
+            </MudTd>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       OnClick="@(() => Navigation.NavigateTo("/admin/adminDashboard"))">
+                Geri Dön
+            </MudButton>
+        </RowTemplate>
+    </MudTable>
+}
+else
+{
+    <MudText>
+        Fatura yükleniyor...
+    </MudText>
+}
+
+@code {
+    public string ReadOnly { get; set; } = "Fatura Detay Görüntüle";
+    private List<Fatura> AdminFatura = new();
+
+    [Parameter] public Guid faturaNo { get; set; }
+    private Fatura? fatura;
+
+    protected override async Task OnInitializedAsync()
+    {
+        fatura = await FaturaService.GetFaturaByFaturaNo(faturaNo);
+    }
+}
