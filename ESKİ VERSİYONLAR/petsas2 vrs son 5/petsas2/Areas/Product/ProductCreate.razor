@@ -1,0 +1,255 @@
+﻿@page "/product/ProductCreate"
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
+
+@using System.IO
+@using Microsoft.AspNetCore.Components.Forms
+@using MudBlazor
+
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IProductService ProductService
+@inject IBrandService BrandService
+@inject ICategoryService CategoryService
+@inject ISubCategoryService SubCategoryService
+@inject IPricingService PricingService
+
+@inject NavigationManager Nav
+@inject ISnackbar Snackbar
+@inject IWebHostEnvironment Env
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+<MudPaper Class="p-4 mx-auto" Style="max-width:600px">
+    @*ürün alanı*@
+    <MudForm @ref="form">
+
+         @*KATEGORİ SECİMİ *@
+        <MudSelect T="int" Label="Kategori"
+                   @bind-Value="SelectedCategoryId"
+                   Required="true">
+                   @* 0 gelmemesi icin *@
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
+            @foreach (var cat in categories)
+            {
+                <MudSelectItem Value="@cat.Id">@cat.PetType</MudSelectItem>
+            }
+        </MudSelect>
+        @*KATEGORİ SECİMİ *@
+
+        @*ALT K *@
+        <MudSelect T="int" Label="Alt Kategori"
+                   @bind-Value="product.SubCategoryId"
+                   Required="true">
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
+            @foreach (var sc in filteredSubcategories)
+            {
+                <MudSelectItem Value="@(sc.Id)">@sc.ProductName</MudSelectItem>
+            }
+        </MudSelect>
+        @*ALT K *@
+
+        <MudTextField @bind-Value="product.Name" Label="Ürün Adı" Required="true" />
+
+        <MudTextField @bind-Value="product.Description" Label="Açıklama" />
+
+        @*MARKA *@
+        <MudSelect T="int"
+                   Label="Marka"
+                   @bind-Value="product.BrandId"
+                   Required="true">
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
+            @foreach (var b in brands)
+            {
+                <MudSelectItem Value="@b.Id">@b.Name</MudSelectItem>
+            }
+        </MudSelect>
+        @*MARKA *@
+
+        @*GÖRSEL *@
+        @*       sadece bir ürüne ait bir görsel olacak -başta öyle yapmışım :( *@
+        <MudFileUpload T="IBrowserFile"
+                       MaxFileSize="1024*1024*20"
+                       Accept="image/jpeg,image/png"
+                       FilesChanged="UploadFile"
+                       Required="true">
+            <ActivatorContent>
+                <MudButton Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           StartIcon="@Icons.Material.Filled.CloudUpload">
+                    Ürün Görseli Yükle
+                </MudButton>
+            </ActivatorContent>
+        </MudFileUpload>
+        @* GÖRSEL *@
+
+        @* STOK *@
+        <MudNumericField T="int"
+                         @bind-Value="product.Stock"
+                         Label="Stok"
+                         Required="true"
+                         Min="0"
+                         Validation="@((int v) => v<0? "Stok 0'dan küçük olamaz":null)" />
+
+        <MudNumericField T="int"
+                         @bind-Value="product.MinStock"
+                         Label="Min Stok"
+                         Required="true"
+                         Min="0"
+                         Validation="@((int v) => v<0? "Min Stok 0'dan küçük olamaz":null)" />
+        @* STOK *@
+
+        @*Son Kullanma Tarihi *@   
+        <MudDatePicker T="DateTime?" Label="Son Kullanma Tarihi"
+                       @bind-Date="product.ExpirationDate"
+                       MinDate="DateTime.Today"
+                       DateFormat="dd.MM.yyyy"
+                       Clearable="true" />
+        @*tarihi olmayan ürünlerde clearable ile tarih girme zorunlu degil bos geç*@
+
+        @*Renk *@
+        <MudTextField @bind-Value="product.Color" Label="Renk" />
+
+        @*Ağırlık *@
+        <MudTextField @bind-Value="product.Weight" Label="Ağırlık" />
+
+        @*Ebat *@
+        <MudTextField @bind-Value="product.Dimensions" Label="Ebat" />
+
+        @*Beden *@
+        <MudTextField @bind-Value="product.Dimensions" Label="Beden" />
+
+        @*Materyal *@
+        <MudTextField @bind-Value="product.Material" Label="Malzeme" />
+
+        <MudDivider Class="my-4" />
+
+        @*FİYAT ALANİ*@
+        <MudTextField T="decimal"
+                      @bind-Value="pricing.NetFiyat"
+                      Label="Net Fiyat"
+                      Required="true" />
+
+        <MudTextField T="decimal?"
+                      @bind-Value="pricing.IndirimOrani"
+                      Label="İndirim Oranı"
+                      Placeholder="0,10 = %10 (virgül kullanınız)" />
+
+        <MudTextField T="decimal?"
+                      @bind-Value="pricing.KdvOrani"
+                      Label="KDV Oranı"
+                      Placeholder="0,18 = %18 (virgül kullanınız) "
+                      Required="true" />
+        @*FİYAT ALANİ*@
+
+        <div class="mt-4 d-flex gap-2">
+            <MudButton Color="Color.Secondary" OnClick="@(() => Nav.NavigateTo("/product/ProductIndex"))">İptal</MudButton>
+            <MudButton Color="Color.Primary" OnClick="@Save">Kaydet</MudButton>
+        </div>
+
+    </MudForm>
+</MudPaper>
+
+@code {
+    public string ReadOnly { get; set; } = "Yeni Ürün Ekle";
+
+    MudForm? form;
+
+    Product product = new();
+    private Pricing pricing = new();
+
+    List<Category> categories = new();
+    List<SubCategory> allSubcategories = new();
+    List<SubCategory> filteredSubcategories = new();
+    List<Brand> brands = new();
+
+    int selectedCategoryId;
+
+    int SelectedCategoryId
+    {
+        get => selectedCategoryId;
+        set
+        {
+            if (selectedCategoryId == value) return;
+            selectedCategoryId = value;
+            product.CategoryId = value;
+            FilterSubcategories();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await CategoryService.GetAllAsync();
+        allSubcategories = await SubCategoryService.GetAllAsync();
+        brands = await BrandService.GetAllAsync();
+        filteredSubcategories = new(); //boş ilk
+    }
+
+    private void FilterSubcategories()
+    {
+        filteredSubcategories = allSubcategories
+        .Where(x => x.CategoryId == selectedCategoryId)
+        .ToList();
+        product.SubCategoryId = 0; //önceki seçim sıfırlanır
+    }
+
+    IBrowserFile? _imageFile;
+
+    // gorsel secimi
+    private void UploadFile(IBrowserFile file)
+    {
+        _imageFile = file;
+    }
+    // //gorsel formatı
+    //AllowedExtensions="@allowedFileExtensions" bu eskimiş
+    // private readonly string[] allowedFileExtensions =
+    //   new[] { ".jpg", ".jpeg", ".png" };
+
+    // kaydet
+    private async Task Save()
+    {
+        await form!.Validate();
+        if (!form.IsValid)
+            return;
+
+        // Görsel varsa kaydet
+        if (_imageFile is not null)
+        {
+            var imagesFolder = Path.Combine(Env.WebRootPath, "images", "products");
+            if (!Directory.Exists(imagesFolder))
+                Directory.CreateDirectory(imagesFolder);
+
+            var ext = Path.GetExtension(_imageFile.Name);
+            var uniqueFileName = $"{Guid.NewGuid()}{ext}";
+            var filePath = Path.Combine(imagesFolder, uniqueFileName);
+
+            await using var stream = _imageFile.OpenReadStream(maxAllowedSize: 1024 * 1024 * 20);
+            await using var fs = new FileStream(filePath, FileMode.Create);
+            await stream.CopyToAsync(fs);
+
+            // Model’e relative yol atayın
+            product.ImageUrl = $"/images/products/{uniqueFileName}";
+        }
+
+        // ürünü ekle
+        await ProductService.AddAsync(product);
+
+        //Ürün ID geldikten sonra pricing.ProductId ata
+        pricing.ProductId = product.Id;
+        //İlk fiyat kaydını bırak
+        await PricingService.AddPricing(pricing);
+
+        Snackbar.Add("Ürün eklendi", Severity.Success);
+        Nav.NavigateTo("/product/ProductIndex");
+
+    }
+} 

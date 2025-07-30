@@ -1,0 +1,279 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Identity
+
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Web
+@using petsas2.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject NavigationManager NavigationManager
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <NavLink class="navbar-brand" href="/">
+            <img src="petsasLogo.png"
+                 alt="PetSas Logo"
+                 style="height:100px; width:auto;"
+                 class="d-inline-block align-text-top" />
+        </NavLink>
+        @*     <NavLink> hem tıklama sonrası tam sayfa yenileme yapmaz hem de otomatik olarak “aktif” linki işaretler.  *@
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            @*  <AuthorizeView Roles="User">
+                <Authorized>  *@
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                @*  1-kedi *@
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        KEDİ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @* alt menunun açılabilmesi için submenu yapmak gerekli *@
+                        @* — İÇ DROPDOWN 1: MAMALAR *@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                Kedi Maması
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Yavru Kedi Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Yetişkin Kedi Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Yaşlı Kedi Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Kısırlaştırılmış Kedi Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Ödül Mamaları</a></li>
+                            </ul>
+                        </li>
+
+                        @* — DİĞER LINKLER *@
+                        <li><a class="dropdown-item" href="#">Mama &amp;  Su Kapları</a></li>
+                        <li><a class="dropdown-item" href="#">Taşıma Çantaları</a></li>
+                        <li><a class="dropdown-item" href="#">Kum &amp;  Tuvalet Gereçleri</a></li>
+                        <li><a class="dropdown-item" href="#">Oyuncaklar</a></li>
+
+                        @* — İÇ DROPDOWN 2: BAKIM & SAĞLIK *@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                Bakım &amp; Sağlık
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ağız &amp;  Diş Bakımı</a></li>
+                                <li><a class="dropdown-item" href="#">Göz &amp;  Kulak Bakımı</a></li>
+                                <li><a class="dropdown-item" href="#">Tarak &amp;  Fırçalar</a></li>
+                                <li><a class="dropdown-item" href="#">Şampuan</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                @*   2-köpek *@
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        KÖPEK
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @* — İÇ DROPDOWN 1: MAMALAR *@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                Köpek Maması
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Yavru Köpek Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Yetişkin Köpek Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Yaşlı Köpek Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Kısırlaştırılmış Köpek Maması</a></li>
+                                <li><a class="dropdown-item" href="#">Ödül Mamaları</a></li>
+                            </ul>
+                        </li>
+                        @* — DİĞER LINKLER *@
+                        <li><a class="dropdown-item" href="#">Mama &amp;  Su Kapları</a></li>
+                        <li><a class="dropdown-item" href="#">Taşıma Çantaları &amp;  Arabaları</a></li>
+                        <li><a class="dropdown-item" href="#">Eğitim Ürünleri</a></li>
+                        <li><a class="dropdown-item" href="#">Oyuncaklar</a></li>
+                        <li><a class="dropdown-item" href="#">Tasma &amp;  Aksesuar</a></li>
+                        @* — İÇ DROPDOWN 2: BAKIM & SAĞLIK *@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                Bakım &amp; Sağlık
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ağız &amp;  Diş Bakımı</a></li>
+                                <li><a class="dropdown-item" href="#">Göz &amp;  Kulak Bakımı</a></li>
+                                <li><a class="dropdown-item" href="#">Tarak &amp;  Fırçalar</a></li>
+                                <li><a class="dropdown-item" href="#">Şampuan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                @* 3-kuş *@
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        KUŞ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @* — İÇ DROPDOWN 1- yemler *@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                Kuş Yemleri
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Muhabbet Kuşu Yemi</a></li>
+                                <li><a class="dropdown-item" href="#">Kanarya Yemi</a></li>
+                                <li><a class="dropdown-item" href="#">Papağan Yemi</a></li>
+                                <li><a class="dropdown-item" href="#">Tropikal Kuş </a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Kuş Sağlığı</a></li>
+                        <li><a class="dropdown-item" href="#">Kuş Evleri</a></li>
+                        <li><a class="dropdown-item" href="#">Kuş Aksesuarları</a></li>
+                    </ul>
+                </li>
+                @*  4-akvaryum *@
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        AKVARYUM
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Balık Yemleri</a></li>
+                        <li><a class="dropdown-item" href="#">Akvaryum Bakım Malzemeleri</a></li>
+                        <li><a class="dropdown-item" href="#">Akvaryum Dekor</a></li>
+                    </ul>
+                </li>
+                @*  5-kemirgen *@
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        KEMİRGEN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @* — tavşan *@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                TAVŞAN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Tavşan Yemleri</a></li>
+                                <li><a class="dropdown-item" href="#">Tavşan Yatağı</a></li>
+                                <li><a class="dropdown-item" href="#">Tavşan Taşıma Ürünleri</a></li>
+                                <li><a class="dropdown-item" href="#">Tavşan Oyuncakları</a></li>
+                            </ul>
+                        </li>
+                        @* — hamster*@
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                HAMSTER
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hamster Yemleri</a></li>
+                                <li><a class="dropdown-item" href="#">Hamster Suluğu</a></li>
+                                <li><a class="dropdown-item" href="#">Hamster Yatağı</a></li>
+                                <li><a class="dropdown-item" href="#">Hamster Taşıma Ürünleri</a></li>
+                                <li><a class="dropdown-item" href="#">Hamster Oyuncakları</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            @*  </Authorized>
+            </AuthorizeView>  *@
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-center">
+                            <!-- Oturum açmışsa sadece Çıkış Yap -->
+                            <AuthorizeView>
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center"
+                                                 href="Account/Logout"
+                                                 Match="NavLinkMatch.All">
+                                            <i class="fas bi bi-box-arrow-right fa-lg text-secondary"></i>
+                                            <span class="ms-1">Çıkış Yap</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+
+                                <NotAuthorized>
+                                    <!-- Üye Girişi -->
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/Account/Login" Match="NavLinkMatch.Prefix">
+                                            <i class="fas fa-sign-in-alt fa-lg text-danger"></i>
+                                            <span class="ms-1">Giriş Yap</span>
+                                        </NavLink>
+                                    </li>
+                                    <!-- Kayıt Ol -->
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/Account/Register" Match="NavLinkMatch.Prefix">
+                                            <i class="fas fa-user-plus fa-lg text-primary"></i>
+                                            <span class="ms-1">Kayıt Ol</span>
+                                        </NavLink>
+                                    </li>
+                                </NotAuthorized>
+                            </AuthorizeView>
+
+                            <!-- kullanıcı sepet -->
+                            <AuthorizeView Roles="User">
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/user/cart" Match="NavLinkMatch.Prefix">
+                                            <i class="fas bi bi-bag-heart-fill fa-lg text-success"></i>
+                                            <span class="ms-1">Sepetim</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+                            <!-- kullanıcı hesabım -->
+                            <AuthorizeView Roles="User">
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/user/userDashboard" Match="NavLinkMatch.Prefix">
+                                            <i class="fas bi bi-clipboard-heart-fill fa-lg text-primary"></i>
+                                            <span class="ms-1">Hesabım</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+
+                            <!-- admin hesabım -->
+                            <AuthorizeView Roles="Admin">
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/admin/adminDashboard" Match="NavLinkMatch.Prefix">
+                                            <i class="fas bi bi-clipboard-heart-fill fa-lg text-primary"></i>
+                                            <span class="ms-1">Hesabım</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+
+                            <!-- Supplier hesabım -->
+                            <AuthorizeView Roles="Supplier">
+                                <Authorized>
+                                    <li class="nav-item mx-3">
+                                        <NavLink class="nav-link d-flex align-items-center" href="/supplier/supplierDashboard" Match="NavLinkMatch.Prefix">
+                                            <i class="fas bi bi-clipboard-heart-fill fa-lg text-primary"></i>
+                                            <span class="ms-1">Hesabım</span>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+

@@ -1,0 +1,105 @@
+﻿@* kategorilerin yönetimi: sil-güncelle-yeni ekle *@
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+
+@page "/category/CategoryIndex"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@using static MudBlazor.Icons.Material
+
+@inject ICategoryService CategoryService
+@inject NavigationManager Navigation
+@inject IDialogService DialogService
+
+<MudText Typo="Typo.h5">Kategori Tablosu</MudText>
+
+<MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+           OnClick="@( () => OpenAddCategoryPage() )">
+    Yeni Kategori Ekle
+</MudButton>
+
+@* <MudButton Color="Color.Primary" Class="mt-4"
+           OnClick="@( () => OpenAddCategoryPage() )">
+    <MudIcon Icon="@Icons.Material.Filled.Add" Class="me-1" />
+    Yeni Kategori Ekle
+</MudButton> *@
+
+@if (categories == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+    <MudTable Items="categories" Hover="true" Striped="true" Bordered="true">
+        <HeaderContent>
+            <MudTh>ID</MudTh>
+            <MudTh>Kategori Adı</MudTh>
+            <MudTh>İşlemler</MudTh>
+        </HeaderContent>
+
+        <RowTemplate Context="category">
+            <MudTd DataLabel="ID">@category.Id</MudTd>
+            <MudTd DataLabel="Kategori Adı">@category.PetType</MudTd>
+            <MudTd>
+                @*  güncelleme *@
+                <MudButton Color="Color.Warning" Variant="Variant.Filled" OnClick="() => EditCategory(category.Id)">
+                    <MudIcon Icon="@Icons.Material.Filled.Edit" />
+                </MudButton>
+
+                @*   direkt silme işlemi- isdeleted true olur *@
+                <MudButton Color="Color.Error" Variant="Variant.Filled" Class="ms-2" OnClick="() => DeleteCategory(category.Id)">
+                    <MudIcon Icon="@Icons.Material.Filled.Delete" />
+                </MudButton>
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+<MudStack Spacing="2" Class="mt-4">
+    <MudText Typo="Typo.caption" Class="mt-2">
+        Bu sayfa yalnızca Admin ve Tedarikçiler için erişilebilir. Silinen kategoriler sistemden tamamen kaldırılmaz.
+    </MudText>
+</MudStack>
+
+@code {
+    private List<Models.Category>? categories;
+  
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await CategoryService.GetAllAsync();
+    }
+
+    //yeni kategori ekleme
+    private void OpenAddCategoryPage()
+    {
+        Navigation.NavigateTo("/category/CategoryCreate");
+    }
+
+    //kategori sil
+    private async Task DeleteCategory(int id)
+    {
+        bool? confirmed = await DialogService.ShowMessageBox(
+            "Kategoriyi sil",
+            "Bu katergoriyi silmek istediğinizden emin misiniz?",
+            yesText: "Evet",
+            cancelText: "Vazgeç"
+        );
+
+        if (confirmed == true)
+        {
+            await CategoryService.SoftDeleteAsync(id);
+            categories = await CategoryService.GetAllAsync();
+        }
+    }
+
+    //kategori güncelleme
+    private void EditCategory(int id)
+    {
+        Navigation.NavigateTo($"/category/CategoryEdit/{id}");
+    }
+        
+}

@@ -1,0 +1,39 @@
+﻿@page "/admin/admindashboard"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
+
+<h1>Admin Hesabım</h1>
+
+<CardsGrid Items="CardList" />
+
+@code {
+    private List<CardsGrid.CardInfo> CardList = new() {
+        new() { Title = "Ürün-Stok İşlemleri", Icon="bi bi-upc-scan",  Link = "/areas/admin/ProductProcess", ButtonText = "Git" },
+        new() { Title = "Gelen Siparişler-Kargo Yönetimi",  Icon="bi bi-truck",      Link = "", ButtonText = "Git" },
+        new() { Title = "Tedarikçiyi Yönet",  Icon="bi bi-person-vcard",      Link = "", ButtonText = "Git" },
+        new() { Title = "Kullanıcıları Yönet",  Icon="bi bi-person-hearts",      Link = "", ButtonText = "Git" },
+        new() { Title = "Blog Yönet",  Icon="bi bi-journal-text",      Link = "", ButtonText = "Git" },
+    };
+
+    //ürün işlemleri- ekle-sil-güncelle
+    //ürün stok güncelle
+    //dashboard hem admin hem tedarikçide gösterilisn --toplam satış , günlük satış, kullanıcılar, en çok satan ürünler
+    //SİPARİŞ YÖNETİMİ	SİPARİŞ LİSTESİ    SİPARİŞ DETAYLARI     SİPARİŞ DURUMU     SİPARİŞ İPTAL/İADE
+
+    // KARGO YÖNETİMİ    Kargo firması seçimi
+    //  Kargo takip numarası girme
+    //  Kargo durumu: Hazırlanıyor / Kargoya verildi / Teslim edildi
+    //  Kargo ücreti hesaplama(ağırlık veya şehre göre)
+
+    // KULLANICI YÖNETİMİ   Kullanıcı listesi(üyelik tarihi, maili, sipariş sayısı)
+    // Roller(Admin, Müşteri, Personel)
+    // Kullanıcıyı pasifleştirme / engelleme
+    // E-posta ile kampanya yollama
+
+
+}
+

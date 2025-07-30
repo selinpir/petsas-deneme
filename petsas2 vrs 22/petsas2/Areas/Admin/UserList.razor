@@ -1,0 +1,75 @@
+﻿@page "/admin/UserList"
+@attribute [Authorize(Roles = "Admin")]
+@* 2 *@
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IAdminService AdminService
+@inject IHesapService HesapService
+@inject IAdresService AdresService
+@inject IPetService PetService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+<MudTable Items="@hesapBilgileris" Hover="true" Striped="true" Bordered="true">
+   @*  üst başlık *@
+    <HeaderContent>
+        <MudTh>Ad</MudTh>
+        <MudTh>Soyad</MudTh>
+        <MudTh>Telefon</MudTh>
+        <MudTh>Doğum Tarihi</MudTh>
+        <MudTh>Hesap Oluşturulma Tarihi</MudTh>
+  @*   <MudTh>Hesap Durumu</MudTh> *@
+        <MudTh>Profil Tamamlanma Durumu</MudTh>
+        <MudTh>İl</MudTh>
+        <MudTh>İlçe</MudTh>
+        <MudTh>Pet Türü</MudTh>
+    </HeaderContent>
+   @*  üst başlık *@
+
+  @*   içerik  *@
+    <RowTemplate Context="k">
+        <MudTd>@k.Ad</MudTd>
+        <MudTd>@k.Soyad</MudTd>
+        <MudTd>@k.Telefon</MudTd>
+        <MudTd>@k.DogumTarihi</MudTd>
+        <MudTd>@k.HesapOlusturmaTarihi</MudTd>
+    @*         <MudTd>@k.HesapDurumu</MudTd> *@
+        <MudTd>@k.IsCompleted</MudTd>
+        <MudTd>@k.AdresBilgisi?.Il?.IlAd</MudTd>
+        <MudTd>@k.AdresBilgisi?.Ilce?.IlceAd</MudTd>
+
+        <MudTd>
+            @foreach (var pet in k.PBilgileri.Where(p => !p.IsDeleted))
+            {
+                @pet.Category?.PetType <br />
+            }
+        </MudTd>
+    </RowTemplate>
+    @*   içerik  *@
+</MudTable>
+
+@code {
+    private string ReadOnly { get; set; } = "Kullanıcı Listesi";
+    List<HesapBilgileri>? hesapBilgileris;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hesapBilgileris = await AdminService.GetAllAsync();
+
+    }
+    //th table header
+    //td table data
+}

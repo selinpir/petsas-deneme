@@ -1,0 +1,96 @@
+﻿@* ÇALIŞIYOR GOAT *@
+@* MARKA LİSTELE-YENİ MARKA EKLE-MARKA SİL- Marka güncelle? *@
+
+@page "/Brand/BrandIndex"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@using static MudBlazor.Icons.Material
+@inject IBrandService BrandService
+@inject NavigationManager Navigation
+@inject IDialogService DialogService
+
+<MudText Typo="Typo.h5"> Marka Tablosu</MudText>
+<MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+           OnClick="@( () => OpenAddBrandPage() )">
+    Yeni Marka Ekle
+</MudButton>
+
+
+@if (brands == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+    <MudTable Items="brands" Hover="true" Striped="true" Bordered="true">
+        <HeaderContent>
+            <MudTh>ID</MudTh>
+            <MudTh>Marka Adı</MudTh>
+            <MudTh>İşlemler</MudTh>
+        </HeaderContent>
+
+        <RowTemplate Context="brand">
+            <MudTd DataLabel="ID">@brand.Id</MudTd>
+            <MudTd DataLabel="Marka Adı">@brand.Name</MudTd>
+            <MudTd>
+                @*  güncelleme *@
+                <MudButton Color="Color.Warning" Variant="Variant.Filled" OnClick="() => EditBrand(brand.Id)">
+                    <MudIcon Icon="@Icons.Material.Filled.Edit" />
+                </MudButton>
+
+                @*   direkt silme işlemi- isdeleted true olur *@
+                <MudButton Color="Color.Error" Variant="Variant.Filled" Class="ms-2" OnClick="() => DeleteBrand(brand.Id)">
+                    <MudIcon Icon="@Icons.Material.Filled.Delete" />
+                </MudButton>
+
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+
+}
+<MudStack Spacing="2" Class="mt-4">
+    <MudText Typo="Typo.caption" Class="mt-2">
+        Bu sayfa yalnızca Admin ve Tedarikçiler için erişilebilir. Silinen markalar sistemden tamamen kaldırılmaz.
+    </MudText>
+</MudStack>
+@code {
+    private List<Models.Brand>? brands;
+
+    protected override async Task OnInitializedAsync()
+    {
+        brands = await BrandService.GetAllAsync();
+    }
+    //yeni marka ekleeeee
+    private void OpenAddBrandPage()
+    {
+        Navigation.NavigateTo("/Brand/BrandCreate");
+    }
+    //marka sil-tamamen silinmez
+    private async Task DeleteBrand(int id)
+    {
+        bool? confirmed = await DialogService.ShowMessageBox(
+            "Markayı Sil",
+            "Bu markayı silmek istediğinizden emin misiniz?",
+            yesText: "Evet",
+            cancelText: "Vazgeç"
+        );
+
+        if (confirmed == true)
+        {
+            await BrandService.SoftDeleteAsync(id);
+            brands = await BrandService.GetAllAsync(); // listeyi yenile
+        }
+    }
+    //marka güncelle
+    private void EditBrand(int id)
+    {
+        Navigation.NavigateTo($"/Brand/BrandEdit/{id}");
+    }
+}
+

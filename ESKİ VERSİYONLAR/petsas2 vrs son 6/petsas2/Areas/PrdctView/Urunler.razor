@@ -1,0 +1,44 @@
+﻿@page "/urunler"
+@page "/urunler/{Category}"
+@page "/urunler/{Category}/{SubCategory}"
+
+@using petsas2.Services
+@using petsas2.Components.Pages.Shared
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject IProductService ProductService
+@inject NavigationManager NavigationManager
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var product in Products)
+        {
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <ProductGenel Name="@product.Name"
+                              DetailUrl="@($"/Urunler/detay/{product.Id}")"
+                              ImageUrl1="@product.ImageUrl"
+                              Price="@(product.Pricings.LastOrDefault()?.BrutFiyat ?? 0)"
+                              DetayaGit="@(() => DetayaGit(product))"
+                              SepeteEkle="@(() => SepeteEkle(product))" />
+            </div>
+        }
+    </div>
+</div>
+
+
+
+@code {
+
+    [Parameter] public string Category { get; set; }
+    [Parameter] public string SubCategory { get; set; }
+
+    public List<Product> Products { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Products = await ProductService.GetProductsAsync(Category, SubCategory);
+    }
+
+    void DetayaGit(Product p) { /* ... */ }
+    void SepeteEkle(Product p) { /* ... */ }
+}

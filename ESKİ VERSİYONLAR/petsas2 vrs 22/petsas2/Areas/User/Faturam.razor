@@ -1,0 +1,265 @@
+﻿<style>
+
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    #container {
+        min-height: 100vh;
+        background-color: #fff;
+        padding: 50px 20px;
+    }
+
+    .text-danger strong {
+        color: #9f181c;
+    }
+
+    .receipt-main {
+        background: #ffffff none repeat scroll 0 0;
+        border-bottom: 12px solid #333333;
+        border-top: 12px solid #9f181c;
+        /*         margin-top: 50px; */
+        margin: 50px auto;
+        margin-bottom: 50px;
+        padding: 40px 30px !important;
+        position: relative;
+        box-shadow: 0 1px 21px #fff;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+        .receipt-main p {
+            color: #333333;
+            font-family: 'Segoe UI Variable Small';
+            line-height: 1.42857;
+        }
+
+    .receipt-footer h1 {
+        font-size: 15px;
+        font-weight: 400 !important;
+        margin: 0 !important;
+    }
+
+    .receipt-main::after {
+        background: #414143 none repeat scroll 0 0;
+        content: "";
+        height: 5px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -13px;
+    }
+
+    .receipt-main thead {
+        background: #414143 none repeat scroll 0 0;
+    }
+
+        .receipt-main thead th {
+            color: black;
+        }
+
+    .receipt-right h5 {
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0 0 7px 0;
+    }
+
+    .receipt-right p {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+        .receipt-right p i {
+            text-align: center;
+            width: 18px;
+        }
+
+    .receipt-main td {
+        padding: 9px 20px !important;
+    }
+
+    .receipt-main th {
+        padding: 13px 20px !important;
+    }
+
+    .receipt-main td {
+        font-size: 13px;
+        font-weight: initial !important;
+    }
+
+        .receipt-main td p:last-child {
+            margin: 0;
+            padding: 0;
+        }
+
+        .receipt-main td h5 {
+            font-size: 20px;
+            font-weight: 900;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+    .receipt-header-mid .receipt-left h5 {
+        font-weight: 100;
+        margin: 34px 0 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .receipt-header-mid {
+        margin: 24px 0;
+        overflow: hidden;
+    }
+
+    #container {
+        background-color: #dcdcdc;
+    }
+
+    .text-normal {
+        font-weight: normal;
+    }
+
+</style>
+
+
+
+@page "/user/Faturam/{FaturaId:int}"
+
+@using Microsoft.JSInterop
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "User")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+
+@inject IFaturaService FaturaService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@if (fatura == null)
+{
+    <MudText>
+        Fatura yükleniyor...
+    </MudText>
+}
+else
+{
+
+    <div id="container">
+        @*      <div id="faturaAlani" class="receipt-main"> *@
+        <div id="faturaAlani" class="receipt-main col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+            <div class="row receipt-header">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="receipt-left">
+                        <img class="img-responsive" alt="Petsas" src="/petsasLogo.png" style="width: 135px; border-radius: 43px;">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <div class="receipt-right">
+                        <h5><b>Vergi No:</b> <span class="text-normal">@fatura.SaticiVergiNo</span></h5>
+                        <h5><b>Satıcı:</b> <span class="text-normal">@fatura.SaticiUnvan</span></h5>
+                        <h5><b>Satıcı İsmi:</b> <span class="text-normal">@fatura.SaticiAdSoyad</span></h5>
+                        <h5><b>Satıcı Adresi:</b> <span class="text-normal">@fatura.SaticiAdres</span> <i class="fa fa-location-arrow"></i></h5>
+                        <p><b>Telefon Numarası:</b> <span class="text-normal">555 444 44 30</span> <i class="fa fa-phone"></i></p>
+                        <p><b>Mail:</b> <span class="text-normal">info@petsas.com</span> <i class="fa fa-envelope-o"></i></p>
+
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row receipt-header receipt-header-mid">
+                <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                    <div class="receipt-right">
+                        <h5><b>Fatura No: </b>  <span>@fatura.FaturaNo</span></h5>
+                        <br />
+                        <h5><b>Sipariş No: </b>  <span> @fatura.SiparisNo</span></h5>
+                        <br />
+                        <h5><b>Fatura Tarihi: </b>  <span>@fatura.FaturaTarihi.ToShortDateString()</span></h5>
+                        <br />
+                        <h5><b>Müşteri Adı:</b> <span>@fatura.MusteriAdi</span></h5>
+                        <br />
+                        <h5><b>Ödeme Yöntemi:</b> <span>@fatura.OdemeYontemi</span></h5>
+                        <br />
+                        <h5><b>Toplam Tutar:</b> <span>@fatura.F_ToplamTutar.ToString("C")</span></h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Ürün/ler</th>
+                            <th>Adet</th>
+                            <th>Fiyat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var detay in fatura.Siparis?.SiparisDetaylar ?? Enumerable.Empty<SiparisDetay>())
+                        {
+                            <tr>
+                                <td>@(detay.Urun?.Name ?? "Bilinmeyen Ürün")</td>
+                                <td>@detay.UrunMiktar</td>
+                                <td>@detay.BirimFiyat.ToString("C")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+            <div class="row receipt-footer">
+                <div class="col-xs-8 col-sm-8 col-md-8 text-left">
+                    <p><b>PetSas'ı tercih ettiğiniz için Teşekkürler!</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @*  </div> *@
+    <MudButton Color="Color.Primary" FullWidth="true" Variant="Variant.Filled" OnClick="YazdirFatura">Yazdır</MudButton>
+}
+@code
+{
+    public string ReadOnly { get; set; } = "Faturam";
+    private List<Fatura> fatura_ = new();
+    private Fatura? fatura;
+
+    [Parameter] public int FaturaId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            fatura = await FaturaService.GetFaturaByFaturaNo(FaturaId);
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add("Fatura yüklenirken hata oluştu: " + ex.Message, Severity.Error);
+        }
+    }
+    //-------faturayazdır1---------------------------
+    [Inject] IJSRuntime JS { get; set; }
+
+    private async Task YazdirFatura()
+    {
+        await JS.InvokeVoidAsync("yazdirFatura");
+    }
+    //----------------------------------
+}

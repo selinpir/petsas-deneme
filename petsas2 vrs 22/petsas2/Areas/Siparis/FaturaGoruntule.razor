@@ -1,0 +1,109 @@
+﻿@page "/siparis/FaturaGoruntule/{FaturaId:int}"
+@* @page "/siparis/adminFaturaGoruntule(burada / yoktu calısmadı ){FaturaNo:guid}" *@
+@* @page "/siparis/adminFaturaGoruntule/{FaturaNo:guid}" *@
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+
+@inject IFaturaService FaturaService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@if (fatura != null)
+{
+    <MudTable Items="new[] { fatura }" Elevation="2">
+        <HeaderContent>
+            <MudTh>FaturaNo </MudTh>
+            <MudTh>SiparisNo</MudTh>
+            <MudTh>Fatura Tarihi</MudTh>
+            <MudTh>Müşteri Adı</MudTh>
+            <MudTh>Ödeme Yöntemi</MudTh>
+            <MudTh>Fatura Toplam Tutar</MudTh>
+           
+
+            <MudTh>Satici Vergi No</MudTh>
+            <MudTh>Satici Unvan</MudTh>
+            <MudTh>Satici Ad Soyad</MudTh>
+            <MudTh>Satici Adres</MudTh>
+
+            <MudTh>Ürünler</MudTh>
+        </HeaderContent>
+
+        <RowTemplate Context="f">
+            @*             context kullanmadığımda daha once veri gelmedi !!! *@
+            <MudTd>@f.FaturaNo</MudTd>
+            <MudTd>@f.SiparisNo</MudTd>
+            <MudTd>@f.FaturaTarihi</MudTd>
+            <MudTd>@f.MusteriAdi</MudTd>
+            <MudTd>@f.OdemeYontemi</MudTd>
+            <MudTd>@f.F_ToplamTutar</MudTd>
+
+            <MudTd>@f.SaticiVergiNo</MudTd>
+            <MudTd>@f.SaticiUnvan</MudTd>
+            <MudTd>@f.SaticiAdSoyad</MudTd>
+            <MudTd>@f.SaticiAdres</MudTd>
+
+            <MudTd>
+              @*   <ul class="m-0 p-0">
+                    @foreach (var detay in fatura.Siparis.SiparisDetaylar)
+                    {
+                        <li>@detay.Urun - @detay.UrunMiktar </li>
+                    }
+                </ul> *@
+
+                <ul class="m-0 p-0">
+                    @foreach (var detay in fatura.Siparis.SiparisDetaylar)
+                    {
+                        <li>@(detay.Urun?.Name ?? "Bilinmeyen Ürün")  @detay.UrunMiktar adet</li>
+                    }
+                </ul>
+              
+            </MudTd>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       OnClick="@(() => Navigation.NavigateTo(" "))">
+                Ana Sayfaya Dön
+            </MudButton>
+        </RowTemplate>
+    </MudTable>
+}
+else
+{
+    <MudText>
+        Fatura yükleniyor...
+    </MudText>
+}
+
+@code {
+    public string ReadOnly { get; set; } = "Fatura Detay Görüntüle";
+    private List<Fatura> fatura_ = new();
+    private Fatura? fatura;
+
+    [Parameter] public int FaturaId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            fatura = await FaturaService.GetFaturaByFaturaNo(FaturaId);
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add("Fatura yüklenirken hata oluştu: " + ex.Message, Severity.Error);
+        }
+    }
+}

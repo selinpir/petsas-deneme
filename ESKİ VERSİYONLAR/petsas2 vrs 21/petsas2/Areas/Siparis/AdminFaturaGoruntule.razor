@@ -1,0 +1,63 @@
+﻿@page "/siparis/AdminFaturaGoruntule/{SiparisNo:guid}"
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+
+@inject IFaturaService FaturaService
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+
+<h3>Fatura Detayları (Admin)</h3>
+
+@if (fatura == null)
+{
+    <MudText>Fatura bulunamadı veya yükleniyor...</MudText>
+}
+else
+{
+    <p><b>Müşteri:</b> @fatura.MusteriAdi</p>
+    <p><b>Tutar:</b> @fatura.F_ToplamTutar.ToString("C")</p>
+    <p><b>Sipariş Tarihi:</b> @(fatura.Siparis?.SiparisTarihi.ToShortDateString() ?? "Bilinmiyor")</p>
+
+    <MudTable Items="fatura.SiparisDetaylari ?? new List<SiparisDetay>()" Hover="true" Bordered="true" Striped="true">
+        <HeaderContent>
+            <MudTh>Ürün Adı</MudTh>
+            <MudTh>Miktar</MudTh>
+            <MudTh>Birim Fiyat</MudTh>
+            <MudTh>Toplam</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd>@context.Urun?.Name ?? "Bilinmiyor"</MudTd>
+            <MudTd>@context.UrunMiktar</MudTd>
+            <MudTd>@context.BirimFiyat.ToString("C")</MudTd>
+            <MudTd>@(context.BirimFiyat * context.UrunMiktar).ToString("C")</MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+@code {
+    public string ReadOnly { get; set; } = "Fatura Detay Görüntüle";
+    [Parameter] public Guid SiparisNo { get; set; }
+
+
+    private Fatura? fatura;
+
+    protected override async Task OnInitializedAsync()
+    {
+        fatura = await FaturaService.GetFaturaBySiparisNoAsync(SiparisNo);
+    }
+}

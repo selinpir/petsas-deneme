@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\services\\interface\\ifaturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\interface\\ifaturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\services\\faturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\faturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\siparis\\faturagoruntule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\siparis\\faturagoruntule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\services\\siparisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\siparisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\models\\siparis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\models\\siparis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\siparis\\siparisiyonet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\siparis\\siparisiyonet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\siparis\\siparisalindi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\siparis\\siparisalindi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\siparis\\odemeislemi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\siparis\\odemeislemi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\user\\siparislerim.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\user\\siparislerim.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\siparis\\adminfaturagoruntule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\siparis\\adminfaturagoruntule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\areas\\user\\userdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\areas\\user\\userdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\services\\interface\\isiparisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\services\\interface\\isiparisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|d:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868A3F9E-856F-45A0-A5CD-FF86BFFDBA69}|petsas2\\petsas2.csproj|solutionrelative:petsas2\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 192,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SiparisService.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\SiparisService.cs",
+              "RelativeDocumentMoniker": "petsas2\\Services\\SiparisService.cs",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\SiparisService.cs",
+              "RelativeToolTip": "petsas2\\Services\\SiparisService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAEwCYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T19:36:29.651Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SiparisAlindi.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\SiparisAlindi.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Siparis\\SiparisAlindi.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\SiparisAlindi.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Siparis\\SiparisAlindi.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T19:34:26.572Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SiparisiYonet.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\SiparisiYonet.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Siparis\\SiparisiYonet.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\SiparisiYonet.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Siparis\\SiparisiYonet.razor",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAUwHIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:25:03.925Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminFaturaGoruntule.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\AdminFaturaGoruntule.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Siparis\\AdminFaturaGoruntule.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\AdminFaturaGoruntule.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Siparis\\AdminFaturaGoruntule.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:51:01.462Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OdemeIslemi.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\OdemeIslemi.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Siparis\\OdemeIslemi.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\OdemeIslemi.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Siparis\\OdemeIslemi.razor",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:29:37.87Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FaturaGoruntule.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\FaturaGoruntule.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\Siparis\\FaturaGoruntule.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\Siparis\\FaturaGoruntule.razor",
+              "RelativeToolTip": "petsas2\\Areas\\Siparis\\FaturaGoruntule.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:14:33.86Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Products.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "petsas2\\Models\\Products.cs",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Models\\Products.cs",
+              "RelativeToolTip": "petsas2\\Models\\Products.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAA+wHAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T23:00:15.46Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Siparislerim.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\User\\Siparislerim.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\User\\Siparislerim.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\User\\Siparislerim.razor",
+              "RelativeToolTip": "petsas2\\Areas\\User\\Siparislerim.razor",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAACsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T00:15:57.229Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDashboard.razor",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\User\\UserDashboard.razor",
+              "RelativeDocumentMoniker": "petsas2\\Areas\\User\\UserDashboard.razor",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Areas\\User\\UserDashboard.razor",
+              "RelativeToolTip": "petsas2\\Areas\\User\\UserDashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T00:15:56.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISiparisService.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\Interface\\ISiparisService.cs",
+              "RelativeDocumentMoniker": "petsas2\\Services\\Interface\\ISiparisService.cs",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\Interface\\ISiparisService.cs",
+              "RelativeToolTip": "petsas2\\Services\\Interface\\ISiparisService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T23:39:25.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Siparis.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Models\\Siparis.cs",
+              "RelativeDocumentMoniker": "petsas2\\Models\\Siparis.cs",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Models\\Siparis.cs",
+              "RelativeToolTip": "petsas2\\Models\\Siparis.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:46:34.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FaturaService.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\FaturaService.cs",
+              "RelativeDocumentMoniker": "petsas2\\Services\\FaturaService.cs",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\FaturaService.cs*",
+              "RelativeToolTip": "petsas2\\Services\\FaturaService.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA4wCEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:40:04.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IFaturaService.cs",
+              "DocumentMoniker": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\Interface\\IFaturaService.cs",
+              "RelativeDocumentMoniker": "petsas2\\Services\\Interface\\IFaturaService.cs",
+              "ToolTip": "D:\\masaustu_yedek\\petsas versiyonlar\\petsas2 vrs 21\\petsas2\\Services\\Interface\\IFaturaService.cs*",
+              "RelativeToolTip": "petsas2\\Services\\Interface\\IFaturaService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:39:46.094Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 106,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

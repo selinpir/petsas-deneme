@@ -1,0 +1,104 @@
+﻿@page "/subcategory/SubCategoryCreate"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject ISubCategoryService SubCategoryService
+@inject ICategoryService CategoryService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudText Typo="Typo.h5">Yeni Alt Kategori Ekle</MudText>
+
+<MudPaper Class="p-4 mx-auto" Style="max-width:600px">
+    <MudForm>
+        <MudSelect T="int?"
+                   Label="Kategori"
+                   @bind-Value="selectedCategoryId"
+                   Required="true"
+                   Class="mb-4">
+            <MudSelectItem Value="0" Disabled="true">Seçiniz</MudSelectItem>
+            @foreach (var cat in categories)
+            {
+                <MudSelectItem T="int?" Value="cat.Id">@cat.PetType</MudSelectItem>
+            }
+        </MudSelect>
+
+        <MudTextField @bind-Value="newSubCategoryName"
+                      Label="Alt Kategori Adı"
+                      Required="true"
+                      Immediate="true"
+                      Class="mb-4" />
+                             
+        <div class="mt-4 d-flex gap-2">
+            <MudButton Color="Color.Secondary"
+                       OnClick="@(() => Navigation.NavigateTo("/subcategory/SubCategoryIndex"))">
+                İptal
+            </MudButton>
+            <MudButton Color="Color.Primary"
+                       OnClick="SaveSubCategory"
+                       Disabled="@(!CanSave)">
+                Kaydet
+            </MudButton>
+        </div>
+
+    </MudForm>
+</MudPaper>
+
+@code {
+    // Form alanları
+    private string newSubCategoryName = "";
+    private int? selectedCategoryId;
+
+    // Veritabanından çekeceğimiz listeler
+    private List<Category> categories = new();
+    private List<Category> existingCategories = new();
+    private List<SubCategory> existingSubCategory = new();
+
+    // Kaydet butonunu aktif etme koşulu
+    private bool CanSave =>
+        !string.IsNullOrWhiteSpace(newSubCategoryName)
+        && selectedCategoryId.HasValue;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //  Üst kategorileri yükle
+        categories = await CategoryService.GetAllAsync();
+        //  Var olan alt kategorileri yükle
+        existingSubCategory = await SubCategoryService.GetAllAsync();
+    }
+
+    private async Task SaveSubCategory()
+    {
+        // Aynı isim+kategori kombosu zaten var mı?
+        var nameNorm = newSubCategoryName.Trim().ToLower();
+        if (existingSubCategory.Any(sc =>
+              sc.ProductName.Trim().ToLower() == nameNorm
+           && sc.CategoryId == selectedCategoryId.Value))
+        {
+            Snackbar.Add(
+              "Bu isimde zaten aynı kategori altında bir alt kategori mevcut.",
+              Severity.Warning
+            );
+            return;
+        }
+
+        // Yeni alt kategori nesnesi
+        var newSub = new SubCategory
+            {
+                ProductName = newSubCategoryName.Trim(),
+                CategoryId = selectedCategoryId.Value
+            };
+
+        // Ekleme ve geri yönlendirme
+        await SubCategoryService.AddAsync(newSub);
+        Snackbar.Add(
+          "Yeni alt kategori başarıyla eklendi. Teşekkürler.",
+          Severity.Success
+        );
+        Navigation.NavigateTo("/subcategory/SubCategoryIndex");
+    }
+}

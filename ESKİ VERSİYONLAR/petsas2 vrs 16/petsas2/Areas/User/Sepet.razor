@@ -1,0 +1,103 @@
+﻿@page "/user/Sepetim"
+@attribute [Authorize]
+@attribute [Authorize(Roles = "User")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IHesapService HesapService
+@inject ISepetService SepetService
+@inject IProductService ProductService
+@inject IPricingService PricingService
+
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+<MudTable Items="@sepet" Hover="true" Striped="true" Bordered="true">
+    <HeaderContent>
+        <MudTh>Ürün Adı</MudTh>
+        <MudTh>Ürün Görseli</MudTh>
+        <MudTh>Fiyat</MudTh>
+        <MudTh>Adet</MudTh>
+        <MudTh>Toplam Tutar</MudTh>
+        <MudTh>Sepetten Sil</MudTh>
+    </HeaderContent>
+
+    <RowTemplate Context="s">
+
+        <MudTd>@s.UrunAd</MudTd>
+
+        <MudTd>
+            @if (!string.IsNullOrWhiteSpace(s.Gorsel))
+            {
+                <img src="@s.Gorsel"
+                     alt="Ürün Görseli"
+                     style="width:60px; height:60px; object-fit:cover; border-radius:4px;" />
+            }
+        </MudTd>
+
+        @*URUNUN FİYATI*@
+        <MudTd>@s.BrutFiyat</MudTd>
+
+        <MudTd>
+            <MudNumericField T="int"
+                             Value="@s.Adet"
+                             Min="1"
+                             Immediate="true"
+                             ValueChanged="@(async (v) => await AdetDegisti(s, v))" />
+        </MudTd>
+
+
+        @*SATIRIN TOPLAM TUTARI*@
+        <MudTd>@(s.Adet * s.BrutFiyat) ₺</MudTd>
+
+        @* SEEPTİN TOPLAM TUTARI*@
+      @*   <MudTd>@s.ToplamTutar</MudTd> *@
+
+        @* sepetten sil *@
+    </RowTemplate>
+</MudTable>
+
+@* <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+           OnClick="@( () => SiparisSayfasi() )">
+    Siparişi Tamamla
+</MudButton> *@
+
+@code {
+    public string ReadOnly { get; set; } = "Sepetim";
+    List<SepetDetay>? sepet;
+    private List<SepetDetay> SepetDetaylar = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        sepet = await SepetService.GetSepetUrunleriAsync();
+    }
+    //adet azalt arttır
+    private async Task AdetDegisti(SepetDetay detay, int yeniAdet)
+    {
+        detay.Adet = yeniAdet;
+        var sonuc = await SepetService.UrunAdetGuncelleAsync(detay.UrunID, yeniAdet);
+
+        if (sonuc)
+        {
+            // toplam tutar ya da başka değerler değiştiyse onları da güncelle
+            StateHasChanged();
+        }
+
+    }
+
+    //sil
+
+    //siparişi tamamla
+}

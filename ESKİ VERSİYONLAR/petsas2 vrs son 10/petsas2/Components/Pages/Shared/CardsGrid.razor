@@ -1,0 +1,40 @@
+﻿@using MudBlazor
+@using Microsoft.AspNetCore.Components.Routing @* navlink icin *@
+
+<div class="row">
+    @foreach (var item in Items)
+    {
+        @* col-12 col-md-6 col-lg-4 class'ları ile responsive *@
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-40">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@item.Title</h5>
+                    <i class="@($"{item.Icon}  mb-3 d-block mx-auto")" style="font-size:4rem;"></i>
+                    <NavLink class="btn btn-info mt-auto" href="@item.Link" style="background-color:#b385e0; border-color:#b385e0; color:#fff;">
+                        @item.ButtonText
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    public class CardInfo
+    {
+        // deger bos atanir
+        //okunabilir(get) ve değiştirilebilir(set)
+        public string Title { get; set; } = "";
+
+        public string Icon { get; set; } = "";
+
+        public string Link { get; set; } = "";
+
+        public string ButtonText { get; set; } = "";
+    }
+
+    // [Parameter] dışarıdan veri alabilmeyi saglar
+
+    [Parameter]
+    public List<CardInfo> Items { get; set; } = new();
+}

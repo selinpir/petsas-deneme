@@ -1,0 +1,135 @@
+﻿@* alt kategorilerin yönetimi: sil-güncelle-yeni ekle *@
+
+@page "/subcategory/SubCategoryIndex"
+
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
+
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@using static MudBlazor.Icons.Material
+@* @using Microsoft.JSInterop *@
+
+@inject ISubCategoryService SubCategoryService
+@inject ICategoryService CategoryService
+@inject NavigationManager Navigation
+@inject IDialogService DialogService
+@* @inject IJSRuntime JS *@
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+    @* <MudItem xs="6" Class="px-0">
+        <MudButton Variant="Variant.Text"
+                   Color="Color.Secondary"
+                   FullWidth="true"
+                   OnClick="GoBack">
+            Geri Dön
+        </MudButton>
+    </MudItem> *@
+</MudGrid>
+
+
+<MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+           OnClick="@( () => OpenAddSubCategoryPage() )">
+    Yeni Alt Kategori Ekle
+</MudButton>
+
+@if (subs == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+    <MudTable Items="subs" Hover="true" Striped="true" Bordered="true">
+        <HeaderContent>
+            @*   <MudTh>Id</MudTh> *@
+            <MudTh>Kategori Adı</MudTh>
+            <MudTh>Alt Kategori Adı</MudTh>
+            <MudTh>Güncelle</MudTh>
+            <MudTh>Sil</MudTh>
+            @*  <MudTh>İşlemler</MudTh> *@
+
+        </HeaderContent>
+
+        <RowTemplate Context="sub">
+            @*  <MudTd DataLabel="ID">@sub.Id</MudTd> *@
+            <MudTd DataLabel="Kategori Adı">@sub.Category!.PetType</MudTd>
+
+            <MudTd DataLabel="Alt Kategori Adı">@sub.ProductName</MudTd>
+
+            <MudTd>
+                <MudButton Color="Color.Warning"
+                           Variant="Variant.Filled"
+                           OnClick="@(() => EditSubCategory(sub.Id))">
+                    <MudIcon Icon="@Icons.Material.Filled.Edit" />
+                </MudButton>
+            </MudTd>
+
+            <MudTd>
+                <MudButton Color="Color.Error"
+                           Variant="Variant.Filled"
+                           Class="ms-2"
+                           OnClick="@(() => DeleteSubCategory(sub.Id))">
+                    <MudIcon Icon="@Icons.Material.Filled.Delete" />
+                </MudButton>
+            </MudTd>
+
+        </RowTemplate>
+    </MudTable>
+
+}
+
+<MudStack Spacing="2" Class="mt-4">
+    <MudText Typo="Typo.caption" Class="mt-2">
+        Silinen alt kategoriler sistemden tamamen kaldırılmaz.
+    </MudText>
+</MudStack>
+
+@code {
+    public string ReadOnly { get; set; } = "Alt Kategori Tablosu";
+
+    // private async Task GoBack()
+    // {
+    //     // Bir önceki sayfaya JS ile geri dön
+    //     await JS.InvokeVoidAsync("history.back");
+    // }
+    private List<Models.SubCategory>? subs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        subs = await SubCategoryService.GetAllAsync();
+    }
+
+    private void OpenAddSubCategoryPage()
+    {
+        Navigation.NavigateTo("/subcategory/SubCategoryCreate");
+    }
+
+    private async Task DeleteSubCategory(int id)
+    {
+        bool? confirmed = await DialogService.ShowMessageBox(
+             "Alt kategoriyi sil",
+            "Bu alt katergoriyi silmek istediğinizden emin misiniz?",
+            yesText: "Evet",
+            cancelText: "Vazgeç"
+        );
+        if (confirmed == true)
+        {
+            await SubCategoryService.SoftDelete(id);
+            subs = await SubCategoryService.GetAllAsync();
+        }
+    }
+
+    private void EditSubCategory(int id)
+    {
+        Navigation.NavigateTo($"/subcategory/SubCategoryEdit/{id}");
+    }
+
+}

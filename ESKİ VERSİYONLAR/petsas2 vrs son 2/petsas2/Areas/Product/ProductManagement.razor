@@ -1,0 +1,24 @@
+﻿@page "/product/ProductManagement"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin,Supplier")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
+
+<h2 class="d-flex align-items-center">
+    <MudIcon Icon="@Icons.Material.Filled.AdminPanelSettings"
+             Size="Size.Small"
+             Class="me-1" />
+    Ürün Yönetimi
+</h2>
+
+<CardsGrid Items="CardList" />
+@code {
+    private List<CardsGrid.CardInfo> CardList = new()
+    {
+        new() { Title = "Ürün Yönetimi",               Icon="bi bi-back",       Link =  "/product/ProductIndex",         ButtonText = "Git" },     
+        new() { Title = "Stoğu Azalan Ürünler",        Icon="bi bi-back",       Link =  "/stock/StockAlert",           ButtonText = "Git" },
+    };
+
+}

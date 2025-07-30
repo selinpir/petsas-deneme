@@ -1,0 +1,40 @@
+﻿@page "/subcategory/SubCategoryCreate"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject ISubCategoryService SubCategoryService
+@inject MudBlazor.ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudText Typo="Typo.h5">Yeni Alt Kategori Ekle</MudText>
+
+
+<MudTextField @bind-Value="newSubCategoryName" Label="Alt Kategori Adı" Required="true" Immediate="true" />
+<MudButton Color="Color.Primary" OnClick="SaveSubCategory" Disabled="string.IsNullOrWhiteSpace(newSubCategoryName)">Kaydet</MudButton>
+
+@code {
+    private string newSubCategoryName = "";
+    private List<SubCategory> existingSubCategory = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        existingSubCategory = await SubCategoryService.GetAllAsync();
+    }
+
+    private async Task SaveSubCategory()
+    {
+        var nameNorm = newSubCategoryName.Trim().ToLower();
+        if (existingSubCategory.Any(b => b.ProductName.Trim().ToLower() == nameNorm))
+        {
+            Snackbar.Add("Bu isimde zaten bir alt kategori mevcut.Başka kategori ekleyin.", Severity.Warning);
+            return;
+        }
+
+        await SubCategoryService.AddAsync(new SubCategory { ProductName = newSubCategoryName.Trim() });
+        Snackbar.Add("Yeni alt kategori başarıyla eklendi.Teşekkürler.", Severity.Success);
+
+        Navigation.NavigateTo("/subcategory/SubCategoryIndex");
+    }
+}

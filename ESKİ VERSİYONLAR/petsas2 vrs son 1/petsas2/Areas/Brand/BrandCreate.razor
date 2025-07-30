@@ -1,0 +1,44 @@
+﻿@* aynı marka ismi varsa uyarı gönderiyor - ilk deneme olduğu için veritabanında kontrol etmeyi düşünemedim diğerlerinde öyle yap*@
+@* yeni marka eklemek içindir-ürün eklerken umarım dropdown list ile gelecektir *@
+@* TAMAM CALISIYOR *@
+@* Yeni Marka Ekle *@
+@page "/Brand/BrandCreate"
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject IBrandService BrandService
+@inject MudBlazor.ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudText Typo="Typo.h5">Yeni Marka Ekle</MudText>
+
+<MudTextField @bind-Value="newBrandName" Label="Marka Adı" Required="true" Immediate="true" />
+<MudButton Color="Color.Primary" OnClick="SaveBrand" Disabled="string.IsNullOrWhiteSpace(newBrandName)">Kaydet</MudButton>
+
+@code {
+    private string newBrandName = "";
+    private List<Brand> existingBrands = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        existingBrands = await BrandService.GetAllAsync();
+    }
+
+    private async Task SaveBrand()
+    {
+        //marka adı var mı kontrol?
+        var nameNorm = newBrandName.Trim().ToLower();
+        if (existingBrands.Any(b => b.Name.Trim().ToLower() == nameNorm))
+        {
+            Snackbar.Add("Bu isimde zaten bir marka mevcut.Başka marka ekleyin.", Severity.Warning);
+            return;
+        }
+
+        // kontrolü geçtiyse ekle
+        await BrandService.AddAsync(new Brand { Name = newBrandName.Trim() });
+        Snackbar.Add("Yeni marka başarıyla eklendi.Teşekkürler.", Severity.Success);
+
+        //index sayfasına yönlendir
+        Navigation.NavigateTo("/Brand/BrandIndex");
+    }
+}

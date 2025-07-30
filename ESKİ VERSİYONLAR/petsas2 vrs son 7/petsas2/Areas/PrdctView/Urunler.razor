@@ -1,0 +1,50 @@
+﻿@page "/urunler"
+@page "/urunler/{Category}"
+@page "/urunler/{Category}/{SubCategory}"
+
+@using petsas2.Services
+@using petsas2.Components.Pages.Shared
+@using petsas2.Models
+@using petsas2.Services.Interface
+@inject IProductService ProductService
+@inject NavigationManager NavigationManager
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var product in Products)
+        {
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <ProductGenel Name="@product.Name"
+                              DetailUrl="@($"/urunDetay/{product.Id}")"
+                              ImageUrl1="@product.ImageUrl"
+                              BrutFiyat="@(product.Pricings.LastOrDefault()?.BrutFiyat ?? 0)"
+                              DetayaGit="@(() => DetayaGit(product.Id))"
+                              SepeteEkle="@(() => SepeteEkle(product.Id))" />
+            </div>
+        }
+    </div>
+</div>
+
+
+
+@code {
+
+    [Parameter] public string Category { get; set; }
+    [Parameter] public required string SubCategory { get; set; }
+
+    public List<Product> Products { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Products = await ProductService.GetProductsAsync(Category, SubCategory);
+    }
+
+    void DetayaGit(int productId)
+    {
+        NavigationManager.NavigateTo($"/urunDetay/{productId}");
+    }
+    void SepeteEkle(int productId)
+    {
+        // Sepete ekleme işlemi
+    }
+}

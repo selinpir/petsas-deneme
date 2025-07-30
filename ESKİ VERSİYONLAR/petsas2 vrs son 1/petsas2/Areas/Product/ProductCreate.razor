@@ -1,0 +1,191 @@
+﻿@page "/product/ProductCreate"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using System.IO
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IProductService ProductService
+@inject IBrandService BrandService
+@inject ICategoryService CategoryService
+@inject ISubCategoryService SubCategoryService
+@inject NavigationManager Nav
+@inject ISnackbar Snackbar
+@inject IWebHostEnvironment Env
+
+<MudPaper Class="p-4 mx-auto" Style="max-width:600px">
+   
+    <MudText Typo="Typo.h5">Yeni Ürün Ekle</MudText>
+
+    <MudForm @ref="form">
+        @* referans *@
+
+     @*KATEGORİ SECİMİ *@
+        <MudSelect T="int" Label="Kategori"
+                   @bind-Value="SelectedCategoryId"
+                   Required="true">
+            @foreach (var cat in categories)
+            {
+                <MudSelectItem Value="@cat.Id">@cat.PetType</MudSelectItem>
+            }
+        </MudSelect>
+
+        @*alt kategori *@
+        <MudSelect T="int" Label="Alt Kategori"
+                   @bind-Value="product.SubCategoryId"
+                   Required="true">
+            @foreach (var sc in filteredSubcategories)
+            {
+                <MudSelectItem Value="@(sc.Id)">@sc.ProductName</MudSelectItem>
+            }
+        </MudSelect>
+        @*ad *@
+        <MudTextField @bind-Value="product.Name" Label="Ürün Adı" Required="true" />
+        @*açıklama *@
+        <MudTextField @bind-Value="product.Description" Label="Açıklama" />
+
+        @*marka *@
+        <MudSelect T="int"
+                   Label="Marka"
+                   @bind-Value="product.BrandId"
+                   Required="true">
+            @foreach (var b in brands)
+            {
+                <MudSelectItem Value="@b.Id">@b.Name</MudSelectItem>
+            }
+        </MudSelect>
+
+        @*görsel *@
+        @*       sadece bir ürüne ait bir görsel olacak -başta öyle yapmışım :( *@
+        <MudFileUpload T="IBrowserFile"
+                       MaxFileSize="1024*1024*20"
+                       Accept="image/jpeg,image/png"
+                       FilesChanged="UploadFile"
+                       Required="true">
+            <ActivatorContent>
+                <MudButton Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           StartIcon="@Icons.Material.Filled.CloudUpload">
+                    Ürün Görseli Yükle
+                </MudButton>
+            </ActivatorContent>
+        </MudFileUpload>
+        @* GÖRSEL *@
+
+        <MudNumericField T="int" @bind-Value="product.Stock" Label="Stok" Required="true" />
+        <MudNumericField T="int" @bind-Value="product.MinStock" Label="Min Stok" Required="true" />
+
+        @*Son Kullanma Tarihi *@
+        <MudTextField @bind-Value="product.ExpirationDate" Label="Son Kullanma Tarihi"  />
+
+        @*Renk *@
+        <MudTextField @bind-Value="product.Color" Label="Renk" />
+
+        @*Ağırlık *@
+        <MudTextField @bind-Value="product.Weight" Label="Ağırlık" />
+
+        @*Ebat *@
+        <MudTextField @bind-Value="product.Dimensions" Label="Ebat" />
+
+        @*Beden *@
+        <MudTextField @bind-Value="product.Dimensions" Label="Beden" />
+
+        @*Materyal *@
+        <MudTextField @bind-Value="product.Material" Label="Materyal" />
+
+
+
+        <div class="mt-4 d-flex gap-2">
+            <MudButton Color="Color.Secondary" OnClick="@(() => Nav.NavigateTo("/product/ProductIndex"))">İptal</MudButton>
+            <MudButton Color="Color.Primary" OnClick="@Save">Kaydet</MudButton>
+        </div>
+    </MudForm>
+</MudPaper>
+
+@code {
+    MudForm? form;
+    Product product = new();
+    List<Category> categories = new();
+    List<SubCategory> allSubcategories = new();
+    List<SubCategory> filteredSubcategories = new();
+    List<Brand> brands = new();
+
+    int selectedCategoryId;
+
+    int SelectedCategoryId
+    {
+        get => selectedCategoryId;
+        set
+        {
+            if (selectedCategoryId == value) return;
+            selectedCategoryId = value;
+            product.CategoryId = value;
+            FilterSubcategories();
+        }
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await CategoryService.GetAllAsync();
+        allSubcategories = await SubCategoryService.GetAllAsync();
+        brands = await BrandService.GetAllAsync();
+        filteredSubcategories = new(); //boş ilk
+    }
+
+    private void FilterSubcategories()
+    {
+        filteredSubcategories = allSubcategories
+        .Where(x => x.CategoryId == selectedCategoryId)
+        .ToList();
+        product.SubCategoryId = 0; //önceki seçim sıfırlanır
+    }
+
+    IBrowserFile? _imageFile;
+
+    // gorsel secimi
+    private void UploadFile(IBrowserFile file)
+    {
+        _imageFile = file;
+    }
+    // //gorsel formatı
+    //AllowedExtensions="@allowedFileExtensions" bu eskimiş
+    // private readonly string[] allowedFileExtensions =
+    //   new[] { ".jpg", ".jpeg", ".png" };
+
+    // kaydet
+    async Task Save()
+    {
+        await form!.Validate();
+        if (!form.IsValid)
+            return;
+
+        // Görsel varsa kaydet
+        if (_imageFile is not null)
+        {
+            var imagesFolder = Path.Combine(Env.WebRootPath, "images", "products");
+            if (!Directory.Exists(imagesFolder))
+                Directory.CreateDirectory(imagesFolder);
+
+            var ext = Path.GetExtension(_imageFile.Name);
+            var uniqueFileName = $"{Guid.NewGuid()}{ext}";
+            var filePath = Path.Combine(imagesFolder, uniqueFileName);
+
+            await using var stream = _imageFile.OpenReadStream(maxAllowedSize: 1024 * 1024 * 20);
+            await using var fs = new FileStream(filePath, FileMode.Create);
+            await stream.CopyToAsync(fs);
+
+            // Model’e relative yol atayın
+            product.ImageUrl = $"/images/products/{uniqueFileName}";
+        }
+
+        // ürünü ekle
+        await ProductService.AddAsync(product);
+        Snackbar.Add("Ürün eklendi", Severity.Success);
+        Nav.NavigateTo("/product/ProductIndex");
+    }
+} 

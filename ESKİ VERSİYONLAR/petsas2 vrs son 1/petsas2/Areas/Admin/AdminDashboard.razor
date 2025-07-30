@@ -1,0 +1,37 @@
+﻿@page "/admin/admindashboard"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
+
+<h2 class="d-flex align-items-center">
+    <MudIcon Icon="@Icons.Material.Filled.AdminPanelSettings"
+             Size="Size.Small"
+             Class="me-1" />
+    Admin Paneli
+</h2>
+
+<CardsGrid Items="CardList" />
+@* SATIŞLAR İLE İLGİLİ GRAFİK VEYA ÜRÜNLERLE İLGİLİ KAÇ ÜRÜN KEDİ KÖPEK ÜRÜN FLN FİYAT DAĞILIMI FLN *@
+@* https://ertugrulakdag.medium.com/apexcharts-kullanarak-asp-net-core-blazorda-%C3%A7izgi-grafik-olu%C5%9Fturmak-f7719ff403a0 *@
+
+@* FATURA OLUŞTURMA *@
+@* https://ertugrulakdag.medium.com/questpdf-ile-dinamik-fatura-pdfleri-olu%C5%9Fturma-creating-dynamic-invoice-pdfs-with-questpdf-67b34db82f32 *@
+
+@code {
+    private List<CardsGrid.CardInfo> CardList = new()
+    {   // new() { Title = "Tedarikçiyi Yönet",  Icon="bi bi-person-vcard",      Link = "", ButtonText = "Git" },
+        // new() { Title = "Kullanıcıları Yönet",  Icon="bi bi-person-hearts",      Link = "", ButtonText = "Git" }
+
+        //tedarikçi ile ortak
+        new() { Title = "Ürün-Stok Yönetimi",       Icon="bi bi-back",       Link =  "/product/ProductIndex",         ButtonText = "Git" },  //-
+        new() { Title = "Kategori Yönetimi" ,       Icon="bi bi-tags-fill",  Link =  "/category/CategoryIndex",       ButtonText = "Git" },  //+
+        new() { Title = "Alt Kategori Yönetimi",    Icon="bi bi-back",       Link =  "/subcategory/SubCategoryIndex", ButtonText = "Git" },  //+
+        new() { Title = "Marka Yönetimi" ,          Icon="bi bi-nvidia",     Link =  "/brand/BrandIndex",             ButtonText = "Git" },  //+
+
+    };
+
+}
+

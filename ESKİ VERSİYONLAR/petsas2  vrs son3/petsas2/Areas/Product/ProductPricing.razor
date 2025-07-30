@@ -1,0 +1,34 @@
+﻿@*FİYATLANDIRMA SAYFASI YAPILACAK*@
+
+
+@* FİYAT DEĞİŞTİRMEDE TARİH AYARI *@
+@* 
+public async Task ChangePriceAsync(int productId, decimal newPrice)
+{
+    var now = DateTime.Now;
+
+    // 1) Hâlihazırda aktif (sonlanma tarihi null) fiyat kaydını getir
+    var current = await _context.Pricings
+        .FirstOrDefaultAsync(p => p.ProductId == productId
+                              && p.FiyatSonlanmaTarihi == null);
+
+    if (current != null)
+    {
+        // 2) Eski fiyatın bitiş tarihini şimdi yap
+        current.FiyatSonlanmaTarihi = now;
+    }
+
+    // 3) Yeni fiyat kaydını oluştur
+    var newPricing = new Pricing
+    {
+        ProductId          = productId,
+        Fiyat              = newPrice,
+        FiyatBaslangicTarihi = now,
+        FiyatSonlanmaTarihi = null  // opsiyonel, zaten null
+    };
+    _context.Pricings.Add(newPricing);
+
+    // 4) Değişiklikleri kaydet
+    await _context.SaveChangesAsync();
+}
+ *@

@@ -1,0 +1,146 @@
+﻿@page "/siparis/OdemeIslemi"
+@* sf2 : odeme adımı  *@
+@attribute [Authorize]
+@attribute [Authorize(Roles = "User")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject ISiparisService SiparisService
+@inject ISepetService SepetService
+@inject IHesapService HesapService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+@* Ödeme *@
+
+<MudPaper Class="p-4 mx-auto" Elevation="15" Style="max-width:600px">
+    <MudForm @ref="form">
+        <MudTextField @bind-Value="TextValue1" Label="Kart Numarası"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Text"
+                      MinLength="16"
+                      MaxLength="16"
+                      Required="true"
+                      Immediate="true"
+                      Validation="@( (string value) =>
+                  string.IsNullOrWhiteSpace(value)
+                      ? "Kart Numarası boş bırakılamaz"
+                      : !System.Text.RegularExpressions.Regex.IsMatch(value,@"^\d{16}$")
+                          ? "Geçerli bir Kart Numarası giriniz "
+                          : null
+              )">
+        </MudTextField>
+
+        <MudTextField @bind-Value="@Siparis.KartIsim" Label="Kart Üzerindeki İsim"
+                      Variant="Variant.Outlined"
+                      Required="true"
+                      Immediate="true">
+        </MudTextField>
+
+        <MudTextField @bind-Value="TextValue2" Label="Son Kullanma Tarihi"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Text"
+                      MinLength="4"
+                      MaxLength="4"
+                      Required="true"
+                      Immediate="true"
+                      Validation="@( (string value) =>
+                  string.IsNullOrWhiteSpace(value)
+                      ? "SKT boş bırakılamaz"
+                      : !System.Text.RegularExpressions.Regex.IsMatch(value, @"^\d{4}$")
+                          ? "Geçerli bir SKT giriniz (AA/YY)"
+                          : null
+              )">
+
+        </MudTextField>
+
+        <MudTextField @bind-Value="TextValue3"
+                      Label="CVV"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Text"
+                      MinLength="3"
+                      MaxLength="3"
+                      Required="true"
+                      Immediate="true"
+                      Validation="@( (string value) =>
+                  string.IsNullOrWhiteSpace(value)
+                      ? "CVV boş bırakılamaz"
+                      : !System.Text.RegularExpressions.Regex.IsMatch(value, @"^\d{3}$")
+                          ? "Geçerli bir CVV giriniz (XXX)"
+                          : null
+              )">
+        </MudTextField>
+
+        <MudStack>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary"
+                       OnClick="@SiparisiTamamlaAsync">
+                Siparişi Tamamla
+            </MudButton>
+
+            <MudButton Variant="Variant.Filled" Color="Color.Warning"
+                       OnClick="@Iptal">
+                İptal
+            </MudButton>
+        </MudStack>
+    </MudForm>
+</MudPaper>
+
+@code
+{
+    public string ReadOnly { get; set; } = "Siparişi Tamamla: Ödeme İşlemi";
+    MudForm form;
+    public string TextValue1 { get; set; }
+    public string TextValue2 { get; set; }
+    public string TextValue3 { get; set; }
+    private Siparis Siparis = new Siparis();
+
+
+    // siparis verilir
+    public async Task SiparisiTamamlaAsync()
+    {
+        var userId = await HesapService.GetCurrentUserHesapAsync();
+        var sepet = await SepetService.GetSepetByUserIdAsync(kullaniciId);
+
+        if (sepet == null || sepet.SepetDetaylar == null || !sepet.SepetDetaylar.Any())
+        {
+            // sepet boşsa işlem yapılmaz
+            return;
+        }
+
+        var siparis = new Siparis
+            {
+                HesapBilgileriId = int.Parse(kullaniciId),
+                SiparisTarihi = DateTime.Now,
+                SiparisDurumu = SiparisDurumu.SiparisAlindi,
+                S_ToplamTutar = sepet.SepetToplamTutar,
+                SiparisDetaylar = sepet.SepetDetaylar.Select(d => new SiparisDetay
+                {
+                    UrunId = d.UrunId,
+                    Adet = d.Adet,
+                    Fiyat = d.Fiyat
+                }).ToList()
+            };
+
+        _context.Siparisler.Add(siparis);
+        await _context.SaveChangesAsync(); // <-- Burası çok önemli
+    }
+    //iptal-dashboarda gideriko
+    private async Task Iptal()
+    {
+        Snackbar.Add("Ödeme işlemi iptal edildi.", Severity.Warning);
+        Navigation.NavigateTo("/user/Userdashboard");
+    }
+}

@@ -1,0 +1,120 @@
+﻿@page "/siparis/SiparisiYonet"
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IAdminService AdminService
+@inject ISiparisService SiparisService
+@inject ISnackbar Snackbar
+@inject NavigationManager Navigation
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+
+<MudTable Items="TumSiparisler" Elevation="2">
+    <HeaderContent>
+        <MudTh>Sipariş No</MudTh>
+        <MudTh>Kullanıcı</MudTh>
+        <MudTh>Tarih</MudTh>
+        <MudTh>Tutar</MudTh>
+        <MudTh>Durum</MudTh>
+        <MudTh>Sipariş Durumunu Güncelle</MudTh>
+
+        <MudTh>Fatura Görüntüle</MudTh>
+
+    </HeaderContent>
+
+    <RowTemplate>
+        <MudTd>@context.SiparisNo</MudTd>
+        <MudTd>@context.HesapBilgileri?.Ad</MudTd>
+        <MudTd>@context.SiparisTarihi.ToShortDateString()</MudTd>
+        <MudTd>@context.S_ToplamTutar.ToString("C")</MudTd>
+        <MudTd>@context.SiparisDurumu.ToString()</MudTd>
+        <MudTd>
+            @if (context.SiparisDurumu == SiparisDurumu.SiparisAlindi)
+            {
+                <MudButton Color="Color.Info" Size="Size.Small"
+                           OnClick="() => SiparisDurumGuncelle(context.SiparisID, SiparisDurumu.SiparisHazirlaniyor)">
+                    Siparişi Hazırla
+                </MudButton>
+            }
+            else if (context.SiparisDurumu == SiparisDurumu.SiparisHazirlaniyor)
+            {
+                <MudButton Color="Color.Success" Size="Size.Small"
+                           OnClick="() => SiparisDurumGuncelle(context.SiparisID, SiparisDurumu.SiparisKargoyaVerildi)">
+                    Siparişi Kargoya Ver
+                </MudButton>
+            }
+            else if (context.SiparisDurumu == SiparisDurumu.SiparisKargoyaVerildi)
+            {
+                <MudButton Color="Color.Success" Size="Size.Small"
+                           OnClick="() => SiparisDurumGuncelle(context.SiparisID, SiparisDurumu.SiparisTeslimEdildi)">
+                    Teslim Edildi
+                </MudButton>
+            }
+        </MudTd>
+        @* ADMİN FATURA GOSTERME-------------------------------------------------------------------- *@
+        <MudTd>
+            <MudButton OnClick="async () => await FaturaGosterAsync(context.SiparisID)">
+                Fatura Görüntüle
+            </MudButton>
+        </MudTd>
+        @* ADMİN FATURA GOSTERME-------------------------------------------------------------------- *@
+    </RowTemplate>
+</MudTable>
+
+@code {
+    public string ReadOnly { get; set; } = "Siparisleri Yonet";
+    //gelen siparisler
+    //siparis hazırla
+    //siparisi kargoya ver
+    private List<Siparis> TumSiparisler = new();
+
+    [Parameter] public int FaturaId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        TumSiparisler = await AdminService.GetTumSiparislerAsync();
+        // _kullaniciSiparisler = await SiparisService.GetSiparislerByKullaniciIdAsync(await _userService.GetCurrentUserIdAsync());
+    }
+
+    private async Task SiparisDurumGuncelle(int siparisId, SiparisDurumu yeniDurum)
+    {
+        var basarili = await SiparisService.SiparisDurumunuGuncelleAsync(siparisId, yeniDurum);
+        if (basarili)
+        {
+            Snackbar.Add("Sipariş durumu güncellendi.", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Durum güncellenirken hata oluştu.", Severity.Error);
+        }
+    }
+
+    //ADMİN FATURA GOSTERME--------------------------------------------------------------------
+    private async Task FaturaGosterAsync(int SiparisID)
+    {
+        var siparis = await SiparisService.GetSiparisByIdAsync(SiparisID);
+            if (siparis?.Fatura != null)
+            {
+                Navigation.NavigateTo($"/siparis/FaturaGoruntule/{siparis.Fatura.FaturaId}");
+
+            }
+            else
+            {
+                Snackbar.Add("Bu sipariş için fatura bulunamadı!", Severity.Warning);
+            }
+    }
+    //ADMİN FATURA GOSTERME--------------------------------------------------------------------
+}

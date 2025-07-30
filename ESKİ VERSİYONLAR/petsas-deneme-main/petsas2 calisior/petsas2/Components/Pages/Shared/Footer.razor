@@ -1,0 +1,374 @@
+﻿@* @* mb-4 : margin bottom 4px
+target="_blank" — tıklandığında yeni sekmede açılmasını sağlar 
+ctrl+k+d kod düzeni için
+*@
+<footer class="bg-body-tertiary text-center">
+    <div class="container p-4">
+        <!-- Sosyal Medya -->
+        <section class="mb-4">
+            @foreach (var social in SocialLinks)
+            {
+                <a data-mdb-ripple-init
+                   class="btn btn-outline btn-floating m-1"
+                   href="@social.Url"
+                   target="_blank"
+                   role="button">
+                    <i class="@social.IconClass"></i>
+                </a>
+            }
+        </section>
+
+        <!-- Kısa Marka Metni -->
+        <section class="mb-4">
+            <p>PetSas ile dostlarınız her zaman keyifte — en kaliteli mama, oyuncak ve aksesuarların adresi.</p>
+        </section>
+
+        <!-- Linkler -->
+        <section>
+            <div class="row">
+                <!-- Ürün Kategorileri -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Kategoriler</h5>
+                    <ul class="list-unstyled mb-0">
+                        @foreach (var cat in ProductCategories)
+                        {
+                            <li>
+                                <NavLink class="text-body text-decoration-none" href="@cat.Url">@cat.Title</NavLink>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- Yasal Sayfalar -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Bilgilendirme</h5>
+                    <ul class="list-unstyled mb-0">
+                        @foreach (var legal in LegalPages)
+                        {
+                            <li>
+                                <NavLink class="text-body text-decoration-none" href="@legal.Url">@legal.Title</NavLink>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- Hızlı Linkler -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Sayfalar</h5>
+                    <ul class="list-unstyled mb-0">
+                        @foreach (var link in PageLinks)
+                        {
+                            <li>
+                                <NavLink class="text-body text-decoration-none" href="@link.Url">@link.Title</NavLink>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- İletişim -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">İletişim</h5>
+                    <ul class="list-unstyled mb-0">
+                        @foreach (var info in ContactItems)
+                        {
+                            <li>
+                                @if (info.IsLink && !string.IsNullOrEmpty(info.Url))
+                                {
+                                    <a class="text-body text-decoration-none" href="@info.Url" target="_blank">@info.Title</a>
+                                }
+                                else
+                                {
+                                    <span class="text-body">@info.Title</span>
+                                }
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Ödeme Logoları & Sertifikalar -->
+    <section class="mb-4">
+        <div class="container">
+            <!-- Ödeme Logoları  -->
+            <h6 class="text-uppercase mb-2">Ödeme Yöntemleri</h6>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <img src="/img/paymentlogo/visa.png"
+                     alt="Visa"
+                     title="Visa"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+                <img src="/img/paymentLogo/mastercard.png"
+                     alt="Mastercard"
+                     title="Mastercard"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+                <img src="/img/paymentLogo/paypal.png"
+                     alt="PayPal"
+                     title="PayPal"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+                <img src="/img/paymentLogo/iyzico.png"
+                     alt="iyzico"
+                     title="iyzico"
+                     class="me-2 mb-2"
+                     style="height:50px;" />
+
+            </div>
+
+            <!-- Sertifika / Rozetler Başlığı -->
+            <h6 class="text-uppercase mt-3 mb-2">Sertifika &amp; Rozetler</h6>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <img src="/img/paymentLogo/SSL.png"
+                     alt="SSL Sertifikası"
+                     title="SSL Sertifikası"
+                     class="me-2 mb-2"
+                     style="height:45px;" />
+              
+
+                <img src="/img/paymentLogo/ISO.png"
+                     alt="ISO Sertifikası"
+                     title="ISO Sertifikası"
+                     class="me-2 mb-2"
+                     style="height:45px;" />
+
+                     @* elektronik ticaret bilgi sistemi *@
+                <img src="/img/paymentLogo/etbis.jpg"
+                     alt="ETBİS"
+                     title="ETBİS"
+                     class="me-2 mb-2"
+                     style="height:45px;" />
+            </div>
+
+            <!-- İade & Değişim Garantisi -->
+            <small class="d-block text-muted mt-3">
+                30 gün içinde iade &amp; değişim garantisi.
+            </small>
+        </div>
+    </section>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © @DateTime.Now.Year Copyright:
+        <a class="text-reset fw-bold" href="/">Selin Pir</a>
+    </div>
+</footer>
+
+@code {
+    // Sosyal Medya Linkleri
+    private readonly SocialLink[] SocialLinks = new[]
+    {
+        new SocialLink("fab fa-facebook-f", "https://www.facebook.com/selin.pir.3/"),
+        new SocialLink("fab fa-twitter", "https://x.com/zoonpolitikion"),
+        new SocialLink("fab fa-instagram", "https://www.instagram.com/seliinpir/")
+    };
+
+    // Ürün Kategorileri
+    private readonly LinkItem[] ProductCategories = new[]
+    {
+        new LinkItem("Kedi", "/categories/cat"),
+        new LinkItem("Köpek", "/categories/dog"),
+        new LinkItem("Kuş", "/categories/bird"),
+        new LinkItem("Akvaryum", "/categories/aquarium"),
+        new LinkItem("Kemirgen", "/categories/smallPets") //rodent kullanımı doğru değil tavşanlar ve hamsterlar memeli sayılıyor
+    };
+
+    // Yasal Sayfalar
+    private readonly LinkItem[] LegalPages = new[]
+    {
+        new LinkItem("KVKK Metni", "Legal/KvkkPolicy"),
+        new LinkItem("Gizlilik Politikası", "legal/PrivacyPolicy"),
+        new LinkItem("Mesafeli Satış Sözleşmesi", "legal/DistanceSales"),
+        new LinkItem("İptal & İade Koşulları", "legal/RefundPolicy"),
+        new LinkItem("Çerez Politikası", "legal/CookiePolicy")
+    };
+
+    // Sayfa Linkleri
+    private readonly LinkItem[] PageLinks = new[]
+    {
+        new LinkItem("Anasayfa", "/"),
+        new LinkItem("Blog", "/petblog"),
+        new LinkItem("SSS", "/faq"),
+        new LinkItem("Hakkımızda", "/about")
+    };
+
+    // İletişim Bilgileri
+    private readonly ContactItem[] ContactItems = new[]
+    {
+        new ContactItem("Telefon: 555 444 44 30", false),
+        new ContactItem("E-posta: info@petsas.com", true, "mailto:info@petsas.com"),
+        new ContactItem("Adres: Örnek Mah. No:123", false)
+    };
+
+    // Kayıt Tipleri
+    private record LinkItem(string Title, string Url); /*  categories/kedi */
+    private record SocialLink(string IconClass, string Url);
+    private record ContactItem(string Title, bool IsLink, string? Url = null);
+    // readonly diziler runtime'da değişmez.
+    // Component-Based Footer Architecture" (Bileşen Tabanlı Footer Mimarisi)
+}
+
+@* 
+ESKİ YAPI   
+<!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Yeni Ürünlerden Haberdar Ol!</strong>
+                        </p>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="email" id="form5Example24" class="form-control" />
+                            <label class="form-label" for="form5Example24">Email address</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <!-- Submit button -->
+                        <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+                            Abone Ol
+                        </button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                PetSas ile dostlarınız her zaman keyifte,en kaliteli mama, oyuncak ve aksesuarların adresi.
+            </p>
+        </section>
+        <!-- Section: Text -->
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a class="text-body" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a class="text-body" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a class="text-body" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a class="text-body" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">SelinPir</a>
+    </div>
+
+</footer>
+ *@ 

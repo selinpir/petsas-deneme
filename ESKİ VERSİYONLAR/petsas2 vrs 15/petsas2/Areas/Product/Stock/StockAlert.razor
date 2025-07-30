@@ -1,0 +1,133 @@
+﻿@* açıklama yazılmadı *@
+@* admin ve tedarikçide ortak*@
+@page "/stock/StockAlert"
+@attribute [Authorize(Roles = "Admin,Supplier")]
+
+@using Microsoft.AspNetCore.Authorization
+@using MudBlazor
+@using petsas2.Models
+@using petsas2.Services.Interface
+
+@inject IProductService ProductService
+@inject ISnackbar Snackbar
+@inject NavigationManager NavigationManager
+
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+<MudTable Items="@alerts" Hover="true" Striped="true" Bordered="true">
+
+    <HeaderContent>
+        <MudTh>Ürün Id</MudTh>
+  @*       <MudTh>Ürün Barkod</MudTh> *@
+        <MudTh>Ürün Adı</MudTh>
+        <MudTh>Stok</MudTh>
+        <MudTh>Min Stok</MudTh>
+        <MudTh width="200px">Stok Ekle</MudTh>
+    </HeaderContent>
+
+  @*   urun Id yerine barkod olmalıydı *@
+
+    <RowTemplate Context="context">
+
+        <MudTd DataLabel="Ürün Id">@context.ProductId</MudTd>
+
+@*         <MudTd DataLabel="Ürün Barkod">@context.Barcode</MudTd> *@
+
+        <MudTd DataLabel="Ürün Adı">@context.ProductName</MudTd>
+
+        <MudTd DataLabel="Stok">@context.Stock</MudTd>
+
+        <MudTd DataLabel="Min Stok">@context.MinStock</MudTd>
+
+        <MudTd DataLabel="Stok Ekle">
+            <MudStack Spacing="2" Class="mt-4">
+                <!-- Eklemek istenilen miktarı girdik -->
+                <MudNumericField T="int"
+                                 @bind-Value="addAmounts[context.ProductId]"
+                                 Min="1" Max="1000"
+                                 Placeholder="Miktar"
+                                 Style="width:80px" />
+
+                <MudButton Color="Color.Primary"
+                           Disabled="@(addAmounts[context.ProductId] <= 0)"
+                           OnClick="() => AddStock(context.ProductId)">
+                    Ekle
+                </MudButton>
+            </MudStack>
+        </MudTd>
+
+    </RowTemplate>
+</MudTable>
+
+<MudButton Color="Color.Secondary" Class="mt-4"
+           OnClick="GoBack">
+    Bitir
+</MudButton>
+
+
+
+
+@code {
+    public string ReadOnly { get; set; } = "Kritik Stok Uyarıları";
+    [Parameter]
+    public int productId { get; set; }
+
+    //listeyi tutacak
+    private List<StockAlertDto> alerts = new();
+
+    //her ürün için eklenen miktarı tutan sözlük
+    private Dictionary<int, int> addAmounts = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        //kritik stokta olan ürünlerin çekilmesi
+        alerts = await ProductService.GetStockAlertAsync();
+
+        //ilk değerleri sıfırla başlat
+        foreach (var a in alerts)
+            addAmounts[a.ProductId] = 0;
+    }
+
+    //stok ekleme
+    private async Task AddStock(int productId)
+    {
+        var amount = addAmounts[productId];
+        if (amount <= 0)
+            return;
+
+        try
+        {
+            //servise ekle
+            await ProductService.AddStockAsync(productId, amount);
+            Snackbar.Add($"Ürün{productId} stoğuna {amount} adet eklendi.", Severity.Success);
+
+            //listeyi yenile ki ürün çıksın
+            alerts = await ProductService.GetStockAlertAsync();
+
+            //yeni liste için miktarı tuttuğumuz sozluk güncelle
+            addAmounts.Clear();
+            foreach (var a in alerts)
+                addAmounts[a.ProductId] = 0;
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Hata: {ex.Message}", Severity.Error);
+        }
+    }
+    private async Task GoBack()
+    {
+        // Tarayıcı geçmişinde bir adım geri:
+        await JS.InvokeVoidAsync("history.back");
+    }
+}

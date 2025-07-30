@@ -1,0 +1,31 @@
+﻿@page "/User/UserDashboard"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components
+@using petsas2.Components
+@using MudBlazor
+@using petsas2.Components.Pages.Shared @* CardsGrid kullanabilmek için *@
+
+@attribute [Authorize]
+
+<MudGrid GutterSize="2">
+    <MudItem xs="12">
+        <MudTextField T="string"
+                      Value="ReadOnly"
+                      Label="Şu Anda Buradasınız"
+                      ReadOnly="true"
+                      Variant="Variant.Outlined" />
+    </MudItem>
+</MudGrid>
+
+<CardsGrid Items="CardList" />
+
+@code {
+    public string ReadOnly { get; set; } = "Hesabım";
+
+    private List<CardsGrid.CardInfo> CardList = new() {
+        new() { Title = "Profil Bilgilerim", Icon="bi bi-clipboard-heart-fill",  Link = "/user/profile", ButtonText = "Profil Bilgilerim" },
+        new() { Title = "Adres Bilgilerim",  Icon="bi bi-house-door-fill",      Link = "/user/address", ButtonText = "Adres Bilgilerim" },
+        new() { Title = "Siparişlerim",      Icon="bi bi-box2-heart-fill",        Link = "/user/orders", ButtonText = "Siparişlerim" }
+    };
+}
+
