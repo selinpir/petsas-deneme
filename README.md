@@ -24,7 +24,7 @@ Evcil hayvan sahiplerine yönelik ürünlerin dijital ortamda satışını sağl
   - Ürünleri inceleme, sepete ekleme, sipariş verme
   - Sipariş geçmişi ve fatura görüntüleme
 
-####Özellikler
+#### Özellikler
 - Katmanlı mimari
 - Rol tabanlı yetkilendirme (Identity)
 - CRUD işlemleri ile dinamik veri yönetimi
